@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -58,9 +57,8 @@ func Benchmark_Problem215(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans215, q.para215
-		fmt.Printf("【input】:%v    【output】:%v\n", p.one, findKthLargest(p.one, p.two))
+		(findKthLargest(p.one, p.two))
 	}
 }

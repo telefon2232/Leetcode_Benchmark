@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -40,9 +39,8 @@ func Benchmark_Problem14(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans14, q.para14
-		fmt.Printf("【input】:%v    【output】:%v\n", p.strs, longestCommonPrefix(p.strs))
+		(longestCommonPrefix(p.strs))
 	}
 }

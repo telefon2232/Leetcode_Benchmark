@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -62,9 +61,8 @@ func Benchmark_Problem9(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans9, q.para9
-		fmt.Printf("【input】:%v    【output】:%v\n", p.one, isPalindrome(p.one))
+		(isPalindrome(p.one))
 	}
 }
