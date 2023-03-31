@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,9 +52,8 @@ func Benchmark_Problem1(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1, q.para1
-		fmt.Printf("【input】:%v       【output】:%v\n", p, twoSum(p.nums, p.target))
+		(twoSum(p.nums, p.target))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem674(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans674, q.para674
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findLengthOfLCIS(p.nums))
+		(findLengthOfLCIS(p.nums))
 	}
 }

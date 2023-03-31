@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem990(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans990, q.para990
-		fmt.Printf("【input】:%v       【output】:%v\n", p, equationsPossible(p.a))
+		(equationsPossible(p.a))
 	}
 }

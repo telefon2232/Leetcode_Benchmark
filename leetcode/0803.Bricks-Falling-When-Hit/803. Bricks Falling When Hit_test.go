@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem803(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans803, q.para803
-		fmt.Printf("【input】:%v       【output】:%v\n", p, hitBricks(p.grid, p.hits))
+		(hitBricks(p.grid, p.hits))
 	}
 }

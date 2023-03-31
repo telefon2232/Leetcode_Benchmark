@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -64,9 +63,8 @@ func Benchmark_Problem328(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans328, q.para328
-		fmt.Printf("【input】:%v       【output】:%v\n", p, structures.List2Ints(oddEvenList(structures.Ints2List(p.one))))
+		(structures.List2Ints(oddEvenList(structures.Ints2List(p.one))))
 	}
 }

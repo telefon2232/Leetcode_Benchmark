@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -80,9 +79,8 @@ func Benchmark_Problem1254(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1254, q.para1254
-		fmt.Printf("【input】:%v       【output】:%v\n", p, closedIsland(p.one))
+		(closedIsland(p.one))
 	}
 }

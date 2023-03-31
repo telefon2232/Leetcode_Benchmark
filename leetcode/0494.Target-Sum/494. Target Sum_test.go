@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem494(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans494, q.para494
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findTargetSumWays(p.nums, p.S))
+		(findTargetSumWays(p.nums, p.S))
 	}
 }

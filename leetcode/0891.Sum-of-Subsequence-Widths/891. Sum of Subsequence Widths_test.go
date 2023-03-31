@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem891(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans891, q.para891
-		fmt.Printf("【input】:%v       【output】:%v\n", p, sumSubseqWidths(p.one))
+		(sumSubseqWidths(p.one))
 	}
 }

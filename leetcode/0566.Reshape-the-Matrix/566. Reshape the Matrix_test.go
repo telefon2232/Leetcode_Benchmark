@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -39,9 +38,8 @@ func Benchmark_Problem566(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans566, q.para566
-		fmt.Printf("【input】:%v       【output】:%v\n", p, matrixReshape(p.nums, p.r, p.c))
+		(matrixReshape(p.nums, p.r, p.c))
 	}
 }

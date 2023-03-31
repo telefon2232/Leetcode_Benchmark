@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem1672(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1672, q.para1672
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maximumWealth(p.accounts))
+		(maximumWealth(p.accounts))
 	}
 }

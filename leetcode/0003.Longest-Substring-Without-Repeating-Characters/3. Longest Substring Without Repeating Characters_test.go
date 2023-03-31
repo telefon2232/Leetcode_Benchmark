@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem3(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans3, q.para3
-		fmt.Printf("【input】:%v       【output】:%v\n", p, lengthOfLongestSubstring(p.s))
+		(lengthOfLongestSubstring(p.s))
 	}
 }

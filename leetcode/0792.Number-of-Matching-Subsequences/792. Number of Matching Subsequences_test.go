@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem792(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans792, q.para792
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numMatchingSubseq(p.s, p.words))
+		(numMatchingSubseq(p.s, p.words))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem338(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans338, q.para338
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countBits(p.one))
+		(countBits(p.one))
 	}
 }

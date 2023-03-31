@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem204(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans204, q.para204
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countPrimes(p.one))
+		(countPrimes(p.one))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -73,9 +72,8 @@ func Benchmark_Problem532(b *testing.B) {
 		// },
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans532, q.para532
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findPairs(p.one, p.n))
+		(findPairs(p.one, p.n))
 	}
 }

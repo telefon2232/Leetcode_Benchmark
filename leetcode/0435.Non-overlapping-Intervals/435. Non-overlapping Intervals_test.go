@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem435(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans435, q.para435
-		fmt.Printf("【input】:%v       【output】:%v\n", p, eraseOverlapIntervals1(p.one))
+		(eraseOverlapIntervals1(p.one))
 	}
 }

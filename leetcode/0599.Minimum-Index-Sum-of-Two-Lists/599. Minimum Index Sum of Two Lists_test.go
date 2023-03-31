@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem599(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans599, q.para599
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findRestaurant(p.one, p.two))
+		(findRestaurant(p.one, p.two))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -80,9 +79,8 @@ func Benchmark_Problem695(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans695, q.para695
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxAreaOfIsland(p.one))
+		(maxAreaOfIsland(p.one))
 	}
 }

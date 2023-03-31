@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem537(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans537, q.para537
-		fmt.Printf("【input】:%v       【output】:%v\n", p, complexNumberMultiply(p.a, p.b))
+		(complexNumberMultiply(p.a, p.b))
 	}
 }

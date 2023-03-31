@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem1232(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1232, q.para1232
-		fmt.Printf("【input】:%v       【output】:%v\n", p, checkStraightLine(p.arr))
+		(checkStraightLine(p.arr))
 	}
 }

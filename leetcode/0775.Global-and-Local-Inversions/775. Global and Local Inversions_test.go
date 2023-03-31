@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,9 +35,8 @@ func Benchmark_Problem775(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans775, q.para775
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isIdealPermutation(p.A))
+		(isIdealPermutation(p.A))
 	}
 }

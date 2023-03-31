@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -50,9 +49,8 @@ func Benchmark_Problem1201(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1201, q.para1201
-		fmt.Printf("【input】:%v       【output】:%v\n", p, nthUglyNumber(p.n, p.a, p.b, p.c))
+		(nthUglyNumber(p.n, p.a, p.b, p.c))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem816(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans816, q.para816
-		fmt.Printf("【input】:%v       【output】:%v\n", p, ambiguousCoordinates(p.one))
+		(ambiguousCoordinates(p.one))
 	}
 }

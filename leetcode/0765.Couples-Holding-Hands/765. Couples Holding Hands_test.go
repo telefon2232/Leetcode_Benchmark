@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem765(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans765, q.para765
-		fmt.Printf("【input】:%v       【output】:%v\n", p, minSwapsCouples(p.one))
+		(minSwapsCouples(p.one))
 	}
 }

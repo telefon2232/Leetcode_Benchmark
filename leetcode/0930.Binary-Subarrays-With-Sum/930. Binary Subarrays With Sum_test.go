@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem930(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans930, q.para930
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numSubarraysWithSum(p.s, p.k))
+		(numSubarraysWithSum(p.s, p.k))
 	}
 }

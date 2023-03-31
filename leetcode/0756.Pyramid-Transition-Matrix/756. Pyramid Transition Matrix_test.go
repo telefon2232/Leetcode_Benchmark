@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem756(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans756, q.para756
-		fmt.Printf("【input】:%v       【output】:%v\n", p, pyramidTransition(p.b, p.a))
+		(pyramidTransition(p.b, p.a))
 	}
 }

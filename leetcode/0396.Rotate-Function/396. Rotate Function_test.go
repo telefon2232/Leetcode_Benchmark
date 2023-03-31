@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,9 +35,8 @@ func Benchmark_Problem396(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans396, q.para396
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxRotateFunction(p.one))
+		(maxRotateFunction(p.one))
 	}
 }

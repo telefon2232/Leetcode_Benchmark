@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem461(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans461, q.para461
-		fmt.Printf("【input】:%v       【output】:%v\n", p, hammingDistance(p.x, p.y))
+		(hammingDistance(p.x, p.y))
 	}
 }

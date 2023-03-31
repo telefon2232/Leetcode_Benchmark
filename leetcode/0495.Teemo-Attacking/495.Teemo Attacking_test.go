@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,9 +35,8 @@ func Benchmark_Problem495(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans495, q.para495
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findPoisonedDuration(p.timeSeries, p.duration))
+		(findPoisonedDuration(p.timeSeries, p.duration))
 	}
 }

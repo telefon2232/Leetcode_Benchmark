@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem1010(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1010, q.para1010
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numPairsDivisibleBy60(p.time))
+		(numPairsDivisibleBy60(p.time))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem643(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans643, q.para643
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findMaxAverage(p.nums, p.k))
+		(findMaxAverage(p.nums, p.k))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem1684(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1684, q.para1684
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countConsistentStrings(p.allowed, p.words))
+		(countConsistentStrings(p.allowed, p.words))
 	}
 }

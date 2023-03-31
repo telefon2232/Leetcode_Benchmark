@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem1710(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1710, q.para1710
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maximumUnits(p.boxTypes, p.truckSize))
+		(maximumUnits(p.boxTypes, p.truckSize))
 	}
 }

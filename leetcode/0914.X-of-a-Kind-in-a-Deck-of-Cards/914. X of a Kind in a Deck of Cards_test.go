@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem914(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans914, q.para914
-		fmt.Printf("【input】:%v       【output】:%v\n", p, hasGroupsSizeX(p.one))
+		(hasGroupsSizeX(p.one))
 	}
 }

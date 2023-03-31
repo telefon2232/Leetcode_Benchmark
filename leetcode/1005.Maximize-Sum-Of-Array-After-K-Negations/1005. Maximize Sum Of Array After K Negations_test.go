@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -62,9 +61,8 @@ func Benchmark_Problem1005(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1005, q.para1005
-		fmt.Printf("【input】:%v       【output】:%v\n", p, largestSumAfterKNegations(p.one, p.two))
+		(largestSumAfterKNegations(p.one, p.two))
 	}
 }

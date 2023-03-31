@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem973(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans973, q.para973
-		fmt.Printf("【input】:%v       【output】:%v\n", p, KClosest(p.one, p.two))
+		(KClosest(p.one, p.two))
 	}
 }

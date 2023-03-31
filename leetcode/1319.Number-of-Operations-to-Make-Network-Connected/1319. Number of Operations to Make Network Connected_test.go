@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,9 +52,8 @@ func Benchmark_Problem1319(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1319, q.para1319
-		fmt.Printf("【input】:%v       【output】:%v\n", p, makeConnected(p.n, p.connections))
+		(makeConnected(p.n, p.connections))
 	}
 }

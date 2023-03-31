@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -59,9 +58,8 @@ func Benchmark_Problem1073(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1073, q.para1073
-		fmt.Printf("【input】:%v       【output】:%v\n", p, addNegabinary1(p.arr1, p.arr2))
+		(addNegabinary1(p.arr1, p.arr2))
 	}
 }

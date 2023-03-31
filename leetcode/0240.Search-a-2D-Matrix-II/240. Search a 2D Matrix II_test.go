@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem240(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans240, q.para240
-		fmt.Printf("【input】:%v       【output】:%v\n", p, searchMatrix240(p.matrix, p.target))
+		(searchMatrix240(p.matrix, p.target))
 	}
 }

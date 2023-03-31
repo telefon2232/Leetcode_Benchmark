@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -69,9 +68,8 @@ func Benchmark_Problem36(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans36, q.para36
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isValidSudoku1(p.s))
+		(isValidSudoku1(p.s))
 	}
 }

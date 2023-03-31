@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem690(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans690, q.para690
-		fmt.Printf("【input】:%v       【output】:%v\n", p, getImportance(p.employees, p.id))
+		(getImportance(p.employees, p.id))
 	}
 }

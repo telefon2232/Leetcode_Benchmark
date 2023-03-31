@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem1732(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1732, q.para1732
-		fmt.Printf("【input】:%v       【output】:%v\n", p, largestAltitude(p.gain))
+		(largestAltitude(p.gain))
 	}
 }

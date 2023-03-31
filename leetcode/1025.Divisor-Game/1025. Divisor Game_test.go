@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,9 +35,8 @@ func Benchmark_Problem1025(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1025, q.para1025
-		fmt.Printf("【input】:%v       【output】:%v\n", p, divisorGame(p.one))
+		(divisorGame(p.one))
 	}
 }

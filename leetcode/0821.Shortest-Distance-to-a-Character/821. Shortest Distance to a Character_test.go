@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem821(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans821, q.para821
-		fmt.Printf("【input】:%v       【output】:%v\n", p, shortestToChar(p.s, p.c))
+		(shortestToChar(p.s, p.c))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -39,9 +38,8 @@ func Benchmark_Problem658(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans658, q.para658
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findClosestElements(p.arr, p.k, p.x))
+		(findClosestElements(p.arr, p.k, p.x))
 	}
 }

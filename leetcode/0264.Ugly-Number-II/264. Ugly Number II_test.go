@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem264(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans264, q.para264
-		fmt.Printf("【input】:%v       【output】:%v\n", p, nthUglyNumber(p.one))
+		(nthUglyNumber(p.one))
 	}
 }

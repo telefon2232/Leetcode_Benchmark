@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem480(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans480, q.para480
-		fmt.Printf("【input】:%v       【output】:%v\n", p, medianSlidingWindow1(p.one, p.k))
+		(medianSlidingWindow1(p.one, p.k))
 	}
 }

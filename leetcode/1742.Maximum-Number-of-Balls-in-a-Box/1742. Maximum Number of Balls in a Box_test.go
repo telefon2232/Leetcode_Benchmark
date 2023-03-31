@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem1742(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1742, q.para1742
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countBalls(p.lowLimit, p.highLimit))
+		(countBalls(p.lowLimit, p.highLimit))
 	}
 }

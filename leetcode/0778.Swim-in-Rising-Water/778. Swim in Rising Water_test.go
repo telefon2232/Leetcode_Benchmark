@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,9 +35,8 @@ func Benchmark_Problem778(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans778, q.para778
-		fmt.Printf("【input】:%v       【output】:%v\n", p, swimInWater(p.grid))
+		(swimInWater(p.grid))
 	}
 }

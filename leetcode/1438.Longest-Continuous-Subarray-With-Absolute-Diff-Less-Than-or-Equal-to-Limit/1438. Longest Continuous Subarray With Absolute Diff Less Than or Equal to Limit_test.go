@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem1438(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1438, q.para1438
-		fmt.Printf("【input】:%v       【output】:%v\n", p, longestSubarray(p.nums, p.limit))
+		(longestSubarray(p.nums, p.limit))
 	}
 }

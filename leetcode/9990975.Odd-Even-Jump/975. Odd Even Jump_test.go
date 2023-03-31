@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem975(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans975, q.para975
-		fmt.Printf("【input】:%v       【output】:%v\n", p, oddEvenJumps(p.A))
+		(oddEvenJumps(p.A))
 	}
 }

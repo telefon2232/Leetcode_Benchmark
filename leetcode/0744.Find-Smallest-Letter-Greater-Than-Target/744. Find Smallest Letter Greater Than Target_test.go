@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -58,9 +57,8 @@ func Benchmark_Problem744(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans744, q.para744
-		fmt.Printf("【input】:%v       【output】:%v\n", p, nextGreatestLetter(p.letters, p.target))
+		(nextGreatestLetter(p.letters, p.target))
 	}
 }

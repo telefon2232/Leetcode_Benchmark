@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem785(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans785, q.para785
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isBipartite(p.graph))
+		(isBipartite(p.graph))
 	}
 }

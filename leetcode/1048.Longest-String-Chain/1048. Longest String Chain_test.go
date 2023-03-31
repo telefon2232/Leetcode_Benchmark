@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -68,9 +67,8 @@ func Benchmark_Problem1048(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1048, q.para1048
-		fmt.Printf("【input】:%v       【output】:%v\n", p, longestStrChain(p.words))
+		(longestStrChain(p.words))
 	}
 }

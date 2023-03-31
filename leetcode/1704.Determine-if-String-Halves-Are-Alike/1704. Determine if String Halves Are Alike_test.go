@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem1704(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1704, q.para1704
-		fmt.Printf("【input】:%v       【output】:%v\n", p, halvesAreAlike(p.s))
+		(halvesAreAlike(p.s))
 	}
 }

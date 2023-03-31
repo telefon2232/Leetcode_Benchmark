@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem363(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans363, q.para363
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxSumSubmatrix(p.one, p.k))
+		(maxSumSubmatrix(p.one, p.k))
 	}
 }

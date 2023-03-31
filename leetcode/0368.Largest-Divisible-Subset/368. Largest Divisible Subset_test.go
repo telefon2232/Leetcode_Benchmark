@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem368(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans368, q.para368
-		fmt.Printf("【input】:%v       【output】:%v\n", p, largestDivisibleSubset(p.one))
+		(largestDivisibleSubset(p.one))
 	}
 }

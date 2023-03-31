@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem887(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans887, q.para887
-		fmt.Printf("【input】:%v       【output】:%v\n", p, superEggDrop(p.k, p.n))
+		(superEggDrop(p.k, p.n))
 	}
 }

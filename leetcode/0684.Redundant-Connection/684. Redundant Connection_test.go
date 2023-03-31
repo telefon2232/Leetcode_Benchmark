@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem684(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans684, q.para684
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findRedundantConnection(p.one))
+		(findRedundantConnection(p.one))
 	}
 }

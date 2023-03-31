@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -61,9 +60,8 @@ func Benchmark_Problem976(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans976, q.para976
-		fmt.Printf("【input】:%v       【output】:%v\n", p, largestPerimeter(p.one))
+		(largestPerimeter(p.one))
 	}
 }

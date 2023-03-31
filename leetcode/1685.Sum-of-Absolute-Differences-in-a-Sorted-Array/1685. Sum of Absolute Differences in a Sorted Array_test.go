@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem1685(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1685, q.para1685
-		fmt.Printf("【input】:%v       【output】:%v\n", p, getSumAbsoluteDifferences(p.nums))
+		(getSumAbsoluteDifferences(p.nums))
 	}
 }

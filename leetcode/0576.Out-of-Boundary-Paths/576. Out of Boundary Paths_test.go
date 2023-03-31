@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -41,9 +40,8 @@ func Benchmark_Problem576(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans576, q.para576
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findPaths(p.m, p.n, p.maxMove, p.startRow, p.startColumn))
+		(findPaths(p.m, p.n, p.maxMove, p.startRow, p.startColumn))
 	}
 }

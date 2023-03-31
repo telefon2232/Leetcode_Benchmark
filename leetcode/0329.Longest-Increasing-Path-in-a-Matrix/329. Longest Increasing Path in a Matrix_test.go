@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -57,9 +56,8 @@ func Benchmark_Problem329(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans329, q.para329
-		fmt.Printf("【input】:%v       【output】:%v\n", p, longestIncreasingPath(p.matrix))
+		(longestIncreasingPath(p.matrix))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem718(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans718, q.para718
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findLength(p.A, p.B))
+		(findLength(p.A, p.B))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -63,9 +62,8 @@ func Benchmark_Problem367(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans367, q.para367
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isPerfectSquare(p.one))
+		(isPerfectSquare(p.one))
 	}
 }

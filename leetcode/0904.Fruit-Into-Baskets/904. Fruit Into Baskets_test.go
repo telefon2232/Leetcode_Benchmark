@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -66,9 +65,8 @@ func Benchmark_Problem904(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans904, q.para904
-		fmt.Printf("【input】:%v       【output】:%v\n", p, totalFruit(p.one))
+		(totalFruit(p.one))
 	}
 }

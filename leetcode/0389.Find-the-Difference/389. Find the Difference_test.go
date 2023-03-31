@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -35,9 +34,8 @@ func Benchmark_Problem389(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans389, q.para389
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findTheDifference(p.s, p.t))
+		(findTheDifference(p.s, p.t))
 	}
 }

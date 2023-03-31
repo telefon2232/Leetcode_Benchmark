@@ -57,10 +57,9 @@ func Benchmark_Problem1752(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1752, q.para1752
-	check(p.nums)
-		//	fmt.Printf("【input】:%v       【output】:%v\n", p, check(p.nums))
+		check(p.nums)
+		//	(check(p.nums))
 	}
 }

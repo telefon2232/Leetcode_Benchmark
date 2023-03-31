@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem401(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans401, q.para401
-		fmt.Printf("【input】:%v       【output】:%v\n", p, readBinaryWatch(p.n))
+		(readBinaryWatch(p.n))
 	}
 }

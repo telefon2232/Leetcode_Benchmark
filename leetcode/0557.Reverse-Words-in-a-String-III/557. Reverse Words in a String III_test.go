@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem557(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans557, q.para557
-		fmt.Printf("【input】:%v       【output】:%v\n", p, reverseWords(p.s))
+		(reverseWords(p.s))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -51,9 +50,8 @@ func Benchmark_Problem959(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans959, q.para959
-		fmt.Printf("【input】:%v       【output】:%v\n", p, regionsBySlashes(p.one))
+		(regionsBySlashes(p.one))
 	}
 }

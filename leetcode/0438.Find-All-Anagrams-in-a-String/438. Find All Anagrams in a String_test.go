@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem438(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans438, q.para438
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findAnagrams(p.s, p.p))
+		(findAnagrams(p.s, p.p))
 	}
 }

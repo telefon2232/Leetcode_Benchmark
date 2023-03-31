@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,9 +52,8 @@ func Benchmark_Problem719(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans719, q.para719
-		fmt.Printf("【input】:%v       【output】:%v\n", p, smallestDistancePair(p.num, p.k))
+		(smallestDistancePair(p.num, p.k))
 	}
 }

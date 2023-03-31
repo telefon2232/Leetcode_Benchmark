@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -44,9 +43,8 @@ func Benchmark_Problem1235(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1235, q.para1235
-		fmt.Printf("【input】:%v       【output】:%v\n", p, jobScheduling(p.startTime, p.endTime, p.profit))
+		(jobScheduling(p.startTime, p.endTime, p.profit))
 	}
 }

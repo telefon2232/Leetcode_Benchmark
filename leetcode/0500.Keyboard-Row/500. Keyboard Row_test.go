@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem500(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans500, q.para500
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findWords500(p.one))
+		(findWords500(p.one))
 	}
 }

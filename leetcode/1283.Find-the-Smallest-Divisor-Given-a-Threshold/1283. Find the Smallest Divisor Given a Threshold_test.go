@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem1283(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1283, q.para1283
-		fmt.Printf("【input】:%v       【output】:%v\n", p, smallestDivisor(p.nums, p.threshold))
+		(smallestDivisor(p.nums, p.threshold))
 	}
 }

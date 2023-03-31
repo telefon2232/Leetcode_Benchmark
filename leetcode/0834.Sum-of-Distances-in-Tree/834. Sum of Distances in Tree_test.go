@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem834(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans834, q.para834
-		fmt.Printf("【input】:%v       【output】:%v\n", p, sumOfDistancesInTree(p.N, p.edges))
+		(sumOfDistancesInTree(p.N, p.edges))
 	}
 }

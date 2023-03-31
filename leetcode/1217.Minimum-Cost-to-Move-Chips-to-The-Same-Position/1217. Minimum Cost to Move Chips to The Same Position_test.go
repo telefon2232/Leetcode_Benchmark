@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem1217(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1217, q.para1217
-		fmt.Printf("【input】:%v       【output】:%v\n", p, minCostToMoveChips(p.arr))
+		(minCostToMoveChips(p.arr))
 	}
 }

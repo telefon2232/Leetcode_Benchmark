@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem890(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans890, q.para890
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findAndReplacePattern(p.words, p.pattern))
+		(findAndReplacePattern(p.words, p.pattern))
 	}
 }

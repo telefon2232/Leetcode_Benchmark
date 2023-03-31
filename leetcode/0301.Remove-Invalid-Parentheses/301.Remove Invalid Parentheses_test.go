@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -40,9 +39,8 @@ func Benchmark_Problem301(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans301, q.para301
-		fmt.Printf("【input】:%v       【output】:%v\n", p, removeInvalidParentheses(p.s))
+		(removeInvalidParentheses(p.s))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem70(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans70, q.para70
-		fmt.Printf("【input】:%v       【output】:%v\n", p, climbStairs(p.n))
+		(climbStairs(p.n))
 	}
 }

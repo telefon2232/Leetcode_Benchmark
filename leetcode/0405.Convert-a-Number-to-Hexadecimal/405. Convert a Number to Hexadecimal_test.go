@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem405(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans405, q.para405
-		fmt.Printf("【input】:%v       【output】:%v\n", p, toHex(p.one))
+		(toHex(p.one))
 	}
 }

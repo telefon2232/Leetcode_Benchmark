@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem717(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans717, q.para717
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isOneBitCharacter(p.one))
+		(isOneBitCharacter(p.one))
 	}
 }

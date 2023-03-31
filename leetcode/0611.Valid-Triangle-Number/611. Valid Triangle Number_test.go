@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem611(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans611, q.para611
-		fmt.Printf("【input】:%v       【output】:%v\n", p, triangleNumber(p.nums))
+		(triangleNumber(p.nums))
 	}
 }

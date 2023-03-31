@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem187(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans187, q.para187
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findRepeatedDnaSequences(p.one))
+		(findRepeatedDnaSequences(p.one))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem378(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans378, q.para378
-		fmt.Printf("【input】:%v       【output】:%v\n", p, kthSmallest378(p.matrix, p.k))
+		(kthSmallest378(p.matrix, p.k))
 	}
 }

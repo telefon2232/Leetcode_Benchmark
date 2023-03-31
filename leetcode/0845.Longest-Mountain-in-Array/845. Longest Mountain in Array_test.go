@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -51,9 +50,8 @@ func Benchmark_Problem845(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans845, q.para845
-		fmt.Printf("【input】:%v       【output】:%v\n", p, longestMountain(p.one))
+		(longestMountain(p.one))
 	}
 }

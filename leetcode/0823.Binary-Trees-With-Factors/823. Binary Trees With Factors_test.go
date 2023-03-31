@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem823(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans823, q.para823
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numFactoredBinaryTrees(p.arr))
+		(numFactoredBinaryTrees(p.arr))
 	}
 }

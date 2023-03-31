@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -54,9 +53,8 @@ func Benchmark_Problem668(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans668, q.para668
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findKthNumber(p.m, p.n, p.k))
+		(findKthNumber(p.m, p.n, p.k))
 	}
 }

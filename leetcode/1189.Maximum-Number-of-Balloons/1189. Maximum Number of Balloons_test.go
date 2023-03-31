@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem1189(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1189, q.para1189
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxNumberOfBalloons(p.text))
+		(maxNumberOfBalloons(p.text))
 	}
 }

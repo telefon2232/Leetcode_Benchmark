@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem1281(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1281, q.para1281
-		fmt.Printf("【input】:%v       【output】:%v\n", p, subtractProductAndSum(p.n))
+		(subtractProductAndSum(p.n))
 	}
 }

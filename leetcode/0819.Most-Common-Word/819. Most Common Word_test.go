@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem819(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans819, q.para819
-		fmt.Printf("【input】:%v       【output】:%v\n", p, mostCommonWord(p.one, p.b))
+		(mostCommonWord(p.one, p.b))
 	}
 }

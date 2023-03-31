@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -36,10 +35,9 @@ func Benchmark_Problem1145(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1145, q.para1145
 		tree := structures.Ints2TreeNode(p.root)
-		fmt.Printf("【input】:%v       【output】:%v\n", p, btreeGameWinningMove(tree, p.n, p.x))
+		(btreeGameWinningMove(tree, p.n, p.x))
 	}
 }

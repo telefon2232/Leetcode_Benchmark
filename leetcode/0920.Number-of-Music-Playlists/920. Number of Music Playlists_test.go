@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -44,9 +43,8 @@ func Benchmark_Problem920(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans920, q.para920
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numMusicPlaylists(p.N, p.L, p.K))
+		(numMusicPlaylists(p.N, p.L, p.K))
 	}
 }

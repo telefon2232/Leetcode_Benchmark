@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem1137(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1137, q.para1137
-		fmt.Printf("【input】:%v       【output】:%v\n", p, tribonacci(p.one))
+		(tribonacci(p.one))
 	}
 }

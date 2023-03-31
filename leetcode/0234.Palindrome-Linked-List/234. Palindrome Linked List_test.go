@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -79,9 +78,8 @@ func Benchmark_Problem234(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans234, q.para234
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isPalindrome(structures.Ints2List(p.one)))
+		(isPalindrome(structures.Ints2List(p.one)))
 	}
 }

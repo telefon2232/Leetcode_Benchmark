@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem475(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans475, q.para475
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findRadius(p.houses, p.heaters))
+		(findRadius(p.houses, p.heaters))
 	}
 }

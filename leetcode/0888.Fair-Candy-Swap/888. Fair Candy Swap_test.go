@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -55,9 +54,8 @@ func Benchmark_Problem888(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans888, q.para888
-		fmt.Printf("【input】:%v       【output】:%v\n", p, fairCandySwap(p.one, p.two))
+		(fairCandySwap(p.one, p.two))
 	}
 }

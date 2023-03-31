@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -44,9 +43,8 @@ func Benchmark_Problem97(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans97, q.para97
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isInterleave(p.s1, p.s2, p.s3))
+		(isInterleave(p.s1, p.s2, p.s3))
 	}
 }

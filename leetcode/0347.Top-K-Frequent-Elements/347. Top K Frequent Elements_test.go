@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem347(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans347, q.para347
-		fmt.Printf("【input】:%v       【output】:%v\n", p, topKFrequent(p.one, p.two))
+		(topKFrequent(p.one, p.two))
 	}
 }

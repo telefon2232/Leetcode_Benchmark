@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -46,9 +45,8 @@ func Benchmark_Problem1439(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1439, q.para1439
-		fmt.Printf("【input】:%v       【output】:%v\n", p, kthSmallest(p.mat, p.k))
+		(kthSmallest(p.mat, p.k))
 	}
 }

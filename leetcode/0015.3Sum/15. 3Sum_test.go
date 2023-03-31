@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -49,9 +48,8 @@ func Benchmark_Problem15(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans15, q.para15
-		fmt.Printf("【input】:%v       【output】:%v\n", p, threeSum(p.a))
+		(threeSum(p.a))
 	}
 }

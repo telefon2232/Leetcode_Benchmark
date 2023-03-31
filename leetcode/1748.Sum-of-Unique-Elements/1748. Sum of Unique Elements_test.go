@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem1748(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1748, q.para1748
-		fmt.Printf("【input】:%v       【output】:%v\n", p, sumOfUnique(p.nums))
+		(sumOfUnique(p.nums))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem704(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans704, q.para704
-		fmt.Printf("【input】:%v       【output】:%v\n", p, search704(p.nums, p.target))
+		(search704(p.nums, p.target))
 	}
 }

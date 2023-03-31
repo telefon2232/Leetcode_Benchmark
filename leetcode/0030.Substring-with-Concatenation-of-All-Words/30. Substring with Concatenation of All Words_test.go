@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -85,6 +84,6 @@ func Benchmark_Problem30(b *testing.B) {
 
 	for _, q := range qs {
 		_, p := q.ans30, q.para30
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findSubstring(p.one, p.two))
+		(findSubstring(p.one, p.two))
 	}
 }

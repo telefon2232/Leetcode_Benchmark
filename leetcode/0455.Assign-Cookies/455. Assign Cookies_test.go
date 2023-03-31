@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem455(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans455, q.para455
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findContentChildren(p.g, p.s))
+		(findContentChildren(p.g, p.s))
 	}
 }

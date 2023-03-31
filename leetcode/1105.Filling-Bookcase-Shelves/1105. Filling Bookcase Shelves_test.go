@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem1105(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1105, q.para1105
-		fmt.Printf("【input】:%v       【output】:%v\n", p, minHeightShelves(p.one, p.w))
+		(minHeightShelves(p.one, p.w))
 	}
 }

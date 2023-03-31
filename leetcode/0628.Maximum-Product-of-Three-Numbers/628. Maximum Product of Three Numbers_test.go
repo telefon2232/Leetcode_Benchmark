@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -72,9 +71,8 @@ func Benchmark_Problem628(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans628, q.para628
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maximumProduct(p.one))
+		(maximumProduct(p.one))
 	}
 }

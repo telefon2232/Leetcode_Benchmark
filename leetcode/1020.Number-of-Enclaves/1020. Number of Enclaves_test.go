@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -80,9 +79,8 @@ func Benchmark_Problem1020(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1020, q.para1020
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numEnclaves(p.one))
+		(numEnclaves(p.one))
 	}
 }

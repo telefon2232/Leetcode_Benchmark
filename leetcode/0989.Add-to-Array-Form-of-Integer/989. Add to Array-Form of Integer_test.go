@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem989(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans989, q.para989
-		fmt.Printf("【input】:%v       【output】:%v\n", p, addToArrayForm(p.A, p.K))
+		(addToArrayForm(p.A, p.K))
 	}
 }

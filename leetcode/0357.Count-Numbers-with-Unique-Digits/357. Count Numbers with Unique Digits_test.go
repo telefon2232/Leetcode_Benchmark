@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -58,9 +57,8 @@ func Benchmark_Problem357(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans357, q.para357
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countNumbersWithUniqueDigits(p.one))
+		(countNumbersWithUniqueDigits(p.one))
 	}
 }

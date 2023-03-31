@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem1337(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1337, q.para1337
-		fmt.Printf("【input】:%v       【output】:%v\n", p, kWeakestRows(p.mat, p.k))
+		(kWeakestRows(p.mat, p.k))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem836(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans836, q.para836
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isRectangleOverlap(p.rec1, p.rec2))
+		(isRectangleOverlap(p.rec1, p.rec2))
 	}
 }

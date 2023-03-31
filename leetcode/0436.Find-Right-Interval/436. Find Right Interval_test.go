@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem436(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans436, q.para436
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findRightInterval(p.one))
+		(findRightInterval(p.one))
 	}
 }

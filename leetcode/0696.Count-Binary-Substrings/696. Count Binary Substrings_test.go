@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem696(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans696, q.para696
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countBinarySubstrings(p.one))
+		(countBinarySubstrings(p.one))
 	}
 }

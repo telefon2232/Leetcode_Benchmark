@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem697(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans697, q.para697
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findShortestSubArray(p.one))
+		(findShortestSubArray(p.one))
 	}
 }

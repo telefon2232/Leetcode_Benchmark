@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -63,9 +62,8 @@ func Benchmark_Problem992(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans992, q.para992
-		fmt.Printf("【input】:%v       【output】:%v\n", p, subarraysWithKDistinct(p.one, p.k))
+		(subarraysWithKDistinct(p.one, p.k))
 	}
 }

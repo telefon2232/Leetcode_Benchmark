@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -45,9 +44,8 @@ func Benchmark_Problem391(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans391, q.para391
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isRectangleCover(p.rectangles))
+		(isRectangleCover(p.rectangles))
 	}
 }

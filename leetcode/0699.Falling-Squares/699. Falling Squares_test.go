@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem699(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans699, q.para699
-		fmt.Printf("【input】:%v       【output】:%v\n", p, fallingSquares(p.one))
+		(fallingSquares(p.one))
 	}
 }

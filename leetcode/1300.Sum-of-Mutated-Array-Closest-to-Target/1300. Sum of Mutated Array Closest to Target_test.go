@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -49,9 +48,8 @@ func Benchmark_Problem1300(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1300, q.para1300
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findBestValue(p.arr, p.target))
+		(findBestValue(p.arr, p.target))
 	}
 }

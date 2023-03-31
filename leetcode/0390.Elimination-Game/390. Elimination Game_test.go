@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem390(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans390, q.para390
-		fmt.Printf("【input】:%v       【output】:%v\n", p, lastRemaining(p.n))
+		(lastRemaining(p.n))
 	}
 }

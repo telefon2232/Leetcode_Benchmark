@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem841(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans841, q.para841
-		fmt.Printf("【input】:%v       【output】:%v\n", p, canVisitAllRooms(p.rooms))
+		(canVisitAllRooms(p.rooms))
 	}
 }

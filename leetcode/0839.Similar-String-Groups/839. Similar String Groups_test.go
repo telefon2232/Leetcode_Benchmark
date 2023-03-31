@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem839(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans839, q.para839
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numSimilarGroups(p.one))
+		(numSimilarGroups(p.one))
 	}
 }

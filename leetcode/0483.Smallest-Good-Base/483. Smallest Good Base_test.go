@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem483(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans483, q.para483
-		fmt.Printf("【input】:%v       【output】:%v\n", p, smallestGoodBase(p.one))
+		(smallestGoodBase(p.one))
 	}
 }

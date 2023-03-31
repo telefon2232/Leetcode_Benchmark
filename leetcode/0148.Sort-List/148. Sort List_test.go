@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -48,9 +47,8 @@ func Benchmark_Problem148(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans148, q.para148
-		fmt.Printf("【input】:%v       【output】:%v\n", p, structures.List2Ints(sortList(structures.Ints2List(p.one))))
+		(structures.List2Ints(sortList(structures.Ints2List(p.one))))
 	}
 }

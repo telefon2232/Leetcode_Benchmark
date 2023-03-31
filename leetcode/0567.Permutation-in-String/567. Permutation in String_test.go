@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,9 +52,8 @@ func Benchmark_Problem567(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans567, q.para567
-		fmt.Printf("【input】:%v       【output】:%v\n", p, checkInclusion(p.s, p.p))
+		(checkInclusion(p.s, p.p))
 	}
 }

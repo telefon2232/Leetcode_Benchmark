@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -44,9 +43,8 @@ func Benchmark_Problem1184(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1184, q.para1184
-		fmt.Printf("【input】:%v       【output】:%v\n", p, distanceBetweenBusStops(p.distance, p.start, p.destination))
+		(distanceBetweenBusStops(p.distance, p.start, p.destination))
 	}
 }

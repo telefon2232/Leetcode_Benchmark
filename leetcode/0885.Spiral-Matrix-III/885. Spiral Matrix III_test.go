@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem885(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans885, q.para885
-		fmt.Printf("【input】:%v       【output】:%v\n", p, spiralMatrixIII(p.R, p.C, p.r0, p.c0))
+		(spiralMatrixIII(p.R, p.C, p.r0, p.c0))
 	}
 }

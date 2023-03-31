@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -38,10 +37,9 @@ func Benchmark_Problem1022(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1022, q.para1022
 		root := structures.Ints2TreeNode(p.one)
-		fmt.Printf("【input】:%v       【output】:%v\n", p, sumRootToLeaf(root))
+		(sumRootToLeaf(root))
 	}
 }

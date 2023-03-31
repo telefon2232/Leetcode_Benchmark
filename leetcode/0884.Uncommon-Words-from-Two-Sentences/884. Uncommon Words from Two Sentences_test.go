@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem884(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans884, q.para884
-		fmt.Printf("【input】:%v       【output】:%v\n", p, uncommonFromSentences(p.A, p.B))
+		(uncommonFromSentences(p.A, p.B))
 	}
 }

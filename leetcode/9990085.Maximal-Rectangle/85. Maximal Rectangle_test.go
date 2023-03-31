@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem85(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans85, q.para85
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maximalRectangle(p.one))
+		(maximalRectangle(p.one))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -51,11 +50,10 @@ func Benchmark_Problem352(b *testing.B) {
 		},
 	}
 
-
 	obj := Constructor()
 	for _, q := range qs {
 		_, p := q.ans352, q.para352
 		obj.AddNum(p.num)
-		fmt.Printf("【input】:%v       【output】:%v\n", p, obj.GetIntervals())
+		(obj.GetIntervals())
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -58,9 +57,8 @@ func Benchmark_Problem605(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans605, q.para605
-		fmt.Printf("【input】:%v       【output】:%v\n", p, canPlaceFlowers(p.flowerbed, p.n))
+		(canPlaceFlowers(p.flowerbed, p.n))
 	}
 }

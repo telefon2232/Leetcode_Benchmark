@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem1154(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1154, q.para1154
-		fmt.Printf("【input】:%v       【output】:%v\n", p, dayOfYear(p.one))
+		(dayOfYear(p.one))
 	}
 }

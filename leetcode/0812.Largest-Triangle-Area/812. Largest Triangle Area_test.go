@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem812(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans812, q.para812
-		fmt.Printf("【input】:%v       【output】:%v\n", p, largestTriangleArea(p.one))
+		(largestTriangleArea(p.one))
 	}
 }

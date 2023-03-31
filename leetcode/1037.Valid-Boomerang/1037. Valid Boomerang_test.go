@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,9 +35,8 @@ func Benchmark_Problem1037(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1037, q.para1037
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isBoomerang(p.one))
+		(isBoomerang(p.one))
 	}
 }

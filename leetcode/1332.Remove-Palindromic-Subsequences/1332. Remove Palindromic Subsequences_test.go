@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem1332(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1332, q.para1332
-		fmt.Printf("【input】:%v       【output】:%v\n", p, removePalindromeSub(p.s))
+		(removePalindromeSub(p.s))
 	}
 }

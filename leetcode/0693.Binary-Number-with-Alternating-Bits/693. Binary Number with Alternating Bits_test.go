@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem693(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans693, q.para693
-		fmt.Printf("【input】:%v       【output】:%v\n", p, hasAlternatingBits(p.one))
+		(hasAlternatingBits(p.one))
 	}
 }

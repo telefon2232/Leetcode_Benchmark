@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem661(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans661, q.para661
-		fmt.Printf("【input】:%v       【output】:%v\n", p, imageSmoother(p.one))
+		(imageSmoother(p.one))
 	}
 }

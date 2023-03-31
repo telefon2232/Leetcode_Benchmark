@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem726(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans726, q.para726
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countOfAtoms(p.one))
+		(countOfAtoms(p.one))
 	}
 }

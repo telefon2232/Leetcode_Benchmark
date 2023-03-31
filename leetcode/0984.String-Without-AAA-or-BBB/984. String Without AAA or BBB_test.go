@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem984(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans984, q.para984
-		fmt.Printf("【input】:%v       【output】:%v\n", p, strWithout3a3b(p.a, p.b))
+		(strWithout3a3b(p.a, p.b))
 	}
 }

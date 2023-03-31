@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem877(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans877, q.para877
-		fmt.Printf("【input】:%v       【output】:%v\n", p, stoneGame(p.piles))
+		(stoneGame(p.piles))
 	}
 }

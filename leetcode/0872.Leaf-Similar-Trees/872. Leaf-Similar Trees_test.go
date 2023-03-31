@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -35,11 +34,10 @@ func Benchmark_Problem872(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans872, q.para872
 		tree1 := structures.Ints2TreeNode(p.one)
 		tree2 := structures.Ints2TreeNode(p.two)
-		fmt.Printf("【input】:%v       【output】:%v\n", p, leafSimilar(tree1, tree2))
+		(leafSimilar(tree1, tree2))
 	}
 }

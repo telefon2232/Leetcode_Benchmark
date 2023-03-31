@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem1047(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1047, q.para1047
-		fmt.Printf("【input】:%v       【output】:%v\n", p, removeDuplicates1047(p.s))
+		(removeDuplicates1047(p.s))
 	}
 }

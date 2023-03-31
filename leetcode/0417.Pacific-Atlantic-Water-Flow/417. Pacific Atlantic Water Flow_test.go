@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -46,9 +45,8 @@ func Benchmark_Problem417(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans417, q.para417
-		fmt.Printf("【input】:%v       【output】:%v\n", p, pacificAtlantic(p.matrix))
+		(pacificAtlantic(p.matrix))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,9 +52,8 @@ func Benchmark_Problem524(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans524, q.para524
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findLongestWord(p.s, p.one))
+		(findLongestWord(p.s, p.one))
 	}
 }

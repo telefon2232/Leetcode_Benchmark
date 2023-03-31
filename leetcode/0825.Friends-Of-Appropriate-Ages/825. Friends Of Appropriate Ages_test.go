@@ -1,7 +1,6 @@
 package leetcocde
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem825(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans825, q.para825
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numFriendRequests(p.ages))
+		(numFriendRequests(p.ages))
 	}
 }

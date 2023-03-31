@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem811(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans811, q.para811
-		fmt.Printf("【input】:%v       【output】:%v\n", p, subdomainVisits(p.one))
+		(subdomainVisits(p.one))
 	}
 }

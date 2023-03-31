@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -68,9 +67,8 @@ func Benchmark_Problem925(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans925, q.para925
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isLongPressedName(p.name, p.typed))
+		(isLongPressedName(p.name, p.typed))
 	}
 }

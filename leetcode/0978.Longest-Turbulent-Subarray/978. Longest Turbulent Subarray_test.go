@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem978(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans978, q.para978
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxTurbulenceSize(p.one))
+		(maxTurbulenceSize(p.one))
 	}
 }

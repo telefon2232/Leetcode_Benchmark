@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,9 +36,8 @@ func Benchmark_Problem1725(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1725, q.para1725
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countGoodRectangles(p.rectangles))
+		(countGoodRectangles(p.rectangles))
 	}
 }

@@ -4,6 +4,6 @@ set -e
 
 for d in $(go list ./leetcode/... | grep -v vendor); do
     echo $d
-    go test -bench . -benchtime 1x  -count=1 -cpuprofile cpu.out  $d | grep ns 
+    go test -benchtime 1x -bench .     $d | grep ns 
    
 done

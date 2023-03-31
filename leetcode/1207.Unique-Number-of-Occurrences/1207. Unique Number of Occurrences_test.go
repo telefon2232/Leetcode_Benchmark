@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem1207(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1207, q.para1207
-		fmt.Printf("【input】:%v       【output】:%v\n", p, uniqueOccurrences(p.arr))
+		(uniqueOccurrences(p.arr))
 	}
 }

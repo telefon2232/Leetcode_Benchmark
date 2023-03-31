@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -34,9 +33,8 @@ func Benchmark_Problem853(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans853, q.para853
-		fmt.Printf("【input】:%v       【output】:%v\n", p, carFleet(p.target, p.position, p.speed))
+		(carFleet(p.target, p.position, p.speed))
 	}
 }

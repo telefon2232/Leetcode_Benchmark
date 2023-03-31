@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -66,9 +65,8 @@ func Benchmark_Problem457(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans457, q.para457
-		fmt.Printf("【input】:%v       【output】:%v\n", p, circularArrayLoop(p.one))
+		(circularArrayLoop(p.one))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -32,9 +31,8 @@ func Benchmark_Problem802(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans802, q.para802
-		fmt.Printf("【input】:%v       【output】:%v\n", p, eventualSafeNodes(p.graph))
+		(eventualSafeNodes(p.graph))
 	}
 }

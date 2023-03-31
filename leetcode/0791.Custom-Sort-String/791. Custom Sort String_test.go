@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -33,9 +32,8 @@ func Benchmark_Problem791(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans791, q.para791
-		fmt.Printf("【input】:%v       【output】:%v\n", p, customSortString(p.order, p.str))
+		(customSortString(p.order, p.str))
 	}
 }

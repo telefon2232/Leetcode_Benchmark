@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem1716(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1716, q.para1716
-		fmt.Printf("【input】:%v       【output】:%v\n", p, totalMoney(p.n))
+		(totalMoney(p.n))
 	}
 }

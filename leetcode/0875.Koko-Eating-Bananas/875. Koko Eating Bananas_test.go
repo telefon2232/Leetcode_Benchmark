@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem875(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans875, q.para875
-		fmt.Printf("【input】:%v       【output】:%v\n", p, minEatingSpeed(p.piles, p.H))
+		(minEatingSpeed(p.piles, p.H))
 	}
 }

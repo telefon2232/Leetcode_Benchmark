@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem1009(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1009, q.para1009
-		fmt.Printf("【input】:%v       【output】:%v\n", p, bitwiseComplement(p.n))
+		(bitwiseComplement(p.n))
 	}
 }

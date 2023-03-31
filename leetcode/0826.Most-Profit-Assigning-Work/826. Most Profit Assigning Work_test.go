@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -39,9 +38,8 @@ func Benchmark_Problem826(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans826, q.para826
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxProfitAssignment(p.one, p.two, p.three))
+		(maxProfitAssignment(p.one, p.two, p.three))
 	}
 }

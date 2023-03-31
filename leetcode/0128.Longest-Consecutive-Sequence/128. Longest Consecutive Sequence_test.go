@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem128(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans128, q.para128
-		fmt.Printf("【input】:%v       【output】:%v\n", p, longestConsecutive(p.one))
+		(longestConsecutive(p.one))
 	}
 }

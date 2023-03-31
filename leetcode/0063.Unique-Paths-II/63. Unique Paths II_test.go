@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -54,9 +53,8 @@ func Benchmark_Problem63(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans63, q.para63
-		fmt.Printf("【input】:%v       【output】:%v\n", p, uniquePathsWithObstacles(p.og))
+		(uniquePathsWithObstacles(p.og))
 	}
 }

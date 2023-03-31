@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem1442(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1442, q.para1442
-		fmt.Printf("【input】:%v       【output】:%v\n", p, countTriplets(p.arr))
+		(countTriplets(p.arr))
 	}
 }

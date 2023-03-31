@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,9 +35,8 @@ func Benchmark_Problem949(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans949, q.para949
-		fmt.Printf("【input】:%v       【output】:%v\n", p, largestTimeFromDigits(p.one))
+		(largestTimeFromDigits(p.one))
 	}
 }

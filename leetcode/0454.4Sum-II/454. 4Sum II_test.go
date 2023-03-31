@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -35,9 +34,8 @@ func Benchmark_Problem454(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans454, q.para454
-		fmt.Printf("【input】:%v       【output】:%v\n", p, fourSumCount(p.a, p.b, p.c, p.d))
+		(fourSumCount(p.a, p.b, p.c, p.d))
 	}
 }

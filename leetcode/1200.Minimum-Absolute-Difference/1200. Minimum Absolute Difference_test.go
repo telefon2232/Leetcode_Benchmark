@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem1200(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1200, q.para1200
-		fmt.Printf("【input】:%v       【output】:%v\n", p, minimumAbsDifference(p.arr))
+		(minimumAbsDifference(p.arr))
 	}
 }

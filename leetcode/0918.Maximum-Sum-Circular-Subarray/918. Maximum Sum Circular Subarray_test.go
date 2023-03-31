@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,9 +51,8 @@ func Benchmark_Problem918(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans918, q.para918
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxSubarraySumCircular(p.one))
+		(maxSubarraySumCircular(p.one))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -35,9 +34,8 @@ func Benchmark_Problem986(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans986, q.para986
-		fmt.Printf("【input】:%v       【output】:%v\n", p, intervalIntersection(p.one, p.two))
+		(intervalIntersection(p.one, p.two))
 	}
 }

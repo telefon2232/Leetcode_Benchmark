@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -59,9 +58,8 @@ func Benchmark_Problem220(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans220, q.para220
-		fmt.Printf("【input】:%v       【output】:%v\n", p, containsNearbyAlmostDuplicate(p.one, p.k, p.t))
+		(containsNearbyAlmostDuplicate(p.one, p.k, p.t))
 	}
 }

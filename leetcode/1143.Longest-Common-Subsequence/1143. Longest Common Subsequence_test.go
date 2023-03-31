@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,8 @@ func Benchmark_Problem1143(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1143, q.para1143
-		fmt.Printf("【input】:%v       【output】:%v\n", p, longestCommonSubsequence(p.text1, p.text2))
+		(longestCommonSubsequence(p.text1, p.text2))
 	}
 }

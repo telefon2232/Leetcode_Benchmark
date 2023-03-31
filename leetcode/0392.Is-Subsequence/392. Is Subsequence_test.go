@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -48,9 +47,8 @@ func Benchmark_Problem392(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans392, q.para392
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isSubsequence(p.one, p.two))
+		(isSubsequence(p.one, p.two))
 	}
 }

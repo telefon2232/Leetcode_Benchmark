@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -58,9 +57,8 @@ func Benchmark_Problem880(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans880, q.para880
-		fmt.Printf("【input】:%v       【output】:%v\n", p, decodeAtIndex(p.s, p.k))
+		(decodeAtIndex(p.s, p.k))
 	}
 }

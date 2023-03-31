@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem713(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans713, q.para713
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numSubarrayProductLessThanK(p.s, p.k))
+		(numSubarrayProductLessThanK(p.s, p.k))
 	}
 }

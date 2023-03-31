@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem996(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans996, q.para996
-		fmt.Printf("【input】:%v       【output】:%v\n", p, numSquarefulPerms(p.one))
+		(numSquarefulPerms(p.one))
 	}
 }

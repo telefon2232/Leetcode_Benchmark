@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -44,9 +43,8 @@ func Benchmark_Problem474(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans474, q.para474
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findMaxForm(p.strs, p.m, p.n))
+		(findMaxForm(p.strs, p.m, p.n))
 	}
 }

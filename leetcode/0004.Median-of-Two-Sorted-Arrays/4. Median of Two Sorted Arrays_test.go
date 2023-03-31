@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,9 +37,8 @@ func Benchmark_Problem4(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans4, q.para4
-		fmt.Printf("【input】:%v       【output】:%v\n", p, findMedianSortedArrays(p.nums1, p.nums2))
+		(findMedianSortedArrays(p.nums1, p.nums2))
 	}
 }

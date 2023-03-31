@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -64,6 +63,6 @@ func Benchmark_Problem41(b *testing.B) {
 
 	for _, q := range qs {
 		_, p := q.ans41, q.para41
-		fmt.Printf("【input】:%v       【output】:%v\n", p, firstMissingPositive(p.one))
+		(firstMissingPositive(p.one))
 	}
 }

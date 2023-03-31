@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem331(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans331, q.para331
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isValidSerialization(p.one))
+		(isValidSerialization(p.one))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -35,9 +34,8 @@ func Benchmark_Problem520(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans520, q.para520
-		fmt.Printf("【input】:%v       【output】:%v\n", p, detectCapitalUse(p.word))
+		(detectCapitalUse(p.word))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,9 +46,8 @@ func Benchmark_Problem554(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans554, q.para554
-		fmt.Printf("【input】:%v       【output】:%v\n", p, leastBricks(p.wall))
+		(leastBricks(p.wall))
 	}
 }

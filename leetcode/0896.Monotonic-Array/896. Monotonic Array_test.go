@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -57,9 +56,8 @@ func Benchmark_Problem896(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans896, q.para896
-		fmt.Printf("【input】:%v       【output】:%v\n", p, isMonotonic(p.one))
+		(isMonotonic(p.one))
 	}
 }

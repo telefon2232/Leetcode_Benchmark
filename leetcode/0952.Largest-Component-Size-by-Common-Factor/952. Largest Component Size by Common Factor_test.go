@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -46,9 +45,8 @@ func Benchmark_Problem952(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans952, q.para952
-		fmt.Printf("【input】:%v       【output】:%v\n", p, largestComponentSize(p.one))
+		(largestComponentSize(p.one))
 	}
 }

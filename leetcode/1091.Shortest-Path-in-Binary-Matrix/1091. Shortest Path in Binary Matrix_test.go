@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,10 +36,9 @@ func Benchmark_Problem1091(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1091, q.para1091
-		fmt.Printf("【input】:%v       【output】:%v\n", p, shortestPathBinaryMatrix(p.grid))
+		(shortestPathBinaryMatrix(p.grid))
 
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,6 +37,6 @@ func Benchmark_Problem909(b *testing.B) {
 	}
 	for _, q := range qs {
 		_, p := q.ans909, q.para909
-		fmt.Printf("【input】:%v       【output】:%v\n", p, snakesAndLadders(p.one))
+		(snakesAndLadders(p.one))
 	}
 }

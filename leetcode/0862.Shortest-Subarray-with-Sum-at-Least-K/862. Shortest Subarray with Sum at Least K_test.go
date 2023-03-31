@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,9 +41,8 @@ func Benchmark_Problem862(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans862, q.para862
-		fmt.Printf("【input】:%v       【output】:%v\n", p, shortestSubarray(p.A, p.K))
+		(shortestSubarray(p.A, p.K))
 	}
 }

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -49,10 +48,9 @@ func Benchmark_Problem1026(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans1026, q.para1026
 		tree := structures.Ints2TreeNode(p.one)
-		fmt.Printf("【input】:%v       【output】:%v\n", p, maxAncestorDiff(tree))
+		(maxAncestorDiff(tree))
 	}
 }

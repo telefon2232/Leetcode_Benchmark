@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -57,9 +56,8 @@ func Benchmark_Problem5(b *testing.B) {
 		},
 	}
 
-
 	for _, q := range qs {
 		_, p := q.ans5, q.para5
-		fmt.Printf("【input】:%v       【output】:%v\n", p, longestPalindrome(p.s))
+		(longestPalindrome(p.s))
 	}
 }
