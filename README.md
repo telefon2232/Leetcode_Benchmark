@@ -41,5 +41,6 @@ go tool pprof -text ${FILE}.out
 - [x] Create scripts for compile for any platforms
 - [ ] Characterize by two metrics: By algorithm and by profile 
 - [ ] Fix Printfs
+- [ ] Can change inputs
 - [ ] Fix some tests without correct benchmark-cycles
 - [ ] Automatic profile analysis
