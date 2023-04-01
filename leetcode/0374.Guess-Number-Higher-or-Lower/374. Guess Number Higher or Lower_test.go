@@ -47,8 +47,9 @@ func Benchmark_Problem374(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans374, q.para374
 		(guessNumber(p.n))
 	}
-}
+}}}

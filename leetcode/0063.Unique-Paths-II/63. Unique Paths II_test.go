@@ -53,8 +53,9 @@ func Benchmark_Problem63(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans63, q.para63
 		(uniquePathsWithObstacles(p.og))
 	}
-}
+}}}

@@ -37,8 +37,9 @@ func Benchmark_Problem67(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans67, q.para67
 		(addBinary(p.a, p.b))
 	}
-}
+}}}

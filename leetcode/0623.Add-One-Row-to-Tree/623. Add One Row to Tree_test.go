@@ -57,10 +57,11 @@ func Benchmark_Problem623(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans623, q.para623
 		fmt.Printf("【input】:%v      ", p)
 		root := structures.Ints2TreeNode(p.one)
 		fmt.Printf("【output】:%v      \n", structures.Tree2Preorder(addOneRow(root, p.v, p.d)))
 	}
-}
+}}}

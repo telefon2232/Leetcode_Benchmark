@@ -36,8 +36,9 @@ func Benchmark_Problem229(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans229, q.para229
 		(majorityElement229(p.s))
 	}
-}
+}}}

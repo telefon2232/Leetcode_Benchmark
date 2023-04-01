@@ -92,11 +92,12 @@ func Benchmark_Problem23(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		var ls []*ListNode
 		for _, qq := range q.para23.one {
 			ls = append(ls, structures.Ints2List(qq))
 		}
 		fmt.Printf("【input】:%v       【output】:%v\n", q.para23.one, structures.List2Ints(mergeKLists(ls)))
 	}
-}
+}}}

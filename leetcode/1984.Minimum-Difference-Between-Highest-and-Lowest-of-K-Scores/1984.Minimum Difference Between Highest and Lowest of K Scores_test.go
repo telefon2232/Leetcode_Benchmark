@@ -37,9 +37,10 @@ func Benchmark_Problem1984(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1984, q.para1984
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", minimumDifference(p.nums, p.k))
 	}
-}
+}}}

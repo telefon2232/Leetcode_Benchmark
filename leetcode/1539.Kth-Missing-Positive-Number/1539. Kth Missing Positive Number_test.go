@@ -39,8 +39,9 @@ func Benchmark_Problem1539(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1539, q.para1539
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, findKthPositive(p.arr, p.k))
 	}
-}
+}}}

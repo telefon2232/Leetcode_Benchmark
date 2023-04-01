@@ -48,8 +48,9 @@ func Benchmark_Problem1624(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1624, q.para1624
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, maxLengthBetweenEqualCharacters(p.s))
 	}
-}
+}}}

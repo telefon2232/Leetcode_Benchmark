@@ -36,8 +36,9 @@ func Benchmark_Problem665(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans665, q.para665
 		(checkPossibility(p.nums))
 	}
-}
+}}}

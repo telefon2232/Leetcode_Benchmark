@@ -33,8 +33,9 @@ func Benchmark_Problem206(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans206, q.para206
 		(structures.List2Ints(reverseList(structures.Ints2List(p.one))))
 	}
-}
+}}}

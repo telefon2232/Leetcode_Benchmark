@@ -42,8 +42,9 @@ func Benchmark_Problem1202(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1202, q.para1202
 		(smallestStringWithSwaps(p.s, p.pairs))
 	}
-}
+}}}

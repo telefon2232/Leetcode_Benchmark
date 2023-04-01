@@ -45,8 +45,9 @@ func Benchmark_Problem25(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans25, q.para25
 		(structures.List2Ints(reverseKGroup(structures.Ints2List(p.one), p.two)))
 	}
-}
+}}}

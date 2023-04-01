@@ -48,10 +48,11 @@ func Benchmark_Problem109(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans109, q.para109
 		arr := []int{}
 		structures.T2s(sortedListToBST(structures.Ints2List(p.one)), &arr)
 
 	}
-}
+}}}

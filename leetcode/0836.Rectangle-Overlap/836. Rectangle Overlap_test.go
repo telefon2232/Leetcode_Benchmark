@@ -37,8 +37,9 @@ func Benchmark_Problem836(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans836, q.para836
 		(isRectangleOverlap(p.rec1, p.rec2))
 	}
-}
+}}}

@@ -61,11 +61,12 @@ func Benchmark_Problem100(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans100, q.para100
 		fmt.Printf("【input】:%v      ", p)
 		rootOne := structures.Ints2TreeNode(p.one)
 		rootTwo := structures.Ints2TreeNode(p.two)
 		fmt.Printf("【output】:%v      \n", isSameTree(rootOne, rootTwo))
 	}
-}
+}}}

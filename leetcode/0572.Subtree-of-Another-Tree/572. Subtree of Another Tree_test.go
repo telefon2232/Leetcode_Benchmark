@@ -51,11 +51,12 @@ func Benchmark_Problem572(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans572, q.para572
 		fmt.Printf("【input】:%v      ", p)
 		roots := structures.Ints2TreeNode(p.s)
 		roott := structures.Ints2TreeNode(p.t)
 		fmt.Printf("【output】:%v      \n", isSubtree(roots, roott))
 	}
-}
+}}}

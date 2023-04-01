@@ -43,8 +43,9 @@ func Benchmark_Problem458(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans458, q.para458
 		fmt.Printf("【input】:%v    【output】:%v\n", p, poorPigs(p.buckets, p.minutesToDie, p.minutesToTest))
 	}
-}
+}}}

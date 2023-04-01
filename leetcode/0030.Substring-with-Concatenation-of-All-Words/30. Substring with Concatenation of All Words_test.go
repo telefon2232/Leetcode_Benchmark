@@ -82,8 +82,9 @@ func Benchmark_Problem30(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans30, q.para30
 		(findSubstring(p.one, p.two))
 	}
-}
+}}}

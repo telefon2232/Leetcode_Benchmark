@@ -34,10 +34,11 @@ func Benchmark_Problem872(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans872, q.para872
 		tree1 := structures.Ints2TreeNode(p.one)
 		tree2 := structures.Ints2TreeNode(p.two)
 		(leafSimilar(tree1, tree2))
 	}
-}
+}}}

@@ -38,8 +38,9 @@ func Benchmark_Problem1078(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1078, q.para1078
 		(findOcurrences(p.t, p.f, p.s))
 	}
-}
+}}}

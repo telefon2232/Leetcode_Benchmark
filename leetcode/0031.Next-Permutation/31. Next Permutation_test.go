@@ -47,10 +47,11 @@ func Benchmark_Problem31(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans31, q.para31
 		fmt.Printf("【input】:%v       ", p)
 		nextPermutation(p.nums)
 		fmt.Printf("【output】:%v\n", p.nums)
 	}
-}
+}}}

@@ -36,8 +36,9 @@ func Benchmark_Problem793(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans793, q.para793
 		(preimageSizeFZF(p.one))
 	}
-}
+}}}

@@ -37,8 +37,9 @@ func Benchmark_Problem377(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans377, q.para377
 		(combinationSum4(p.n, p.k))
 	}
-}
+}}}

@@ -37,8 +37,9 @@ func Benchmark_Problem753(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans753, q.para753
 		(crackSafe(p.n, p.k))
 	}
-}
+}}}

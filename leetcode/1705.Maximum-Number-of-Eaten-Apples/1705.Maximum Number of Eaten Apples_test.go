@@ -37,8 +37,9 @@ func Benchmark_Problem1705(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1705, q.para1705
 		fmt.Printf("【input】:%v    【output】:%v\n", p, eatenApples(p.apples, p.days))
 	}
-}
+}}}

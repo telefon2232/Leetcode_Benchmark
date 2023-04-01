@@ -52,8 +52,9 @@ func Benchmark_Problem18(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans18, q.para18
 		(fourSum(p.a, p.t))
 	}
-}
+}}}

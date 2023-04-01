@@ -42,8 +42,9 @@ func Benchmark_Problem383(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans383, q.para383
 		fmt.Printf("【input】:%v    【output】:%v\n", p, canConstruct(p.ransomNote, p.magazine))
 	}
-}
+}}}

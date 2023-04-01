@@ -107,9 +107,10 @@ func Benchmark_Problem116(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans116, q.para116
 		fmt.Printf("【input】:%v      ", p.one)
 		fmt.Printf("【output】:%v      \n", connect(p.one))
 	}
-}
+}}}

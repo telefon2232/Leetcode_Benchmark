@@ -48,8 +48,9 @@ func Benchmark_Problem1019(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1019, q.para1019
 		(nextLargerNodes(structures.Ints2List(p.one)))
 	}
-}
+}}}

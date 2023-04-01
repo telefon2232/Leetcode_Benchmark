@@ -43,8 +43,9 @@ func Benchmark_Problem1052(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1052, q.para1052
 		(maxSatisfied(p.customers, p.grumpy, p.x))
 	}
-}
+}}}

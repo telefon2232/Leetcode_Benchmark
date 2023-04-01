@@ -36,8 +36,9 @@ func Benchmark_Problem1734(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1734, q.para1734
 		(decode(p.encoded))
 	}
-}
+}}}

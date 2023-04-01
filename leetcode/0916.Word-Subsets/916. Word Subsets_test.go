@@ -52,8 +52,9 @@ func Benchmark_Problem916(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans916, q.para916
 		(wordSubsets(p.A, p.B))
 	}
-}
+}}}

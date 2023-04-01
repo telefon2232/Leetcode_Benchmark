@@ -36,8 +36,9 @@ func Benchmark_Problem216(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans216, q.para216
 		(combinationSum3(p.n, p.k))
 	}
-}
+}}}

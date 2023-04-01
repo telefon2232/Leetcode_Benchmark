@@ -45,7 +45,8 @@ func Benchmark_Problem95(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans95, q.para95
 		fmt.Printf("【input】:%v  \n", p)
 		trees := generateTrees(p.one)
@@ -53,4 +54,4 @@ func Benchmark_Problem95(b *testing.B) {
 			fmt.Printf("【output】:%v\n", structures.Tree2Preorder(t))
 		}
 	}
-}
+}}}

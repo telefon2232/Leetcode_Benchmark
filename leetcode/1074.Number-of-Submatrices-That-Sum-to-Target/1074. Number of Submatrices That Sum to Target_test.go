@@ -37,8 +37,9 @@ func Benchmark_Problem1074(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1074, q.para1074
 		(numSubmatrixSumTarget1(p.one, p.t))
 	}
-}
+}}}

@@ -41,8 +41,9 @@ func Benchmark_Problem547(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans547, q.para547
 		(findCircleNum(p.one))
 	}
-}
+}}}

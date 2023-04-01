@@ -61,8 +61,9 @@ func Benchmark_Problem41(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans41, q.para41
 		(firstMissingPositive(p.one))
 	}
-}
+}}}

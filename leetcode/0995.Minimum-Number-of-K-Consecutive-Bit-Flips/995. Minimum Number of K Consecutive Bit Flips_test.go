@@ -42,8 +42,9 @@ func Benchmark_Problem995(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans995, q.para995
 		(minKBitFlips(p.one, p.k))
 	}
-}
+}}}

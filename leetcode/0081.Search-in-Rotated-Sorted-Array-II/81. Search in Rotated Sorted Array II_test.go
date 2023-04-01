@@ -39,8 +39,9 @@ func Benchmark_Problem81(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans81, q.para81
 		fmt.Printf("【input】:%v    【output】:%v\n", p, search(p.nums, p.target))
 	}
-}
+}}}

@@ -51,8 +51,9 @@ func Benchmark_Problem264(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans264, q.para264
 		(nthUglyNumber(p.one))
 	}
-}
+}}}

@@ -43,8 +43,9 @@ func Benchmark_Problem97(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans97, q.para97
 		(isInterleave(p.s1, p.s2, p.s3))
 	}
-}
+}}}

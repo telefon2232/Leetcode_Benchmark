@@ -53,8 +53,9 @@ func Benchmark_Problem668(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans668, q.para668
 		(findKthNumber(p.m, p.n, p.k))
 	}
-}
+}}}

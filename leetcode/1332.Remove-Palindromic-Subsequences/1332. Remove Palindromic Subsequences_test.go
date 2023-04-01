@@ -51,8 +51,9 @@ func Benchmark_Problem1332(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1332, q.para1332
 		(removePalindromeSub(p.s))
 	}
-}
+}}}

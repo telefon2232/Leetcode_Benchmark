@@ -47,8 +47,9 @@ func Benchmark_Problem1518(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1518, q.para1518
 		fmt.Printf("【input】:%v    【output】:%v\n", p, numWaterBottles(p.numBottles, p.numExchange))
 	}
-}
+}}}

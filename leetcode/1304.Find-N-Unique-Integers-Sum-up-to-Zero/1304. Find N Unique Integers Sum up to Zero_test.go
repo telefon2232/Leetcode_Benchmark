@@ -46,8 +46,9 @@ func Benchmark_Problem1304(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1304, q.para1304
 		(sumZero(p.one))
 	}
-}
+}}}

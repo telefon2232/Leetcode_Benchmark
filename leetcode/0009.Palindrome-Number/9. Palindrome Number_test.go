@@ -61,8 +61,9 @@ func Benchmark_Problem9(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans9, q.para9
 		(isPalindrome(p.one))
 	}
-}
+}}}

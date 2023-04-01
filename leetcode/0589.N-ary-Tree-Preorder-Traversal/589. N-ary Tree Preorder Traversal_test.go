@@ -39,12 +39,15 @@ func Benchmark_Problem589(b *testing.B) {
 		},
 	}
 
-
-	for _, q := range qs {
-		_, p := q.ans589, q.para589
-		fmt.Printf("【input】:%v      ", p)
-		rootOne := int2NaryNode(p.one)
-		fmt.Printf("【output】:%v      \n", preorder(rootOne))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans589, q.para589
+				fmt.Printf("【input】:%v      ", p)
+				rootOne := int2NaryNode(p.one)
+				fmt.Printf("【output】:%v      \n", preorder(rootOne))
+			}
+		}
 	}
 }
 

@@ -38,10 +38,11 @@ func Benchmark_Problem344(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans344, q.para344
 		fmt.Printf("【input】:%v      ", p.one)
 		reverseString(p.one)
 		fmt.Printf("【output】:%v\n", p.one)
 	}
-}
+}}}

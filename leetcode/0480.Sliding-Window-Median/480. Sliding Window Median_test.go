@@ -32,8 +32,9 @@ func Benchmark_Problem480(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans480, q.para480
 		(medianSlidingWindow1(p.one, p.k))
 	}
-}
+}}}

@@ -32,8 +32,9 @@ func Benchmark_Problem690(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans690, q.para690
 		(getImportance(p.employees, p.id))
 	}
-}
+}}}

@@ -36,8 +36,9 @@ func Benchmark_Problem1232(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1232, q.para1232
 		(checkStraightLine(p.arr))
 	}
-}
+}}}

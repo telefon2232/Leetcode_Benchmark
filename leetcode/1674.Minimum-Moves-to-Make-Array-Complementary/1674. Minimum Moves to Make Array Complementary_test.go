@@ -42,8 +42,9 @@ func Benchmark_Problem1674(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1674, q.para1674
 		(minMoves(p.nums, p.limit))
 	}
-}
+}}}

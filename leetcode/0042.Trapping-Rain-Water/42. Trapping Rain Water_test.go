@@ -31,8 +31,9 @@ func Benchmark_Problem42(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans42, q.para42
 		(trap(p.one))
 	}
-}
+}}}

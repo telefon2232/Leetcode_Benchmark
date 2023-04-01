@@ -35,8 +35,9 @@ func Benchmark_Problem1025(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1025, q.para1025
 		(divisorGame(p.one))
 	}
-}
+}}}

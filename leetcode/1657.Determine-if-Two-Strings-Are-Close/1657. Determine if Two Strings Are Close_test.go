@@ -59,8 +59,9 @@ func Benchmark_Problem1657(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1657, q.para1657
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, closeStrings(p.word1, p.word2))
 	}
-}
+}}}

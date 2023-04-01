@@ -56,9 +56,10 @@ func Benchmark_Problem1305(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1305, q.para1305
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", getAllElements(structures.Ints2TreeNode(p.root1), structures.Ints2TreeNode(p.root2)))
 	}
-}
+}}}

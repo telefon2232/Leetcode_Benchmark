@@ -34,9 +34,10 @@ func Benchmark_Problem1110(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1110, q.para1110
 		tree := structures.Ints2TreeNode(p.one)
 		(delNodes(tree, p.two))
 	}
-}
+}}}

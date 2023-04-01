@@ -47,8 +47,9 @@ func Benchmark_Problem205(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans205, q.para205
 		(isIsomorphic(p.one, p.two))
 	}
-}
+}}}

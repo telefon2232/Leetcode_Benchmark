@@ -46,8 +46,9 @@ func Benchmark_Problem1154(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1154, q.para1154
 		(dayOfYear(p.one))
 	}
-}
+}}}

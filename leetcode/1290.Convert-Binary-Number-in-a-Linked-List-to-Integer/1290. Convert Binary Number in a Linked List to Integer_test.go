@@ -53,8 +53,9 @@ func Benchmark_Problem1290(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1290, q.para1290
 		(getDecimalValue(structures.Ints2List(p.one)))
 	}
-}
+}}}

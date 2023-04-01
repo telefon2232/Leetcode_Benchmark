@@ -46,10 +46,11 @@ func Benchmark_Problem701(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans701, q.para701
 		fmt.Printf("【input】:%v      ", p)
 		rootOne := structures.Ints2TreeNode(p.root)
 		fmt.Printf("【output】:%v      \n", structures.Tree2ints(insertIntoBST(rootOne, p.val)))
 	}
-}
+}}}

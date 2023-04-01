@@ -42,8 +42,9 @@ func Benchmark_Problem997(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans997, q.para997
 		fmt.Printf("【input】:%v    【output】:%v\n", p, findJudge(p.n, p.trust))
 	}
-}
+}}}

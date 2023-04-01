@@ -42,8 +42,9 @@ func Benchmark_Problem700(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans700, q.para700
 		fmt.Printf("【input】:%v    【output】:%v\n", p, searchBST(p.root, p.val))
 	}
-}
+}}}

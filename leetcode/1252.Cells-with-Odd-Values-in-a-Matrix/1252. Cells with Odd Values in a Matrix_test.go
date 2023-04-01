@@ -38,8 +38,9 @@ func Benchmark_Problem1252(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1252, q.para1252
 		(oddCells(p.n, p.m, p.indices))
 	}
-}
+}}}

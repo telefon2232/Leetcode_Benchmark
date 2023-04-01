@@ -43,8 +43,9 @@ func Benchmark_Problem1641(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1641, q.para1641
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, countVowelStrings(p.n))
 	}
-}
+}}}

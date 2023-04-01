@@ -48,8 +48,9 @@ func Benchmark_Problem1171(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1171, q.para1171
 		(structures.List2Ints(removeZeroSumSublists(structures.Ints2List(p.one))))
 	}
-}
+}}}

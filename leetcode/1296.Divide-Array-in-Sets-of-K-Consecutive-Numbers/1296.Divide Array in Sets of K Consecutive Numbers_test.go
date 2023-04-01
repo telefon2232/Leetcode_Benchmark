@@ -42,8 +42,9 @@ func Benchmark_Problem1296(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1296, q.para1296
 		fmt.Printf("【input】:%v    【output】:%v\n", p, isPossibleDivide(p.nums, p.k))
 	}
-}
+}}}

@@ -38,8 +38,9 @@ func Benchmark_Problem1302(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1302, q.para1302
 		(deepestLeavesSum(structures.Ints2TreeNode(p.one)))
 	}
-}
+}}}

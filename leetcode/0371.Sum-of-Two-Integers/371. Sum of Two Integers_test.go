@@ -38,8 +38,9 @@ func Benchmark_Problem371(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans371, q.para371
 		(getSum(p.a, p.b))
 	}
-}
+}}}

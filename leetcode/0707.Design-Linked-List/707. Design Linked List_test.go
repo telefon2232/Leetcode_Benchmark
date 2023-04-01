@@ -32,7 +32,6 @@ func Benchmark_Problem707(b *testing.B) {
 	obj.AddAtTail(91)
 	fmt.Printf("obj = %v\n", MList2Ints(&obj))
 
-
 	obj1 := Constructor()
 	fmt.Printf("obj1 = %v\n", MList2Ints(&obj1))
 	param2 := obj1.Get(0)

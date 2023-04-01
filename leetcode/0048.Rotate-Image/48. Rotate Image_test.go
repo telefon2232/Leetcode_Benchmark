@@ -38,11 +38,12 @@ func Benchmark_Problem48(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans48, q.para48
 		fmt.Printf("【input】:%v \n", p)
 		rotate(p.s)
 		fmt.Printf("【output】:%v\n", p)
 		fmt.Printf("\n")
 	}
-}
+}}}

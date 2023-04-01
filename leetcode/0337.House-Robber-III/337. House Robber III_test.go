@@ -43,8 +43,9 @@ func Benchmark_Problem337(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans337, q.para337
 		(rob337(structures.Ints2TreeNode(p.one)))
 	}
-}
+}}}

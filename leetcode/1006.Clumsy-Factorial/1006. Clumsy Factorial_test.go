@@ -41,8 +41,9 @@ func Benchmark_Problem1006(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1006, q.para1006
 		(clumsy(p.N))
 	}
-}
+}}}

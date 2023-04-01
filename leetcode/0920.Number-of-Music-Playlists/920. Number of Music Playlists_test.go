@@ -43,8 +43,9 @@ func Benchmark_Problem920(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans920, q.para920
 		(numMusicPlaylists(p.N, p.L, p.K))
 	}
-}
+}}}

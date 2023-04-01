@@ -71,11 +71,12 @@ func Benchmark_Problem725(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans725, q.para725
 		res := splitListToParts(structures.Ints2List(p.one), p.n)
 		for _, value := range res {
 			fmt.Printf("【input】:%v    length:%v   【output】:%v\n", p, len(res), structures.List2Ints(value))
 		}
 	}
-}
+}}}

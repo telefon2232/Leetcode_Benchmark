@@ -52,8 +52,9 @@ func Benchmark_Problem1(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1, q.para1
 		(twoSum(p.nums, p.target))
 	}
-}
+}}}

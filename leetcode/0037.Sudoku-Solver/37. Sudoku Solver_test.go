@@ -50,11 +50,12 @@ func Benchmark_Problem37(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans37, q.para37
 		fmt.Printf("【input】:%v \n\n", p)
 		solveSudoku(p.s)
 		fmt.Printf("【output】:%v \n\n", p)
 	}
 
-}
+}}}

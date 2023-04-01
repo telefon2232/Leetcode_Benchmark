@@ -31,8 +31,9 @@ func Benchmark_Problem810(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans810, q.para810
 		(xorGame(p.nums))
 	}
-}
+}}}

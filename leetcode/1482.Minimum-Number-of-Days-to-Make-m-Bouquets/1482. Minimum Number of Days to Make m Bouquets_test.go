@@ -55,8 +55,9 @@ func Benchmark_Problem1482(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1482, q.para1482
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, minDays(p.bloomDay, p.m, p.k))
 	}
-}
+}}}

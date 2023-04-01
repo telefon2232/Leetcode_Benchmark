@@ -46,8 +46,9 @@ func Benchmark_Problem394(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans394, q.para394
 		(decodeString(p.s))
 	}
-}
+}}}

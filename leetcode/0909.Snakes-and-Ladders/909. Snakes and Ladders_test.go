@@ -35,8 +35,9 @@ func Benchmark_Problem909(b *testing.B) {
 			ans909{4},
 		},
 	}
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans909, q.para909
 		(snakesAndLadders(p.one))
 	}
-}
+}}}

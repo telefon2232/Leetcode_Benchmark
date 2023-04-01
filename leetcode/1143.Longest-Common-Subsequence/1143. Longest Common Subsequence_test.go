@@ -42,8 +42,9 @@ func Benchmark_Problem1143(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1143, q.para1143
 		(longestCommonSubsequence(p.text1, p.text2))
 	}
-}
+}}}

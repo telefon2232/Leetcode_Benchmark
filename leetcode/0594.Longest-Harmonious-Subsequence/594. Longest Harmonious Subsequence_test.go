@@ -31,8 +31,9 @@ func Benchmark_Problem594(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans594, q.para594
 		(findLHS(p.one))
 	}
-}
+}}}

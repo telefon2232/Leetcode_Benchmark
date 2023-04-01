@@ -39,8 +39,9 @@ func Benchmark_Problem1629(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1629, q.para1629
 		fmt.Printf("【input】:%v      【output】:%c      \n", p, slowestKey(p.releaseTimes, p.keysPressed))
 	}
-}
+}}}

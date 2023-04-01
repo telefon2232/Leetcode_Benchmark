@@ -41,8 +41,9 @@ func Benchmark_Problem977(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans977, q.para977
 		(sortedSquares(p.one))
 	}
-}
+}}}

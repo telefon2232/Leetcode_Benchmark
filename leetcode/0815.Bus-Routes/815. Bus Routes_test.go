@@ -33,8 +33,9 @@ func Benchmark_Problem815(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans815, q.para815
 		(numBusesToDestination(p.r, p.s, p.t))
 	}
-}
+}}}

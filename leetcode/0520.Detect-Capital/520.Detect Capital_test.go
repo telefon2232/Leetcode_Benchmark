@@ -34,8 +34,9 @@ func Benchmark_Problem520(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans520, q.para520
 		(detectCapitalUse(p.word))
 	}
-}
+}}}

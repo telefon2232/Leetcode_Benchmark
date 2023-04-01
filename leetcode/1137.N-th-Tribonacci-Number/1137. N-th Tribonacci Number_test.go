@@ -51,8 +51,9 @@ func Benchmark_Problem1137(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1137, q.para1137
 		(tribonacci(p.one))
 	}
-}
+}}}

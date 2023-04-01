@@ -43,8 +43,9 @@ func Benchmark_Problem141(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans141, q.para141
 		(hasCycle(structures.Ints2List(p.one)))
 	}
-}
+}}}

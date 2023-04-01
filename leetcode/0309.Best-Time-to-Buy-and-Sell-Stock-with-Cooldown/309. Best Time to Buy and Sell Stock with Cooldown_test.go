@@ -56,8 +56,9 @@ func Benchmark_Problem309(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans309, q.para309
 		(maxProfit309(p.one))
 	}
-}
+}}}

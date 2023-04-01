@@ -42,8 +42,9 @@ func Benchmark_Problem50(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans50, q.para50
 		(myPow(p.x, p.n))
 	}
-}
+}}}

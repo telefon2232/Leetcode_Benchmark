@@ -38,12 +38,15 @@ func Benchmark_Problem419(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans419, q.para419
+				fmt.Printf("【input】:%v       【output】:%v\n", bytesArrayToStringArray(p.one), countBattleships(p.one))
+			}
 
-	for _, q := range qs {
-		_, p := q.ans419, q.para419
-		fmt.Printf("【input】:%v       【output】:%v\n", bytesArrayToStringArray(p.one), countBattleships(p.one))
+		}
 	}
-
 }
 
 // 在运行go test时 为了更直观地显示[][]byte中的字符而非ASCII码数值

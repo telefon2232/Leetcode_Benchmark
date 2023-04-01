@@ -37,8 +37,9 @@ func Benchmark_Problem870(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans870, q.para870
 		(advantageCount1(p.A, p.B))
 	}
-}
+}}}

@@ -70,8 +70,9 @@ func Benchmark_Problem2(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans2, q.para2
 		(structures.List2Ints(addTwoNumbers(structures.Ints2List(p.one), structures.Ints2List(p.another))))
 	}
-}
+}}}

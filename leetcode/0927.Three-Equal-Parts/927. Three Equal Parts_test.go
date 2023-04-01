@@ -36,8 +36,9 @@ func Benchmark_Problem927(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans927, q.para927
 		(threeEqualParts(p.one))
 	}
-}
+}}}

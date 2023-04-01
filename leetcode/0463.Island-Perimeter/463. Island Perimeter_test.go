@@ -31,8 +31,9 @@ func Benchmark_Problem463(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans463, q.para463
 		(islandPerimeter(p.one))
 	}
-}
+}}}

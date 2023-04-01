@@ -46,8 +46,9 @@ func Benchmark_Problem1018(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1018, q.para1018
 		(prefixesDivBy5(p.a))
 	}
-}
+}}}

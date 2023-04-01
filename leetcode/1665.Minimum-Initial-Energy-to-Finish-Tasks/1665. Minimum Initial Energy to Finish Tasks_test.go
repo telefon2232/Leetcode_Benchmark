@@ -43,8 +43,9 @@ func Benchmark_Problem1665(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1665, q.para1665
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, minimumEffort(p.tasks))
 	}
-}
+}}}

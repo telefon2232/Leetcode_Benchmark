@@ -48,9 +48,10 @@ func Benchmark_Problem1464(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1464, q.para1464
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", maxProduct(p.nums))
 	}
-}
+}}}

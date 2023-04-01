@@ -53,8 +53,9 @@ func Benchmark_Problem878(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans878, q.para878
 		(nthMagicalNumber(p.n, p.a, p.b))
 	}
-}
+}}}

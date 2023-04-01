@@ -43,8 +43,9 @@ func Benchmark_Problem1184(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1184, q.para1184
 		(distanceBetweenBusStops(p.distance, p.start, p.destination))
 	}
-}
+}}}

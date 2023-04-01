@@ -64,12 +64,15 @@ func Benchmark_Problem237(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
-		_, p := q.ans237, q.para237
-		(structures.List2Ints(removeElements(structures.Ints2List(p.one), p.n)))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans237, q.para237
+				(structures.List2Ints(removeElements(structures.Ints2List(p.one), p.n)))
+			}
+		}
 	}
 }
-
 func removeElements(head *ListNode, val int) *ListNode {
 	if head == nil {
 		return head

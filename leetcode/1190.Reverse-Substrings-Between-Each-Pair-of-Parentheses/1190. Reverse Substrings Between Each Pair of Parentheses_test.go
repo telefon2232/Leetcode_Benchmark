@@ -46,8 +46,9 @@ func Benchmark_Problem1190(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1190, q.para1190
 		(reverseParentheses(p.s))
 	}
-}
+}}}

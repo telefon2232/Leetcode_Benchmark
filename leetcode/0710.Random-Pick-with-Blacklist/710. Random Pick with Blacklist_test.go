@@ -55,7 +55,8 @@ func Benchmark_Problem710(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans710, q.para710
 		fmt.Printf("【input】: n = %v blacklist = %v pick times = %v  ", p.n, p.blackList, p.times)
 		obj := Constructor710(p.n, p.blackList)
@@ -65,4 +66,4 @@ func Benchmark_Problem710(b *testing.B) {
 		}
 		fmt.Printf("\n")
 	}
-}
+}}}

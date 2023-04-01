@@ -47,8 +47,9 @@ func Benchmark_Problem433(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans433, q.para433
 		(minMutation(p.start, p.end, p.bank))
 	}
-}
+}}}

@@ -40,8 +40,9 @@ func Benchmark_Problem151(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans151, q.para151
 		(reverseWords151(p.one))
 	}
-}
+}}}

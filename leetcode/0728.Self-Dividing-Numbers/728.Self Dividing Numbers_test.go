@@ -37,9 +37,10 @@ func Benchmark_Problem728(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans728, q.para728
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", selfDividingNumbers(p.left, p.right))
 	}
-}
+}}}

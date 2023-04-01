@@ -40,8 +40,9 @@ func Benchmark_Problem198(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans198, q.para198
 		(rob198(p.one))
 	}
-}
+}}}

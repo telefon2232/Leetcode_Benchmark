@@ -44,8 +44,9 @@ func Benchmark_Problem434(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans434, q.para434
 		(countSegments(p.s))
 	}
-}
+}}}

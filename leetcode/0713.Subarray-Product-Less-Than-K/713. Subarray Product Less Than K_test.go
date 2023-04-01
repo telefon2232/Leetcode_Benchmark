@@ -37,8 +37,9 @@ func Benchmark_Problem713(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans713, q.para713
 		(numSubarrayProductLessThanK(p.s, p.k))
 	}
-}
+}}}

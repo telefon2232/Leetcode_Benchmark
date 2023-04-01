@@ -35,9 +35,10 @@ func Benchmark_Problem863(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans863, q.para863
 		tree, target := structures.Ints2TreeNode(p.root), structures.Ints2TreeNode(p.target)
 		(distanceK(tree, target, p.K))
 	}
-}
+}}}

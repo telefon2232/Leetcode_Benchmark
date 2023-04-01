@@ -32,7 +32,8 @@ func Benchmark_Problem384(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		sol := Constructor(nil)
 		_, p := q.ans384, q.para384
 		for _, op := range p.ops {
@@ -45,4 +46,4 @@ func Benchmark_Problem384(b *testing.B) {
 			}
 		}
 	}
-}
+}}}

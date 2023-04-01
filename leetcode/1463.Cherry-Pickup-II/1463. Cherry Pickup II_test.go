@@ -61,9 +61,10 @@ func Benchmark_Problem1463(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1463, q.para1463
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", cherryPickup(p.grid))
 	}
-}
+}}}

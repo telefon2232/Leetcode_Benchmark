@@ -37,8 +37,9 @@ func Benchmark_Problem748(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans748, q.para748
 		(shortestCompletingWord(p.c, p.w))
 	}
-}
+}}}

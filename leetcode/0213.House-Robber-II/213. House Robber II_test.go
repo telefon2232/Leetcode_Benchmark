@@ -40,8 +40,9 @@ func Benchmark_Problem213(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans213, q.para213
 		(rob213(p.one))
 	}
-}
+}}}

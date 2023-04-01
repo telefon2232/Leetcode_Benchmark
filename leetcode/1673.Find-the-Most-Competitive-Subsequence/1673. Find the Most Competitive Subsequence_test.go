@@ -52,8 +52,9 @@ func Benchmark_Problem1673(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1673, q.para1673
 		(mostCompetitive(p.nums, p.k))
 	}
-}
+}}}

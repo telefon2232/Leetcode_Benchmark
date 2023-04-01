@@ -41,8 +41,9 @@ func Benchmark_Problem218(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans218, q.para218
 		(getSkyline(p.one))
 	}
-}
+}}}

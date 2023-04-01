@@ -42,9 +42,10 @@ func Benchmark_Problem2037(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans2037, q.para2037
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", minMovesToSeat(p.seats, p.students))
 	}
-}
+}}}

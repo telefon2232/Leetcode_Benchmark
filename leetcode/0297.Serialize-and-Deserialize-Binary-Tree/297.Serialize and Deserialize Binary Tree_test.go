@@ -41,7 +41,8 @@ func Benchmark_Problem297(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans297, q.para297
 		fmt.Printf("【input】:%v      ", p)
 		root := structures.Ints2TreeNode(p.one)
@@ -50,4 +51,4 @@ func Benchmark_Problem297(b *testing.B) {
 		serialized := tree297.serialize(root)
 		fmt.Printf("【output】:%v      \n", structures.Tree2Preorder(tree297.deserialize(serialized)))
 	}
-}
+}}}

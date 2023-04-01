@@ -63,8 +63,9 @@ func Benchmark_Problem328(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans328, q.para328
 		(structures.List2Ints(oddEvenList(structures.Ints2List(p.one))))
 	}
-}
+}}}

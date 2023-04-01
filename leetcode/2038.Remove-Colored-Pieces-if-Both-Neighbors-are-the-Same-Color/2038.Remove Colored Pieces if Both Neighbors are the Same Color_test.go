@@ -41,9 +41,10 @@ func Benchmark_Problem2038(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans2038, q.para2038
 		fmt.Printf("【input】:%v      ", p.colors)
 		fmt.Printf("【output】:%v      \n", winnerOfGame(p.colors))
 	}
-}
+}}}

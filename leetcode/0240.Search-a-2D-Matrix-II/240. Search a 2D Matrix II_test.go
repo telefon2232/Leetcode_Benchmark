@@ -37,8 +37,9 @@ func Benchmark_Problem240(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans240, q.para240
 		(searchMatrix240(p.matrix, p.target))
 	}
-}
+}}}

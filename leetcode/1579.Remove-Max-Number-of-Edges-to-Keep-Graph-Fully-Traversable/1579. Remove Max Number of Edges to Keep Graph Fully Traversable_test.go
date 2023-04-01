@@ -44,8 +44,9 @@ func Benchmark_Problem1579(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1579, q.para1579
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, maxNumEdgesToRemove(p.n, p.edges))
 	}
-}
+}}}

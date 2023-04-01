@@ -37,8 +37,9 @@ func Benchmark_Problem201(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans201, q.para201
 		(rangeBitwiseAnd(p.m, p.n))
 	}
-}
+}}}

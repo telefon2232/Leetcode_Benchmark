@@ -42,11 +42,12 @@ func Benchmark_Problem1089(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1089, q.para1089
 		fmt.Printf("【input】:%v      ", p)
 		duplicateZeros(p.arr)
 		fmt.Printf("【output】:%v      \n", p.arr)
 
 	}
-}
+}}}

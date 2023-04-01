@@ -40,8 +40,9 @@ func Benchmark_Problem51(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans51, q.para51
 		(solveNQueens(p.one))
 	}
-}
+}}}

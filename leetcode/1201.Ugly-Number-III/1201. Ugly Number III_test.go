@@ -49,8 +49,9 @@ func Benchmark_Problem1201(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1201, q.para1201
 		(nthUglyNumber(p.n, p.a, p.b, p.c))
 	}
-}
+}}}

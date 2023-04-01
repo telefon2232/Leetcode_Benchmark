@@ -34,7 +34,8 @@ func Benchmark_Problem2043(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		var b Bank
 		var res []bool
 		_, p := q.ans2043, q.para2043
@@ -57,4 +58,4 @@ func Benchmark_Problem2043(b *testing.B) {
 		fmt.Printf("【input】:%v      \n", p)
 		fmt.Printf("【output】:%v      \n", res)
 	}
-}
+}}}

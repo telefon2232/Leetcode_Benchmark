@@ -54,8 +54,9 @@ func Benchmark_Problem1640(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1640, q.para1640
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, canFormArray(p.arr, p.pieces))
 	}
-}
+}}}

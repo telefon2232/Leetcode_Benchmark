@@ -52,8 +52,9 @@ func Benchmark_Problem719(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans719, q.para719
 		(smallestDistancePair(p.num, p.k))
 	}
-}
+}}}

@@ -47,10 +47,11 @@ func Benchmark_Problem993(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans993, q.para993
 		fmt.Printf("【input】:%v      ", p)
 		root := structures.Ints2TreeNode(p.one)
 		fmt.Printf("【output】:%v      \n", isCousins(root, p.x, p.y))
 	}
-}
+}}}

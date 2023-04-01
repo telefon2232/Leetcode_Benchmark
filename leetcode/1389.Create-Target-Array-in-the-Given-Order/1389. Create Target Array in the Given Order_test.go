@@ -44,9 +44,10 @@ func Benchmark_Problem1389(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1389, q.para1389
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", createTargetArray(p.nums, p.index))
 	}
-}
+}}}

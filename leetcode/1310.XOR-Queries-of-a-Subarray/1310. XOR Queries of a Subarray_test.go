@@ -37,8 +37,9 @@ func Benchmark_Problem1310(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1310, q.para1310
 		(xorQueries(p.arr, p.queries))
 	}
-}
+}}}

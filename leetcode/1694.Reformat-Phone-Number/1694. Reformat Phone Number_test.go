@@ -56,8 +56,9 @@ func Benchmark_Problem1694(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1694, q.para1694
 		(reformatNumber(p.number))
 	}
-}
+}}}

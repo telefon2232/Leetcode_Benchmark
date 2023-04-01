@@ -41,8 +41,9 @@ func Benchmark_Problem1736(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1736, q.para1736
 		(maximumTime(p.time))
 	}
-}
+}}}

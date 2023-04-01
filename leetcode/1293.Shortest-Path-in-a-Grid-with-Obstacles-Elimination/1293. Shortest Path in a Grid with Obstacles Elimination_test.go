@@ -62,8 +62,9 @@ func Benchmark_Problem1293(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1293, q.para1293
 		(shortestPath(p.grid, p.k))
 	}
-}
+}}}

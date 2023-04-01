@@ -45,8 +45,9 @@ func Benchmark_Problem952(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans952, q.para952
 		(largestComponentSize(p.one))
 	}
-}
+}}}

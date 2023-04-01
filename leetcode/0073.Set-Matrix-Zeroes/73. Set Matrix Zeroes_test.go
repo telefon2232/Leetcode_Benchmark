@@ -36,10 +36,11 @@ func Benchmark_Problem73(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans73, q.para73
 		fmt.Printf("【input】:%v       ", p)
 		setZeroes(p.matrix)
 		fmt.Printf("【output】:%v\n", p)
 	}
-}
+}}}

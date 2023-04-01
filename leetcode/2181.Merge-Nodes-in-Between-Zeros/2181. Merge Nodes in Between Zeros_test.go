@@ -38,9 +38,13 @@ func Benchmark_Problem2181(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
-		_, p := q.ans2181, q.para2181
-		(structures.List2Ints(mergeNodes(structures.Ints2List(p.one))))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans2181, q.para2181
+				(structures.List2Ints(mergeNodes(structures.Ints2List(p.one))))
+			}
+		}
 	}
 }
 

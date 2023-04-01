@@ -52,8 +52,9 @@ func Benchmark_Problem1319(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1319, q.para1319
 		(makeConnected(p.n, p.connections))
 	}
-}
+}}}

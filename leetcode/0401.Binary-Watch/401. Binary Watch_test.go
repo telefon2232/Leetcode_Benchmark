@@ -31,8 +31,9 @@ func Benchmark_Problem401(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans401, q.para401
 		(readBinaryWatch(p.n))
 	}
-}
+}}}

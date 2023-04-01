@@ -64,8 +64,9 @@ func Benchmark_Problem86(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans86, q.para86
 		(structures.List2Ints(partition(structures.Ints2List(p.one), p.x)))
 	}
-}
+}}}

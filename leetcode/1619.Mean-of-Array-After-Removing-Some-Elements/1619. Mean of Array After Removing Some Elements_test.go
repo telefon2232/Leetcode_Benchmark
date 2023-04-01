@@ -53,8 +53,9 @@ func Benchmark_Problem1619(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1619, q.para1619
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, trimMean(p.p))
 	}
-}
+}}}

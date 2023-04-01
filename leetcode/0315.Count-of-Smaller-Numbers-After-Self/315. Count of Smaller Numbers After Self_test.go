@@ -41,8 +41,9 @@ func Benchmark_Problem315(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans315, q.para315
 		(countSmaller(p.nums))
 	}
-}
+}}}

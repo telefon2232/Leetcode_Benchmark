@@ -47,7 +47,8 @@ func Benchmark_Problem235(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans235, q.para235
 		fmt.Printf("【input】:%v      ", p)
 		rootOne := structures.Ints2TreeNode(p.one)
@@ -55,4 +56,4 @@ func Benchmark_Problem235(b *testing.B) {
 		rootThr := structures.Ints2TreeNode(p.thr)
 		fmt.Printf("【output】:%v      \n", lowestCommonAncestor(rootOne, rootTwo, rootThr))
 	}
-}
+}}}

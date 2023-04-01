@@ -34,8 +34,9 @@ func Benchmark_Problem454(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans454, q.para454
 		(fourSumCount(p.a, p.b, p.c, p.d))
 	}
-}
+}}}

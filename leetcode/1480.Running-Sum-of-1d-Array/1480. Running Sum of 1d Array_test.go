@@ -43,8 +43,9 @@ func Benchmark_Problem1480(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1480, q.para1480
 		fmt.Printf("【input】:%v      【output】:%v      \n", p, runningSum(p.nums))
 	}
-}
+}}}

@@ -41,8 +41,9 @@ func Benchmark_Problem611(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans611, q.para611
 		(triangleNumber(p.nums))
 	}
-}
+}}}

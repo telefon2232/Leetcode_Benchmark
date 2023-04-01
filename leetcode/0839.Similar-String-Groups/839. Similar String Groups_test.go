@@ -31,8 +31,9 @@ func Benchmark_Problem839(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans839, q.para839
 		(numSimilarGroups(p.one))
 	}
-}
+}}}

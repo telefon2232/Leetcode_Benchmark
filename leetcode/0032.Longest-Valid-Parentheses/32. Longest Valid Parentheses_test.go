@@ -52,8 +52,9 @@ func Benchmark_Problem32(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans32, q.para32
 		fmt.Printf("【input】:%v    【output】:%v\n", p, longestValidParentheses(p.s))
 	}
-}
+}}}

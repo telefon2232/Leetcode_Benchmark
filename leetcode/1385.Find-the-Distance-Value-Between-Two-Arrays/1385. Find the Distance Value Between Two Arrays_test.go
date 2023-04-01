@@ -45,9 +45,10 @@ func Benchmark_Problem1385(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1385, q.para1385
 		fmt.Printf("【input】:%v      ", p)
 		fmt.Printf("【output】:%v      \n", findTheDistanceValue(p.arr1, p.arr2, p.d))
 	}
-}
+}}}

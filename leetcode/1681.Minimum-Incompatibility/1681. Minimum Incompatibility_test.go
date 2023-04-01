@@ -42,8 +42,9 @@ func Benchmark_Problem1681(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans1681, q.para1681
 		(minimumIncompatibility(p.nums, p.k))
 	}
-}
+}}}

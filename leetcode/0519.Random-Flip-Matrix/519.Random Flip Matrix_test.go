@@ -32,7 +32,8 @@ func Benchmark_Problem519(b *testing.B) {
 	}
 
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans519, q.para519
 		sol := Constructor(0, 0)
 		for _, v := range p.para {
@@ -47,4 +48,4 @@ func Benchmark_Problem519(b *testing.B) {
 			}
 		}
 	}
-}
+}}}

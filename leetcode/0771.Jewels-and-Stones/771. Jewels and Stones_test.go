@@ -36,8 +36,9 @@ func Benchmark_Problem771(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans771, q.para771
 		(numJewelsInStones(p.one, p.two))
 	}
-}
+}}}

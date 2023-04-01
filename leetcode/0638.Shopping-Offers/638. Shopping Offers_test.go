@@ -38,8 +38,9 @@ func Benchmark_Problem638(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans638, q.para638
 		(shoppingOffers(p.price, p.special, p.needs))
 	}
-}
+}}}

@@ -36,8 +36,9 @@ func Benchmark_Problem11(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans11, q.para11
 		(maxArea(p.one))
 	}
-}
+}}}

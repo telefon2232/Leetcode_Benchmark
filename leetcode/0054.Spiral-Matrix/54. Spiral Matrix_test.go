@@ -50,8 +50,9 @@ func Benchmark_Problem54(b *testing.B) {
 		},
 	}
 
-	for _, q := range qs {
+	for bbe := 0; bbe < b.N; bbe++ { 
+for _, q := range qs { {
 		_, p := q.ans54, q.para54
 		(spiralOrder(p.one))
 	}
-}
+}}}
