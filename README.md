@@ -18,17 +18,22 @@ For quick test you can use:
 ```
 
 ### Compile
-You can compile for any platform (riscv64, arm64, amd64). To do this, use:
+You can compile for any platform (**riscv64, arm64, amd64**). To do this, use:
 
 ```bash
 ./compile riscv64
 ```
 
 ### Profiling
-After compile prifile command to create CPU-profile for analyze:
+After compile prifile command to create CPU-profile for analyze (**Carefully!** each test run 10 second and we will get 10*700=7000second run.).
 ```bash
 ./profiling riscv64
 ```
+If you want check only 1 test, you may use in binary dir:
+```bash
+./${FILE} -test.bench .  -test.benchtime 10s
+```
+
  
 ## Plans
 - [x] Create project and run tests
