@@ -25,7 +25,7 @@ You can compile for any platform (**riscv64, arm64, amd64**). To do this, use:
 ```
 
 ### Profiling
-After compile prifile command to create CPU-profile for analyze (**Carefully!** each test run 10 second and we will get 10*700=7000second run.).
+After compile prifile command to create CPU-profile for analyze (**Carefully!** Each test run 10 second and we will get 10*700=7000second run).
 ```bash
 ./profiling riscv64
 ```
