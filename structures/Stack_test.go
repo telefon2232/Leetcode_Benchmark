@@ -7,7 +7,7 @@ import (
 )
 
 func Benchmark_Stack(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	s := NewStack()
 	ast.True(s.IsEmpty(), "检查新建的 s 是否为空")

@@ -7,7 +7,7 @@ import (
 )
 
 func Benchmark_Queue(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	q := NewQueue()
 	ast.True(q.IsEmpty(), "检查新建的 q 是否为空")

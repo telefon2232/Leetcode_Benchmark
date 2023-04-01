@@ -21,7 +21,7 @@ var (
 )
 
 func Benchmark_Ints2TreeNode(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	expected := PreIn2Tree(preOrder, inOrder)
 	actual := Ints2TreeNode(LeetCodeOrder)
@@ -32,7 +32,7 @@ func Benchmark_Ints2TreeNode(b *testing.B) {
 }
 
 func Benchmark_preIn2Tree(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	actual := Tree2Postorder(PreIn2Tree(preOrder, inOrder))
 	expected := postOrder
@@ -44,7 +44,7 @@ func Benchmark_preIn2Tree(b *testing.B) {
 }
 
 func Benchmark_inPost2Tree(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	actual := Tree2Preorder(InPost2Tree(inOrder, postOrder))
 	expected := preOrder
@@ -56,7 +56,7 @@ func Benchmark_inPost2Tree(b *testing.B) {
 }
 
 func Benchmark_tree2Ints(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 	root := PreIn2Tree(preOrder, inOrder)
 
 	ast.Equal(preOrder, Tree2Preorder(root))
@@ -70,7 +70,7 @@ func Benchmark_tree2Ints(b *testing.B) {
 }
 
 func Benchmark_indexOf(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	ast.Equal(1, indexOf(1, []int{0, 1, 2, 3}))
 
@@ -103,10 +103,10 @@ func Benchmark_TreeNode_Equal(b *testing.B) {
 		},
 	}
 	for _, tt := range tests {
-		t.Run(tt.name, func(b *testing.B) {
+		b.Run(tt.name, func(b *testing.B) {
 			tn := tt.fields.a
 			if got := tn.Equal(tt.args.a); got != tt.want {
-				t.Errorf("TreeNode.Equal() = %v, want %v", got, tt.want)
+				b.Errorf("TreeNode.Equal() = %v, want %v", got, tt.want)
 			}
 		})
 	}
@@ -148,16 +148,16 @@ func Benchmark_GetTargetNode(b *testing.B) {
 	}
 
 	for _, tt := range tests {
-		t.Run(tt.name, func(b *testing.B) {
+		b.Run(tt.name, func(b *testing.B) {
 			if got := GetTargetNode(tt.args.root, tt.args.target); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("GetTargetNode() = %v, want %v", got, tt.want)
+				b.Errorf("GetTargetNode() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
 func Benchmark_Tree2ints(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	root := PreIn2Tree(preOrder, inOrder)
 	actual := LeetCodeOrder

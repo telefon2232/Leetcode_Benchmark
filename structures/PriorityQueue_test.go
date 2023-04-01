@@ -8,7 +8,7 @@ import (
 )
 
 func Benchmark_priorityQueue(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	// Some items and their priorities.
 	items := map[string]int{

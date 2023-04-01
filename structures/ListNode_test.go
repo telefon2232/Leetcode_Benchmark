@@ -7,7 +7,7 @@ import (
 )
 
 func Benchmark_l2s(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 	ast.Equal([]int{}, List2Ints(nil), "输入nil，没有返回[]int{}")
 
 	one2three := &ListNode{
@@ -27,7 +27,7 @@ func Benchmark_l2s(b *testing.B) {
 }
 
 func Benchmark_s2l(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 	ast.Nil(Ints2List([]int{}), "输入[]int{}，没有返回nil")
 
 	ln := Ints2List([]int{1, 2, 3, 4, 5, 6, 7, 8, 9})
@@ -40,7 +40,7 @@ func Benchmark_s2l(b *testing.B) {
 }
 
 func Benchmark_getNodeWith(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 	//
 	ln := Ints2List([]int{1, 2, 3, 4, 5, 6, 7, 8, 9})
 	val := 10
@@ -58,7 +58,7 @@ func Benchmark_getNodeWith(b *testing.B) {
 }
 
 func Benchmark_Ints2ListWithCycle(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 	ints := []int{1, 2, 3}
 	l := Ints2ListWithCycle(ints, -1)
 	ast.Equal(ints, List2Ints(l))

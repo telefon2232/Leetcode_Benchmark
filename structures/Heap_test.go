@@ -9,7 +9,7 @@ import (
 )
 
 func Benchmark_intHeap(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	ih := new(intHeap)
 	heap.Init(ih)

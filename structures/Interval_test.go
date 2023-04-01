@@ -7,7 +7,7 @@ import (
 )
 
 func Benchmark_Interval2Ints(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	actual := Interval2Ints(Interval{Start: 1, End: 2})
 	expected := []int{1, 2}
@@ -15,7 +15,7 @@ func Benchmark_Interval2Ints(b *testing.B) {
 }
 
 func Benchmark_IntervalSlice2Intss(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	actual := IntervalSlice2Intss(
 		[]Interval{
@@ -37,7 +37,7 @@ func Benchmark_IntervalSlice2Intss(b *testing.B) {
 	ast.Equal(expected, actual)
 }
 func Benchmark_Intss2IntervalSlice(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	expected := []Interval{
 		{

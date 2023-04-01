@@ -7,7 +7,7 @@ import (
 )
 
 func Benchmark_NestedInteger(b *testing.B) {
-	ast := assert.New(t)
+	ast := assert.New(b)
 
 	n := NestedInteger{}
 

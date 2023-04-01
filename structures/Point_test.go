@@ -36,7 +36,7 @@ func Benchmark_Intss2Points(b *testing.B) {
 	}
 	for _, tt := range tests {
 		if got := Intss2Points(tt.args.points); !reflect.DeepEqual(got, tt.want) {
-			t.Errorf("%q. intss2Points() = %v, want %v", tt.name, got, tt.want)
+			b.Errorf("%q. intss2Points() = %v, want %v", tt.name, got, tt.want)
 		}
 	}
 }
@@ -72,7 +72,7 @@ func Benchmark_Points2Intss(b *testing.B) {
 	}
 	for _, tt := range tests {
 		if got := Points2Intss(tt.args.points); !reflect.DeepEqual(got, tt.want) {
-			t.Errorf("%q. Points2Intss() = %v, want %v", tt.name, got, tt.want)
+			b.Errorf("%q. Points2Intss() = %v, want %v", tt.name, got, tt.want)
 		}
 	}
 }
