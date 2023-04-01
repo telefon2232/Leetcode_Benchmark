@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -41,10 +40,12 @@ func Benchmark_Problem1572(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1572, q.para1572
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, diagonalSum(p.mat))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1572, q.para1572
+				(diagonalSum(p.mat))
+			}
+		}
 	}
-}}}
+}

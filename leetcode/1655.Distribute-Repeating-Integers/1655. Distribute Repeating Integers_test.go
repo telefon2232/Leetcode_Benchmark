@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,10 +52,12 @@ func Benchmark_Problem1655(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1655, q.para1655
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, canDistribute(p.nums, p.quantity))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1655, q.para1655
+				(canDistribute(p.nums, p.quantity))
+			}
+		}
 	}
-}}}
+}

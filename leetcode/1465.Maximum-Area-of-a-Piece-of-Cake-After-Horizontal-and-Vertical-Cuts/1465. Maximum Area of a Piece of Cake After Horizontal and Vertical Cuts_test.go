@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -45,10 +44,12 @@ func Benchmark_Problem1465(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1465, q.para1465
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, maxArea(p.h, p.w, p.horizontalCuts, p.verticalCuts))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1465, q.para1465
+				(maxArea(p.h, p.w, p.horizontalCuts, p.verticalCuts))
+			}
+		}
 	}
-}}}
+}

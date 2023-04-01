@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -49,10 +48,12 @@ func Benchmark_Problem1642(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1642, q.para1642
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, furthestBuilding(p.heights, p.bricks, p.ladders))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1642, q.para1642
+				(furthestBuilding(p.heights, p.bricks, p.ladders))
+			}
+		}
 	}
-}}}
+}

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,10 +51,12 @@ func Benchmark_Problem1619(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1619, q.para1619
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, trimMean(p.p))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1619, q.para1619
+				(trimMean(p.p))
+			}
+		}
 	}
-}}}
+}

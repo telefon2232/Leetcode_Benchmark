@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,10 +52,12 @@ func Benchmark_Problem1648(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1648, q.para1648
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, maxProfit(p.inventory, p.orders))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1648, q.para1648
+				(maxProfit(p.inventory, p.orders))
+			}
+		}
 	}
-}}}
+}

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -45,10 +44,12 @@ func Benchmark_Problem1659(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1659, q.para1659
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, getMaxGridHappiness(p.m, p.n, p.introvertsCount, p.extrovertsCount))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1659, q.para1659
+				(getMaxGridHappiness(p.m, p.n, p.introvertsCount, p.extrovertsCount))
+			}
+		}
 	}
-}}}
+}

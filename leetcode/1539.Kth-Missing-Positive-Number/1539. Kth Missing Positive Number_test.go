@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,10 +37,12 @@ func Benchmark_Problem1539(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1539, q.para1539
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, findKthPositive(p.arr, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1539, q.para1539
+				(findKthPositive(p.arr, p.k))
+			}
+		}
 	}
-}}}
+}

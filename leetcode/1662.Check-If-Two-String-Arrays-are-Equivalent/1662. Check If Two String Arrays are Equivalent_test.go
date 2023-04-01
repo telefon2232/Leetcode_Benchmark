@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,10 +42,12 @@ func Benchmark_Problem1662(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1662, q.para1662
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, arrayStringsAreEqual(p.word1, p.word2))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1662, q.para1662
+				(arrayStringsAreEqual(p.word1, p.word2))
+			}
+		}
 	}
-}}}
+}

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,10 +41,12 @@ func Benchmark_Problem1649(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1649, q.para1649
-		fmt.Printf("【input】:%v      【output】:%v      \n", p, createSortedArray(p.instructions))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1649, q.para1649
+				(createSortedArray(p.instructions))
+			}
+		}
 	}
-}}}
+}
