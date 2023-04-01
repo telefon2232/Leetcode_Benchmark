@@ -1,5 +1,5 @@
 # Leetcode Benchmark
-This is the first benchmark based on Leetcode tasks. Used to test CPU efficiency
+This is the first benchmark based on Leetcode tasks. Used to test CPU efficiency.
 
 ## Usage
 
@@ -16,7 +16,6 @@ For quick test you can use:
 ```bash
 ./gotest.sh
 ```
-And you will see fast runs on your system.
 
 ### Compile
 You can compile for any platform (riscv64, arm64, amd64). To do this, use:
@@ -36,5 +35,5 @@ After compile prifile command to create CPU-profile for analyze:
 - [x] Create scripts for compile for any platforms
 - [ ] Characterize by two metrics: By algorithm and by profile 
 - [ ] Fix Printfs
-- [ ] Fix some tests without 
+- [ ] Fix some tests without correct benchmark-cycles
 - [ ] Automatic profile analysis
