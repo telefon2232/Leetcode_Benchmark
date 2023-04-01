@@ -31,7 +31,8 @@ After compile prifile command to create CPU-profile for analyze (**Carefully!** 
 ```
 If you want check only 1 test, you may use in binary dir:
 ```bash
-./${FILE} -test.bench .  -test.benchtime 10s
+./${FILE} -test.bench .  -test.benchtime 10s -test.cpuprofile ${FILE}.out
+go tool pprof -text ${FILE}.out
 ```
 
  
