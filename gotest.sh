@@ -3,8 +3,8 @@
 set -e
 
 for d in $(go list ./leetcode/... | grep -v vendor); do
-    echo $d
-    go test -benchtime 1x -bench .  $d | grep ns 
+    echo -n "$d " | awk -F"/" -v ORS='' '{print $NF}'
+    go test -benchtime 1x -bench .  $d | grep ns/op | awk '{print $3, $4}' 
 
 
     # go test -c -o foo  #-> ./foo -test.bench .
