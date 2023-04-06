@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -23,7 +22,7 @@ func generateSubsetsWithDup(nums []int, k, start int, c []int, res *[][]int) {
 	}
 	// i will at most be n - (k - c.size()) + 1
 	for i := start; i < len(nums)-(k-len(c))+1; i++ {
-		fmt.Printf("i = %v start = %v c = %v\n", i, start, c)
+
 		if i > start && nums[i] == nums[i-1] { // 这里是去重的关键逻辑,本次不取重复数字，下次循环可能会取重复数字
 			continue
 		}

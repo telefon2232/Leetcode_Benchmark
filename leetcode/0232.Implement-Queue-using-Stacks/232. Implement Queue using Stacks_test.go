@@ -7,11 +7,11 @@ import (
 
 func Benchmark_Problem232(b *testing.B) {
 	obj := Constructor232()
-	fmt.Printf("obj = %v\n", obj)
+	
 	obj.Push(2)
-	fmt.Printf("obj = %v\n", obj)
+	
 	obj.Push(10)
-	fmt.Printf("obj = %v\n", obj)
+	
 	param2 := obj.Pop()
 	fmt.Printf("param_2 = %v\n", param2)
 	param3 := obj.Peek()

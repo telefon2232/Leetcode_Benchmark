@@ -1,8 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
-
 	"github.com/halfrost/LeetCode-Go/structures"
 )
 
@@ -39,7 +37,7 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 		} else {
 			b = b.Next
 		}
-		fmt.Printf("a = %v b = %v\n", a, b)
+
 	}
 	return a
 }

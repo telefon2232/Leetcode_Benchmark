@@ -1,15 +1,14 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
 func Benchmark_Problem703(b *testing.B) {
 	obj := Constructor(3, []int{4, 5, 8, 2})
-	fmt.Printf("Add 7 = %v\n", obj.Add(3))
-	fmt.Printf("Add 7 = %v\n", obj.Add(5))
-	fmt.Printf("Add 7 = %v\n", obj.Add(10))
-	fmt.Printf("Add 7 = %v\n", obj.Add(9))
-	fmt.Printf("Add 7 = %v\n", obj.Add(4))
+	obj.Add(3)
+	obj.Add(5)
+	obj.Add(10)
+	obj.Add(9)
+	obj.Add(4)
 }

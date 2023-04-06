@@ -7,13 +7,12 @@ import (
 
 func Benchmark_Problem211(b *testing.B) {
 	obj := Constructor211()
-	fmt.Printf("obj = %v\n", obj)
+
 	obj.AddWord("bad")
-	fmt.Printf("obj = %v\n", obj)
+
 	obj.AddWord("dad")
-	fmt.Printf("obj = %v\n", obj)
+
 	obj.AddWord("mad")
-	fmt.Printf("obj = %v\n", obj)
 
 	param1 := obj.Search("pad")
 	fmt.Printf("param_1 = %v obj = %v\n", param1, obj)

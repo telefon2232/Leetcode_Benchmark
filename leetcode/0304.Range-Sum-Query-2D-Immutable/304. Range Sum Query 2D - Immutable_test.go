@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -15,7 +14,7 @@ func Benchmark_Problem304(b *testing.B) {
 			{1, 0, 3, 0, 5},
 		},
 	)
-	fmt.Printf("obj = %v\n", obj.SumRegion(2, 1, 4, 3))
-	fmt.Printf("obj = %v\n", obj.SumRegion(1, 1, 2, 2))
-	fmt.Printf("obj = %v\n", obj.SumRegion(1, 2, 2, 4))
+	obj.SumRegion(2, 1, 4, 3)
+	obj.SumRegion(1, 1, 2, 2)
+	obj.SumRegion(1, 2, 2, 4)
 }

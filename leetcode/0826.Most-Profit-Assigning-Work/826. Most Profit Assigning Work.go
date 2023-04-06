@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -41,12 +40,12 @@ func maxProfitAssignment(difficulty []int, profit []int, worker []int) int {
 	for i := 1; i < len(tasks); i++ {
 		tasks[i].Profit = max(tasks[i].Profit, tasks[i-1].Profit)
 	}
-	fmt.Printf("tasks = %v worker = %v\n", tasks, worker)
+
 	for _, w := range worker {
 		for index < len(difficulty) && w >= tasks[index].Difficulty {
 			index++
 		}
-		fmt.Printf("tasks【index】 = %v\n", tasks[index])
+
 		if index > 0 {
 			res += tasks[index-1].Profit
 		}

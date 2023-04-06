@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,9 +42,9 @@ func Benchmark_Problem88(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans88, q.para88
-				fmt.Printf("【intput】:%v,%v,%v,%v       ", p.one, p.m, p.two, p.n)
+
 				merge(p.one, p.m, p.two, p.n)
-				fmt.Printf("【output】:%v\n", p)
+
 			}
 		}
 	}

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -9,11 +8,11 @@ func Benchmark_Problem676(b *testing.B) {
 	dict := []string{"hello", "leetcode"}
 	obj := Constructor676()
 	obj.BuildDict(dict)
-	fmt.Printf("obj = %v\n", obj)
-	fmt.Println(obj.Search("hello"))
-	fmt.Println(obj.Search("apple"))
-	fmt.Println(obj.Search("leetcode"))
-	fmt.Println(obj.Search("leetcoded"))
-	fmt.Println(obj.Search("hhllo"))
-	fmt.Println(obj.Search("hell"))
+
+	obj.Search("hello")
+	obj.Search("apple")
+	obj.Search("leetcode")
+	obj.Search("leetcoded")
+	obj.Search("hhllo")
+	obj.Search("hell")
 }

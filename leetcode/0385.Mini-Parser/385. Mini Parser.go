@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -70,15 +69,15 @@ func (n NestedInteger) Print() {
 	if len(n.List) != 0 {
 		for _, v := range n.List {
 			if len(v.List) != 0 {
-				v.Print()
+
 				return
 			}
-			fmt.Printf("%v ", v.Num)
+
 		}
 	} else {
-		fmt.Printf("%v ", n.Num)
+
 	}
-	fmt.Printf("\n")
+
 }
 
 func deserialize(s string) *NestedInteger {
