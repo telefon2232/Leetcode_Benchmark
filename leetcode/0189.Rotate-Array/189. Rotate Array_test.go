@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -38,12 +37,14 @@ func Benchmark_Problem189(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans189, q.para189
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans189, q.para189
-		fmt.Printf("【input】:%v       ", p)
-		rotate(p.nums, p.k)
-		fmt.Printf("【output】:%v\n", p.nums)
+				rotate(p.nums, p.k)
+
+			}
+		}
 	}
-}}}
+}

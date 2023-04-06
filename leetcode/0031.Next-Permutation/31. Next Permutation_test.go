@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,11 +46,14 @@ func Benchmark_Problem31(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans31, q.para31
-		fmt.Printf("【input】:%v       ", p)
-		nextPermutation(p.nums)
-		fmt.Printf("【output】:%v\n", p.nums)
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans31, q.para31
+
+				nextPermutation(p.nums)
+
+			}
+		}
 	}
-}}}
+}
