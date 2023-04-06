@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,7 +35,7 @@ func Benchmark_Problem966(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans966, q.para966
-				fmt.Printf("【input】:%v       【output】:%#v\n", p, spellchecker(p.wordlist, p.queries))
+				(spellchecker(p.wordlist, p.queries))
 			}
 		}
 	}

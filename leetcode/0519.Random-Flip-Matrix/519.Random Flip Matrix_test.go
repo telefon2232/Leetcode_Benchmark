@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -39,12 +38,12 @@ func Benchmark_Problem519(b *testing.B) {
 				for _, v := range p.para {
 					if v == "Solution" {
 						sol = Constructor(q.val[0][0], q.val[0][1])
-						fmt.Printf("【input】:%v    【output】:%v\n", v, nil)
+
 					} else if v == "flip" {
-						fmt.Printf("【input】:%v    【output】:%v\n", v, sol.Flip())
+						sol.Flip()
 					} else {
 						sol.Reset()
-						fmt.Printf("【input】:%v    【output】:%v\n", v, nil)
+
 					}
 				}
 			}

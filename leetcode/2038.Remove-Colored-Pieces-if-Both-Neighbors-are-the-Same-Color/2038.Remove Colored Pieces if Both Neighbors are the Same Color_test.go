@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -44,7 +43,7 @@ func Benchmark_Problem2038(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans2038, q.para2038
-				fmt.Printf("【input】:%v      ", p.colors)
+
 				(winnerOfGame(p.colors))
 			}
 		}

@@ -221,7 +221,7 @@ func Tree2ints(tn *TreeNode) []int {
 
 // T2s converts *TreeNode to []int
 func T2s(head *TreeNode, array *[]int) {
-	fmt.Printf("运行到这里了 head = %v array = %v\n", head, array)
+
 	// fmt.Printf("****array = %v\n", array)
 	// fmt.Printf("****head = %v\n", head.Val)
 	*array = append(*array, head.Val)

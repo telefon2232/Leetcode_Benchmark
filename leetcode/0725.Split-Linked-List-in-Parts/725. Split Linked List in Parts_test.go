@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -76,7 +75,7 @@ func Benchmark_Problem725(b *testing.B) {
 				_, p := q.ans725, q.para725
 				res := splitListToParts(structures.Ints2List(p.one), p.n)
 				for _, value := range res {
-					fmt.Printf("【input】:%v    length:%v   【output】:%v\n", p, len(res), structures.List2Ints(value))
+					(structures.List2Ints(value))
 				}
 			}
 		}

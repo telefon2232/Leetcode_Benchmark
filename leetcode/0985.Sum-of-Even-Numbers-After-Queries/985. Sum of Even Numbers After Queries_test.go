@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -37,7 +36,7 @@ func Benchmark_Problem985(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans985, q.para985
-				fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, sumEvenAfterQueries(p.A, p.queries))
+				(sumEvenAfterQueries(p.A, p.queries))
 			}
 		}
 	}

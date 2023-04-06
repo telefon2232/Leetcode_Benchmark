@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -57,7 +56,7 @@ func Benchmark_Problem980(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans980, q.para980
-				fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, uniquePathsIII(p.grid))
+				(uniquePathsIII(p.grid))
 			}
 		}
 	}

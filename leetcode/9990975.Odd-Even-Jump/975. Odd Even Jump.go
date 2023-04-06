@@ -1,9 +1,5 @@
 package leetcode
 
-import (
-	"fmt"
-)
-
 func oddEvenJumps(A []int) int {
 	oddJumpMap, evenJumpMap, current, res := map[int]int{}, map[int]int{}, 0, 0
 	for i := 0; i < len(A); i++ {
@@ -40,7 +36,7 @@ func oddEvenJumps(A []int) int {
 			}
 		}
 	}
-	fmt.Printf("oddJumpMap = %v evenJumpMap = %v\n", oddJumpMap, evenJumpMap)
+
 	for i := 0; i < len(A); i++ {
 		count := 1
 		current = i

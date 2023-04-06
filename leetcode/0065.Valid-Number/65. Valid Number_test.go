@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -34,6 +33,6 @@ func Benchmark_Problem65(b *testing.B) {
 	}
 
 	for _, tc := range tcs {
-		fmt.Printf("【input】:%v       【output】:%v\n", tc, isNumber(tc.s))
+		(isNumber(tc.s))
 	}
 }

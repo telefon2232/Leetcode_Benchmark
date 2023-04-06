@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,10 +51,9 @@ func Benchmark_Problem2043(b *testing.B) {
 						isSuccess := b.Deposit(int(p.para[i][0]), p.para[i][1])
 						res = append(res, isSuccess)
 					} else {
-						fmt.Println("unknown operation")
+
 					}
 				}
-				fmt.Printf("【input】:%v      \n", p)
 
 			}
 		}

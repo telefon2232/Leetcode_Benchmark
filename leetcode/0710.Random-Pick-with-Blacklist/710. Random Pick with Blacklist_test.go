@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -58,13 +57,13 @@ func Benchmark_Problem710(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans710, q.para710
-				fmt.Printf("【input】: n = %v blacklist = %v pick times = %v  ", p.n, p.blackList, p.times)
+
 				obj := Constructor710(p.n, p.blackList)
-				fmt.Printf("【output】:")
+
 				for i := 0; i < p.times; i++ {
-					fmt.Printf(" %v ,", obj.Pick())
+					(obj.Pick())
 				}
-				fmt.Printf("\n")
+
 			}
 		}
 	}

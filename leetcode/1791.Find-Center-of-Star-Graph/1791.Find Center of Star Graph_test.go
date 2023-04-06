@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -39,7 +38,7 @@ func Benchmark_Problem1791(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans1791, q.para1791
-				fmt.Printf("【input】:%v      ", p.edges)
+
 				(findCenter(p.edges))
 			}
 		}

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -67,7 +66,7 @@ func Benchmark_Problem1609(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans1609, q.para1609
-				fmt.Printf("【input】:%v    【output】:%v\n", p.root, isEvenOddTree(p.root))
+				(isEvenOddTree(p.root))
 			}
 		}
 	}

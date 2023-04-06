@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -39,7 +38,7 @@ func Benchmark_Problem400(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans400, q.para400
-				fmt.Printf("【input】:%v    【output】:%v\n", p.n, findNthDigit(p.n))
+				(findNthDigit(p.n))
 			}
 		}
 	}

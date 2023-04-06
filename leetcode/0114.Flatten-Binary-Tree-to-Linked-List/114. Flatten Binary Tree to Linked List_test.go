@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -48,11 +47,11 @@ func Benchmark_Problem114(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans114, q.para114
-				fmt.Printf("【input】:%v       \n", p)
+
 				rootOne := structures.Strings2TreeNode(p.one)
 				flatten(rootOne)
-				fmt.Printf("【levelorder output】:%v       \n", structures.Tree2LevelOrderStrings(rootOne))
-				fmt.Printf("【preorder output】:%v      \n", structures.Tree2PreOrderStrings(rootOne))
+				(structures.Tree2LevelOrderStrings(rootOne))
+				(structures.Tree2PreOrderStrings(rootOne))
 			}
 		}
 	}

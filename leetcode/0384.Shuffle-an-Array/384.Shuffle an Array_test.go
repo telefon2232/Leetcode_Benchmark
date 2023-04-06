@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -40,9 +39,9 @@ func Benchmark_Problem384(b *testing.B) {
 					if op == "Solution" {
 						sol = Constructor(q.value[0])
 					} else if op == "reset" {
-						fmt.Printf("【input】:%v    【output】:%v\n", op, sol.Reset())
+						(sol.Reset())
 					} else {
-						fmt.Printf("【input】:%v    【output】:%v\n", op, sol.Shuffle())
+						(sol.Shuffle())
 					}
 				}
 			}

@@ -42,7 +42,8 @@ func Benchmark_Problem419(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans419, q.para419
-				fmt.Printf("【input】:%v       【output】:%v\n", bytesArrayToStringArray(p.one), countBattleships(p.one))
+				bytesArrayToStringArray(p.one)
+				countBattleships(p.one)
 			}
 
 		}

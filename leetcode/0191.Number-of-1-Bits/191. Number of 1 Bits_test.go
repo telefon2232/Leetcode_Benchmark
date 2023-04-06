@@ -43,7 +43,7 @@ func Benchmark_Problem191(b *testing.B) {
 				_, p := q.ans191, q.para191
 				input := strconv.FormatUint(uint64(p.one), 2) // 32位无符号整数转换为二进制字符串
 				input = fmt.Sprintf("%0*v", 32, input)        // 格式化输出32位,保留前置0
-				fmt.Printf("【input】:%v       【output】:%v\n", input, hammingWeight(p.one))
+				(hammingWeight(p.one))
 			}
 		}
 	}

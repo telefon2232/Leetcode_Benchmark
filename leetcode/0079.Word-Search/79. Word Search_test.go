@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -99,7 +98,7 @@ func Benchmark_Problem79(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans79, q.para79
-				fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, exist(p.b, p.word))
+				(exist(p.b, p.word))
 			}
 		}
 	}

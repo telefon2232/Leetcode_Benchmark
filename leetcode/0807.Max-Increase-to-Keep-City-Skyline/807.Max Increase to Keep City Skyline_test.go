@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -39,7 +38,7 @@ func Benchmark_Problem807(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans807, q.para807
-				fmt.Printf("【input】:%v    【output】:%v\n", p.grid, maxIncreaseKeepingSkyline(p.grid))
+				(maxIncreaseKeepingSkyline(p.grid))
 			}
 		}
 	}
