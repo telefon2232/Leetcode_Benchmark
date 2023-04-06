@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -43,10 +42,12 @@ func Benchmark_Problem1034(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1034, q.para1034
-		fmt.Printf("【input】:%v    【output】:%v\n", p, colorBorder(p.grid, p.row, p.col, p.color))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1034, q.para1034
+				(colorBorder(p.grid, p.row, p.col, p.color))
+			}
+		}
 	}
-}}}
+}

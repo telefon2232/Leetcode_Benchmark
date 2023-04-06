@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -46,10 +45,12 @@ func Benchmark_Problem859(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans859, q.para859
-		fmt.Printf("【input】:%v    【output】:%v\n", p, buddyStrings(p.s, p.goal))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans859, q.para859
+				(buddyStrings(p.s, p.goal))
+			}
+		}
 	}
-}}}
+}

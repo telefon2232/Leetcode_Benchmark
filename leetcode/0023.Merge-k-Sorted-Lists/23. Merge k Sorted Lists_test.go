@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -91,13 +90,15 @@ func Benchmark_Problem23(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		var ls []*ListNode
-		for _, qq := range q.para23.one {
-			ls = append(ls, structures.Ints2List(qq))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				var ls []*ListNode
+				for _, qq := range q.para23.one {
+					ls = append(ls, structures.Ints2List(qq))
+				}
+				(structures.List2Ints(mergeKLists(ls)))
+			}
 		}
-		fmt.Printf("【input】:%v       【output】:%v\n", q.para23.one, structures.List2Ints(mergeKLists(ls)))
 	}
-}}}
+}

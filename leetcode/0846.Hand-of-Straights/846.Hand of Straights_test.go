@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,10 +35,12 @@ func Benchmark_Problem846(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans846, q.para846
-		fmt.Printf("【input】:%v    【output】:%v\n", p, isNStraightHand(p.hand, p.groupSize))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans846, q.para846
+				(isNStraightHand(p.hand, p.groupSize))
+			}
+		}
 	}
-}}}
+}

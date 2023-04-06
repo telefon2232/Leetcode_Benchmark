@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -41,10 +40,12 @@ func Benchmark_Problem1296(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1296, q.para1296
-		fmt.Printf("【input】:%v    【output】:%v\n", p, isPossibleDivide(p.nums, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1296, q.para1296
+				(isPossibleDivide(p.nums, p.k))
+			}
+		}
 	}
-}}}
+}
