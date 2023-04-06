@@ -36,9 +36,12 @@ func Benchmark_Problem820(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans820, q.para820
-		(minimumLengthEncoding(p.words))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans820, q.para820
+				(minimumLengthEncoding(p.words))
+			}
+		}
 	}
-}}}
+}

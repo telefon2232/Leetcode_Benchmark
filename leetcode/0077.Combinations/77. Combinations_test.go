@@ -32,9 +32,12 @@ func Benchmark_Problem77(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans77, q.para77
-		(combine(p.n, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans77, q.para77
+				(combine(p.n, p.k))
+			}
+		}
 	}
-}}}
+}

@@ -42,9 +42,12 @@ func Benchmark_Problem1028(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1028, q.para1028
-		(structures.Tree2ints(recoverFromPreorder(p.one)))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1028, q.para1028
+				(structures.Tree2ints(recoverFromPreorder(p.one)))
+			}
+		}
 	}
-}}}
+}

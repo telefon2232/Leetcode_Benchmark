@@ -46,9 +46,12 @@ func Benchmark_Problem699(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans699, q.para699
-		(fallingSquares(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans699, q.para699
+				(fallingSquares(p.one))
+			}
+		}
 	}
-}}}
+}

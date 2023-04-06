@@ -41,9 +41,12 @@ func Benchmark_Problem93(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans93, q.para93
-		(restoreIPAddresses(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans93, q.para93
+				(restoreIPAddresses(p.s))
+			}
+		}
 	}
-}}}
+}

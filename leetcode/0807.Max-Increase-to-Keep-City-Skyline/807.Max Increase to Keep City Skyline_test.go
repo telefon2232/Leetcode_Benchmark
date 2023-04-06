@@ -35,10 +35,12 @@ func Benchmark_Problem807(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans807, q.para807
-		fmt.Printf("【input】:%v    【output】:%v\n", p.grid, maxIncreaseKeepingSkyline(p.grid))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans807, q.para807
+				fmt.Printf("【input】:%v    【output】:%v\n", p.grid, maxIncreaseKeepingSkyline(p.grid))
+			}
+		}
 	}
-}}}
+}

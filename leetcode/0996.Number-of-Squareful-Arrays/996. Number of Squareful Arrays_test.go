@@ -46,9 +46,12 @@ func Benchmark_Problem996(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans996, q.para996
-		(numSquarefulPerms(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans996, q.para996
+				(numSquarefulPerms(p.one))
+			}
+		}
 	}
-}}}
+}

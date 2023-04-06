@@ -37,9 +37,12 @@ func Benchmark_Problem40(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans40, q.para40
-		(combinationSum2(p.n, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans40, q.para40
+				(combinationSum2(p.n, p.k))
+			}
+		}
 	}
-}}}
+}

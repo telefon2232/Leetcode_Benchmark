@@ -41,9 +41,12 @@ func Benchmark_Problem885(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans885, q.para885
-		(spiralMatrixIII(p.R, p.C, p.r0, p.c0))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans885, q.para885
+				(spiralMatrixIII(p.R, p.C, p.r0, p.c0))
+			}
+		}
 	}
-}}}
+}

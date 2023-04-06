@@ -43,9 +43,12 @@ func Benchmark_Problem327(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans327, q.para327
-		(countRangeSum(p.nums, p.lower, p.upper))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans327, q.para327
+				(countRangeSum(p.nums, p.lower, p.upper))
+			}
+		}
 	}
-}}}
+}

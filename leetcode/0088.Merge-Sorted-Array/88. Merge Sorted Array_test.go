@@ -39,11 +39,14 @@ func Benchmark_Problem88(b *testing.B) {
 			ans88{[]int{1, 2, 2, 3, 5, 6}},
 		},
 	}
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans88, q.para88
-		fmt.Printf("【intput】:%v,%v,%v,%v       ", p.one, p.m, p.two, p.n)
-		merge(p.one, p.m, p.two, p.n)
-		fmt.Printf("【output】:%v\n", p)
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans88, q.para88
+				fmt.Printf("【intput】:%v,%v,%v,%v       ", p.one, p.m, p.two, p.n)
+				merge(p.one, p.m, p.two, p.n)
+				fmt.Printf("【output】:%v\n", p)
+			}
+		}
 	}
-}}}
+}

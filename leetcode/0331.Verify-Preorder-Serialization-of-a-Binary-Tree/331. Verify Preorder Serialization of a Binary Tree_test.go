@@ -41,9 +41,12 @@ func Benchmark_Problem331(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans331, q.para331
-		(isValidSerialization(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans331, q.para331
+				(isValidSerialization(p.one))
+			}
+		}
 	}
-}}}
+}

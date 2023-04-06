@@ -57,9 +57,12 @@ func Benchmark_Problem605(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans605, q.para605
-		(canPlaceFlowers(p.flowerbed, p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans605, q.para605
+				(canPlaceFlowers(p.flowerbed, p.n))
+			}
+		}
 	}
-}}}
+}

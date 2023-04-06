@@ -41,9 +41,12 @@ func Benchmark_Problem1175(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1175, q.para1175
-		(numPrimeArrangements(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1175, q.para1175
+				(numPrimeArrangements(p.one))
+			}
+		}
 	}
-}}}
+}

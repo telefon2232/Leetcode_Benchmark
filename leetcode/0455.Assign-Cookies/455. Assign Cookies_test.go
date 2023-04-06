@@ -37,9 +37,12 @@ func Benchmark_Problem455(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans455, q.para455
-		(findContentChildren(p.g, p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans455, q.para455
+				(findContentChildren(p.g, p.s))
+			}
+		}
 	}
-}}}
+}

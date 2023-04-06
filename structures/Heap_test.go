@@ -4,6 +4,8 @@ import (
 	"container/heap"
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func Benchmark_intHeap(b *testing.B) {

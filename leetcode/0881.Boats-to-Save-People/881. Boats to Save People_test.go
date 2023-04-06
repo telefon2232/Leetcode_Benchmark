@@ -52,9 +52,12 @@ func Benchmark_Problem881(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans881, q.para881
-		(numRescueBoats(p.s, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans881, q.para881
+				(numRescueBoats(p.s, p.k))
+			}
+		}
 	}
-}}}
+}

@@ -52,9 +52,12 @@ func Benchmark_Problem567(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans567, q.para567
-		(checkInclusion(p.s, p.p))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans567, q.para567
+				(checkInclusion(p.s, p.p))
+			}
+		}
 	}
-}}}
+}

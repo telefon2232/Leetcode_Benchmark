@@ -36,9 +36,12 @@ func Benchmark_Problem1217(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1217, q.para1217
-		(minCostToMoveChips(p.arr))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1217, q.para1217
+				(minCostToMoveChips(p.arr))
+			}
+		}
 	}
-}}}
+}

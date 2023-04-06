@@ -41,9 +41,12 @@ func Benchmark_Problem975(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans975, q.para975
-		(oddEvenJumps(p.A))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans975, q.para975
+				(oddEvenJumps(p.A))
+			}
+		}
 	}
-}}}
+}

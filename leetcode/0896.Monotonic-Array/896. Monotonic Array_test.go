@@ -56,9 +56,12 @@ func Benchmark_Problem896(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans896, q.para896
-		(isMonotonic(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans896, q.para896
+				(isMonotonic(p.one))
+			}
+		}
 	}
-}}}
+}

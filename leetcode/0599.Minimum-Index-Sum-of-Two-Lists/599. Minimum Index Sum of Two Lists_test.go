@@ -37,9 +37,12 @@ func Benchmark_Problem599(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans599, q.para599
-		(findRestaurant(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans599, q.para599
+				(findRestaurant(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

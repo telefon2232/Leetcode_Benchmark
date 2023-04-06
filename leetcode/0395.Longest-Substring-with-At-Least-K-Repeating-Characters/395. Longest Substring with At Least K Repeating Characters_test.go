@@ -37,9 +37,12 @@ func Benchmark_Problem395(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans395, q.para395
-		(longestSubstring(p.s, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans395, q.para395
+				(longestSubstring(p.s, p.k))
+			}
+		}
 	}
-}}}
+}

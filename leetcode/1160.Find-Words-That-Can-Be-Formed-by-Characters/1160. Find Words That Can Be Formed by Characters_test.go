@@ -37,9 +37,12 @@ func Benchmark_Problem1160(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1160, q.para1160
-		(countCharacters(p.words, p.chars))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1160, q.para1160
+				(countCharacters(p.words, p.chars))
+			}
+		}
 	}
-}}}
+}

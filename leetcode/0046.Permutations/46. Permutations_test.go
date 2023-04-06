@@ -31,9 +31,12 @@ func Benchmark_Problem46(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans46, q.para46
-		(permute(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans46, q.para46
+				(permute(p.s))
+			}
+		}
 	}
-}}}
+}

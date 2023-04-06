@@ -32,9 +32,12 @@ func Benchmark_Problem410(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans410, q.para410
-		(splitArray(p.nums, p.m))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans410, q.para410
+				(splitArray(p.nums, p.m))
+			}
+		}
 	}
-}}}
+}

@@ -35,9 +35,12 @@ func Benchmark_Problem1044(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1044, q.para1044
-		(longestDupSubstring(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1044, q.para1044
+				(longestDupSubstring(p.one))
+			}
+		}
 	}
-}}}
+}

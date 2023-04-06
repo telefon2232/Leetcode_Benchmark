@@ -69,9 +69,12 @@ func Benchmark_Problem203(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans203, q.para203
-		(structures.List2Ints(removeElements(structures.Ints2List(p.one), p.n)))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans203, q.para203
+				(structures.List2Ints(removeElements(structures.Ints2List(p.one), p.n)))
+			}
+		}
 	}
-}}}
+}

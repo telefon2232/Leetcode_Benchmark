@@ -41,9 +41,12 @@ func Benchmark_Problem862(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans862, q.para862
-		(shortestSubarray(p.A, p.K))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans862, q.para862
+				(shortestSubarray(p.A, p.K))
+			}
+		}
 	}
-}}}
+}

@@ -51,9 +51,12 @@ func Benchmark_Problem918(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans918, q.para918
-		(maxSubarraySumCircular(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans918, q.para918
+				(maxSubarraySumCircular(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -36,9 +36,12 @@ func Benchmark_Problem1689(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1689, q.para1689
-		(minPartitions(p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1689, q.para1689
+				(minPartitions(p.n))
+			}
+		}
 	}
-}}}
+}

@@ -36,9 +36,12 @@ func Benchmark_Problem1695(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1695, q.para1695
-		(maximumUniqueSubarray(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1695, q.para1695
+				(maximumUniqueSubarray(p.nums))
+			}
+		}
 	}
-}}}
+}

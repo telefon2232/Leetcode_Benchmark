@@ -58,9 +58,12 @@ func Benchmark_Problem349(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans349, q.para349
-		(intersection(p.one, p.another))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans349, q.para349
+				(intersection(p.one, p.another))
+			}
+		}
 	}
-}}}
+}

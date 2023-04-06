@@ -36,9 +36,12 @@ func Benchmark_Problem1093(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1093, q.para1093
-		(sampleStats(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1093, q.para1093
+				(sampleStats(p.one))
+			}
+		}
 	}
-}}}
+}

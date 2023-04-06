@@ -42,9 +42,12 @@ func Benchmark_Problem6(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans6, q.para6
-		(convert(p.s, p.numRows))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans6, q.para6
+				(convert(p.s, p.numRows))
+			}
+		}
 	}
-}}}
+}

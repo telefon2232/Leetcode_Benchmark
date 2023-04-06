@@ -41,9 +41,12 @@ func Benchmark_Problem1009(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1009, q.para1009
-		(bitwiseComplement(p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1009, q.para1009
+				(bitwiseComplement(p.n))
+			}
+		}
 	}
-}}}
+}

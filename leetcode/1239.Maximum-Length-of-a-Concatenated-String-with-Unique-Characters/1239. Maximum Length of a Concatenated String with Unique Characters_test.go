@@ -41,9 +41,12 @@ func Benchmark_Problem1239(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1239, q.para1239
-		(maxLength(p.arr))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1239, q.para1239
+				(maxLength(p.arr))
+			}
+		}
 	}
-}}}
+}

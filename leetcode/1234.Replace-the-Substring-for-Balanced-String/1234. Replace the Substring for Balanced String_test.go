@@ -51,9 +51,12 @@ func Benchmark_Problem1234(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1234, q.para1234
-		(balancedString(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1234, q.para1234
+				(balancedString(p.s))
+			}
+		}
 	}
-}}}
+}

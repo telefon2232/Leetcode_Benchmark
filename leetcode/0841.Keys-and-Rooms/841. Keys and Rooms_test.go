@@ -36,9 +36,12 @@ func Benchmark_Problem841(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans841, q.para841
-		(canVisitAllRooms(p.rooms))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans841, q.para841
+				(canVisitAllRooms(p.rooms))
+			}
+		}
 	}
-}}}
+}

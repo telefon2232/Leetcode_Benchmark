@@ -37,9 +37,12 @@ func Benchmark_Problem984(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans984, q.para984
-		(strWithout3a3b(p.a, p.b))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans984, q.para984
+				(strWithout3a3b(p.a, p.b))
+			}
+		}
 	}
-}}}
+}

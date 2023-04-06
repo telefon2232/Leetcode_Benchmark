@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -60,13 +59,15 @@ func Benchmark_Problem100(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans100, q.para100
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans100, q.para100
-		fmt.Printf("【input】:%v      ", p)
-		rootOne := structures.Ints2TreeNode(p.one)
-		rootTwo := structures.Ints2TreeNode(p.two)
-		fmt.Printf("【output】:%v      \n", isSameTree(rootOne, rootTwo))
+				rootOne := structures.Ints2TreeNode(p.one)
+				rootTwo := structures.Ints2TreeNode(p.two)
+				(isSameTree(rootOne, rootTwo))
+			}
+		}
 	}
-}}}
+}

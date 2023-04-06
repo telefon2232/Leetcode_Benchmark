@@ -41,9 +41,12 @@ func Benchmark_Problem581(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans581, q.para581
-		(findUnsortedSubarray(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans581, q.para581
+				(findUnsortedSubarray(p.nums))
+			}
+		}
 	}
-}}}
+}

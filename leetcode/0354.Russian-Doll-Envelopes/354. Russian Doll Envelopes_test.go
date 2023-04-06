@@ -31,9 +31,12 @@ func Benchmark_Problem354(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans354, q.para354
-		(maxEnvelopes(p.envelopes))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans354, q.para354
+				(maxEnvelopes(p.envelopes))
+			}
+		}
 	}
-}}}
+}

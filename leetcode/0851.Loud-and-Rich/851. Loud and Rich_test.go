@@ -32,9 +32,12 @@ func Benchmark_Problem851(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans851, q.para851
-		(loudAndRich(p.richer, p.quiet))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans851, q.para851
+				(loudAndRich(p.richer, p.quiet))
+			}
+		}
 	}
-}}}
+}

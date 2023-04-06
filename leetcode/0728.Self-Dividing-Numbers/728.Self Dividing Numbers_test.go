@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -36,11 +35,13 @@ func Benchmark_Problem728(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans728, q.para728
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans728, q.para728
-		fmt.Printf("【input】:%v      ", p)
-		fmt.Printf("【output】:%v      \n", selfDividingNumbers(p.left, p.right))
+				(selfDividingNumbers(p.left, p.right))
+			}
+		}
 	}
-}}}
+}

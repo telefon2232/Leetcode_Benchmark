@@ -31,9 +31,12 @@ func Benchmark_Problem739(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans739, q.para739
-		(dailyTemperatures(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans739, q.para739
+				(dailyTemperatures(p.s))
+			}
+		}
 	}
-}}}
+}

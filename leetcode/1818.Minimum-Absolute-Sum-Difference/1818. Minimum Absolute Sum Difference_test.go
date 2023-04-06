@@ -42,9 +42,12 @@ func Benchmark_Problem1818(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1818, q.para1818
-		(minAbsoluteSumDiff(p.nums1, p.nums2))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1818, q.para1818
+				(minAbsoluteSumDiff(p.nums1, p.nums2))
+			}
+		}
 	}
-}}}
+}

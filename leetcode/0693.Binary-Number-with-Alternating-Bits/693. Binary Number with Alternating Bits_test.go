@@ -46,9 +46,12 @@ func Benchmark_Problem693(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans693, q.para693
-		(hasAlternatingBits(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans693, q.para693
+				(hasAlternatingBits(p.one))
+			}
+		}
 	}
-}}}
+}

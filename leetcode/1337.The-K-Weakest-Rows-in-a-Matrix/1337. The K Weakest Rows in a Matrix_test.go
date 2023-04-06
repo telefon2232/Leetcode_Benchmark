@@ -37,9 +37,12 @@ func Benchmark_Problem1337(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1337, q.para1337
-		(kWeakestRows(p.mat, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1337, q.para1337
+				(kWeakestRows(p.mat, p.k))
+			}
+		}
 	}
-}}}
+}

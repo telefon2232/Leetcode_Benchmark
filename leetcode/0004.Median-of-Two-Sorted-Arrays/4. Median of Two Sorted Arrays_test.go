@@ -37,9 +37,12 @@ func Benchmark_Problem4(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans4, q.para4
-		(findMedianSortedArrays(p.nums1, p.nums2))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans4, q.para4
+				(findMedianSortedArrays(p.nums1, p.nums2))
+			}
+		}
 	}
-}}}
+}

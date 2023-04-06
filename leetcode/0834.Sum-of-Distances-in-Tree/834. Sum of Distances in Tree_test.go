@@ -37,9 +37,12 @@ func Benchmark_Problem834(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans834, q.para834
-		(sumOfDistancesInTree(p.N, p.edges))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans834, q.para834
+				(sumOfDistancesInTree(p.N, p.edges))
+			}
+		}
 	}
-}}}
+}

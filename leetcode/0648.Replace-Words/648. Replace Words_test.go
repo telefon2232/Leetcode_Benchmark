@@ -32,9 +32,12 @@ func Benchmark_Problem648(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans648, q.para648
-		(replaceWords(p.one, p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans648, q.para648
+				(replaceWords(p.one, p.s))
+			}
+		}
 	}
-}}}
+}

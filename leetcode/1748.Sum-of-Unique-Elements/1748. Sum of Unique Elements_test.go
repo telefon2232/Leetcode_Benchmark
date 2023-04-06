@@ -41,9 +41,12 @@ func Benchmark_Problem1748(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1748, q.para1748
-		(sumOfUnique(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1748, q.para1748
+				(sumOfUnique(p.nums))
+			}
+		}
 	}
-}}}
+}

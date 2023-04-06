@@ -44,9 +44,12 @@ func Benchmark_Problem1030(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1030, q.para1030
-		(allCellsDistOrder(p.R, p.C, p.r0, p.c0))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1030, q.para1030
+				(allCellsDistOrder(p.R, p.C, p.r0, p.c0))
+			}
+		}
 	}
-}}}
+}

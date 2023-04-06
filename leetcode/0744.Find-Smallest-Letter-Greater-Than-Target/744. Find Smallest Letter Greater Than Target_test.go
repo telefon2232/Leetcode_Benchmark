@@ -57,9 +57,12 @@ func Benchmark_Problem744(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans744, q.para744
-		(nextGreatestLetter(p.letters, p.target))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans744, q.para744
+				(nextGreatestLetter(p.letters, p.target))
+			}
+		}
 	}
-}}}
+}

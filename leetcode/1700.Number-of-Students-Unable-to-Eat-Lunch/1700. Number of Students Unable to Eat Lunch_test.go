@@ -37,9 +37,12 @@ func Benchmark_Problem1700(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1700, q.para1700
-		(countStudents(p.students, p.sandwiches))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1700, q.para1700
+				(countStudents(p.students, p.sandwiches))
+			}
+		}
 	}
-}}}
+}

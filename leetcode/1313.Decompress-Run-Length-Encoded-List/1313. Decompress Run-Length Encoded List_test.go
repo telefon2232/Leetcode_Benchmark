@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -42,11 +41,13 @@ func Benchmark_Problem1313(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1313, q.para1313
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1313, q.para1313
-		fmt.Printf("【input】:%v      ", p)
-		fmt.Printf("【output】:%v      \n", decompressRLElist(p.nums))
+				(decompressRLElist(p.nums))
+			}
+		}
 	}
-}}}
+}

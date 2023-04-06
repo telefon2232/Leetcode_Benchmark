@@ -37,9 +37,12 @@ func Benchmark_Problem910(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans910, q.para910
-		(smallestRangeII(p.A, p.K))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans910, q.para910
+				(smallestRangeII(p.A, p.K))
+			}
+		}
 	}
-}}}
+}

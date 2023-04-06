@@ -44,14 +44,16 @@ func Benchmark_Problem114(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans114, q.para114
-		fmt.Printf("【input】:%v       \n", p)
-		rootOne := structures.Strings2TreeNode(p.one)
-		flatten(rootOne)
-		fmt.Printf("【levelorder output】:%v       \n", structures.Tree2LevelOrderStrings(rootOne))
-		fmt.Printf("【preorder output】:%v      \n", structures.Tree2PreOrderStrings(rootOne))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans114, q.para114
+				fmt.Printf("【input】:%v       \n", p)
+				rootOne := structures.Strings2TreeNode(p.one)
+				flatten(rootOne)
+				fmt.Printf("【levelorder output】:%v       \n", structures.Tree2LevelOrderStrings(rootOne))
+				fmt.Printf("【preorder output】:%v      \n", structures.Tree2PreOrderStrings(rootOne))
+			}
+		}
 	}
-}}}
+}

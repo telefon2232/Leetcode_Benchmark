@@ -33,29 +33,31 @@ func Benchmark_Problem2043(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				var b Bank
+				var res []bool
+				_, p := q.ans2043, q.para2043
+				for i, op := range p.ops {
+					if op == "Bank" {
+						b = Constructor(q.para[i])
+					} else if op == "withdraw" {
+						isSuccess := b.Withdraw(int(p.para[i][0]), p.para[i][1])
+						res = append(res, isSuccess)
+					} else if op == "transfer" {
+						isSuccess := b.Transfer(int(p.para[i][0]), int(p.para[i][0]), p.para[i][2])
+						res = append(res, isSuccess)
+					} else if op == "deposit" {
+						isSuccess := b.Deposit(int(p.para[i][0]), p.para[i][1])
+						res = append(res, isSuccess)
+					} else {
+						fmt.Println("unknown operation")
+					}
+				}
+				fmt.Printf("【input】:%v      \n", p)
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		var b Bank
-		var res []bool
-		_, p := q.ans2043, q.para2043
-		for i, op := range p.ops {
-			if op == "Bank" {
-				b = Constructor(q.para[i])
-			} else if op == "withdraw" {
-				isSuccess := b.Withdraw(int(p.para[i][0]), p.para[i][1])
-				res = append(res, isSuccess)
-			} else if op == "transfer" {
-				isSuccess := b.Transfer(int(p.para[i][0]), int(p.para[i][0]), p.para[i][2])
-				res = append(res, isSuccess)
-			} else if op == "deposit" {
-				isSuccess := b.Deposit(int(p.para[i][0]), p.para[i][1])
-				res = append(res, isSuccess)
-			} else {
-				fmt.Println("unknown operation")
 			}
 		}
-		fmt.Printf("【input】:%v      \n", p)
-		fmt.Printf("【output】:%v      \n", res)
 	}
-}}}
+}

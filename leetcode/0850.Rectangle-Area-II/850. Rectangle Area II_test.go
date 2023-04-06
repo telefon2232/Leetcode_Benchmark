@@ -46,9 +46,12 @@ func Benchmark_Problem850(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans850, q.para850
-		(rectangleArea(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans850, q.para850
+				(rectangleArea(p.one))
+			}
+		}
 	}
-}}}
+}

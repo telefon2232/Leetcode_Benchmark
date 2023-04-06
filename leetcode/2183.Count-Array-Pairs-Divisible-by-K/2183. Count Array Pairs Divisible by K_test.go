@@ -37,9 +37,12 @@ func Benchmark_Problem2182(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans2182, q.para2182
-		(countPairs(p.nums, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans2182, q.para2182
+				(countPairs(p.nums, p.k))
+			}
+		}
 	}
-}}}
+}

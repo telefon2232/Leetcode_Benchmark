@@ -51,9 +51,12 @@ func Benchmark_Problem990(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans990, q.para990
-		(equationsPossible(p.a))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans990, q.para990
+				(equationsPossible(p.a))
+			}
+		}
 	}
-}}}
+}

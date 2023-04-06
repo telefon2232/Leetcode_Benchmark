@@ -36,9 +36,12 @@ func Benchmark_Problem609(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans609, q.para609
-		(findDuplicate(p.paths))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans609, q.para609
+				(findDuplicate(p.paths))
+			}
+		}
 	}
-}}}
+}

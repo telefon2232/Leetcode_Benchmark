@@ -47,9 +47,12 @@ func Benchmark_Problem1679(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1679, q.para1679
-		(maxOperations(p.nums, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1679, q.para1679
+				(maxOperations(p.nums, p.k))
+			}
+		}
 	}
-}}}
+}

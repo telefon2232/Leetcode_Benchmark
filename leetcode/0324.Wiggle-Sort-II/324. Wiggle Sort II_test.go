@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -52,12 +51,14 @@ func Benchmark_Problem324(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans324, q.para324
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans324, q.para324
-		fmt.Printf("【input】:%v      ", p)
-		wiggleSort(p.one)
-		fmt.Printf("【output】:%v      \n", p)
+				wiggleSort(p.one)
+
+			}
+		}
 	}
-}}}
+}

@@ -35,9 +35,12 @@ func Benchmark_Problem495(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans495, q.para495
-		(findPoisonedDuration(p.timeSeries, p.duration))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans495, q.para495
+				(findPoisonedDuration(p.timeSeries, p.duration))
+			}
+		}
 	}
-}}}
+}

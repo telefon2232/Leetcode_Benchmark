@@ -32,9 +32,12 @@ func Benchmark_Problem494(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans494, q.para494
-		(findTargetSumWays(p.nums, p.S))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans494, q.para494
+				(findTargetSumWays(p.nums, p.S))
+			}
+		}
 	}
-}}}
+}

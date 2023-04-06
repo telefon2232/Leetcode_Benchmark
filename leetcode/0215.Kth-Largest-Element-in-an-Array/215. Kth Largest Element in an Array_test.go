@@ -57,9 +57,12 @@ func Benchmark_Problem215(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans215, q.para215
-		(findKthLargest(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans215, q.para215
+				(findKthLargest(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

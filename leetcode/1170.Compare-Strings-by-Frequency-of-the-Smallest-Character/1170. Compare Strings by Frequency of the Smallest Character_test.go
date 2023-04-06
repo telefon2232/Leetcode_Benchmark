@@ -37,9 +37,12 @@ func Benchmark_Problem1170(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1170, q.para1170
-		(numSmallerByFrequency(p.queries, p.words))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1170, q.para1170
+				(numSmallerByFrequency(p.queries, p.words))
+			}
+		}
 	}
-}}}
+}

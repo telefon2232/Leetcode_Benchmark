@@ -46,9 +46,12 @@ func Benchmark_Problem1249(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1249, q.para1249
-		(minRemoveToMakeValid(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1249, q.para1249
+				(minRemoveToMakeValid(p.s))
+			}
+		}
 	}
-}}}
+}

@@ -48,9 +48,12 @@ func Benchmark_Problem1300(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1300, q.para1300
-		(findBestValue(p.arr, p.target))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1300, q.para1300
+				(findBestValue(p.arr, p.target))
+			}
+		}
 	}
-}}}
+}

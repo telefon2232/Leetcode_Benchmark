@@ -31,9 +31,12 @@ func Benchmark_Problem877(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans877, q.para877
-		(stoneGame(p.piles))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans877, q.para877
+				(stoneGame(p.piles))
+			}
+		}
 	}
-}}}
+}

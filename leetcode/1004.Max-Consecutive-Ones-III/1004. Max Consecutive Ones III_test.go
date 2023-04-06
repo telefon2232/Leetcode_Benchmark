@@ -42,9 +42,12 @@ func Benchmark_Problem1004(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1004, q.para1004
-		(longestOnes(p.s, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1004, q.para1004
+				(longestOnes(p.s, p.k))
+			}
+		}
 	}
-}}}
+}

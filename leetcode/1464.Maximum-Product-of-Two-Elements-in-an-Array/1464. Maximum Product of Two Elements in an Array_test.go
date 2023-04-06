@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,11 +46,13 @@ func Benchmark_Problem1464(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1464, q.para1464
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1464, q.para1464
-		fmt.Printf("【input】:%v      ", p)
-		fmt.Printf("【output】:%v      \n", maxProduct(p.nums))
+				(maxProduct(p.nums))
+			}
+		}
 	}
-}}}
+}

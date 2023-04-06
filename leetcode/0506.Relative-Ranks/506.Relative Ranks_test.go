@@ -35,10 +35,12 @@ func Benchmark_Problem506(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans506, q.para506
-		fmt.Printf("【input】:%v    【output】:%v\n", p.score, findRelativeRanks(p.score))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans506, q.para506
+				fmt.Printf("【input】:%v    【output】:%v\n", p.score, findRelativeRanks(p.score))
+			}
+		}
 	}
-}}}
+}

@@ -56,9 +56,12 @@ func Benchmark_Problem5(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans5, q.para5
-		(longestPalindrome(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans5, q.para5
+				(longestPalindrome(p.s))
+			}
+		}
 	}
-}}}
+}

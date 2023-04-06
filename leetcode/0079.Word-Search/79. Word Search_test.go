@@ -95,10 +95,12 @@ func Benchmark_Problem79(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans79, q.para79
-		fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, exist(p.b, p.word))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans79, q.para79
+				fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, exist(p.b, p.word))
+			}
+		}
 	}
-}}}
+}

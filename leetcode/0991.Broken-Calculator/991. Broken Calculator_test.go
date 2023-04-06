@@ -47,9 +47,12 @@ func Benchmark_Problem991(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans991, q.para991
-		(brokenCalc(p.X, p.Y))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans991, q.para991
+				(brokenCalc(p.X, p.Y))
+			}
+		}
 	}
-}}}
+}

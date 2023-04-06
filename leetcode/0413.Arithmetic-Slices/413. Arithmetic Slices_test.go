@@ -41,9 +41,12 @@ func Benchmark_Problem413(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans413, q.para413
-		(numberOfArithmeticSlices(p.A))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans413, q.para413
+				(numberOfArithmeticSlices(p.A))
+			}
+		}
 	}
-}}}
+}

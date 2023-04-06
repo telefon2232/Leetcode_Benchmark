@@ -41,9 +41,12 @@ func Benchmark_Problem709(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans709, q.para709
-		(toLowerCase(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans709, q.para709
+				(toLowerCase(p.one))
+			}
+		}
 	}
-}}}
+}

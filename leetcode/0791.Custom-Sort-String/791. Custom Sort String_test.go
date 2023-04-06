@@ -32,9 +32,12 @@ func Benchmark_Problem791(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans791, q.para791
-		(customSortString(p.order, p.str))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans791, q.para791
+				(customSortString(p.order, p.str))
+			}
+		}
 	}
-}}}
+}

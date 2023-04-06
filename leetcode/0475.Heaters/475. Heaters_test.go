@@ -37,9 +37,12 @@ func Benchmark_Problem475(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans475, q.para475
-		(findRadius(p.houses, p.heaters))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans475, q.para475
+				(findRadius(p.houses, p.heaters))
+			}
+		}
 	}
-}}}
+}

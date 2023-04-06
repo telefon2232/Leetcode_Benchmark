@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -56,14 +55,16 @@ func Benchmark_Problem236(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans236, q.para236
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans236, q.para236
-		fmt.Printf("【input】:%v      ", p)
-		rootOne := structures.Ints2TreeNode(p.one)
-		rootTwo := structures.Ints2TreeNode(p.two)
-		rootThr := structures.Ints2TreeNode(p.thr)
-		fmt.Printf("【output】:%v      \n", lowestCommonAncestor236(rootOne, rootTwo, rootThr))
+				rootOne := structures.Ints2TreeNode(p.one)
+				rootTwo := structures.Ints2TreeNode(p.two)
+				rootThr := structures.Ints2TreeNode(p.thr)
+				(lowestCommonAncestor236(rootOne, rootTwo, rootThr))
+			}
+		}
 	}
-}}}
+}

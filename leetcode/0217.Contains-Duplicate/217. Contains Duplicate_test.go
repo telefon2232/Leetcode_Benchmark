@@ -41,9 +41,12 @@ func Benchmark_Problem217(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans217, q.para217
-		(containsDuplicate(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans217, q.para217
+				(containsDuplicate(p.one))
+			}
+		}
 	}
-}}}
+}

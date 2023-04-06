@@ -59,9 +59,12 @@ func Benchmark_Problem160(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans160, q.para160
-		(structures.List2Ints(getIntersectionNode(structures.Ints2List(p.one), structures.Ints2List(p.another))))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans160, q.para160
+				(structures.List2Ints(getIntersectionNode(structures.Ints2List(p.one), structures.Ints2List(p.another))))
+			}
+		}
 	}
-}}}
+}

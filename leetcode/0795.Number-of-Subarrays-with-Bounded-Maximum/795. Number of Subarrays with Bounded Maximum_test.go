@@ -33,9 +33,12 @@ func Benchmark_Problem795(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans795, q.para795
-		(numSubarrayBoundedMax(p.nums, p.left, p.right))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans795, q.para795
+				(numSubarrayBoundedMax(p.nums, p.left, p.right))
+			}
+		}
 	}
-}}}
+}

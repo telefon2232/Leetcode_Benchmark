@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -47,12 +46,14 @@ func Benchmark_Problem75(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans75, q.para75
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans75, q.para75
-		fmt.Printf("【input】:%v      ", p)
-		sortColors(p.one)
-		fmt.Printf("【output】:%v      \n", p)
+				sortColors(p.one)
+
+			}
+		}
 	}
-}}}
+}

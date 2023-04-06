@@ -41,9 +41,12 @@ func Benchmark_Problem231(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans231, q.para231
-		(isPowerOfTwo(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans231, q.para231
+				(isPowerOfTwo(p.one))
+			}
+		}
 	}
-}}}
+}

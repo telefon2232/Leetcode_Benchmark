@@ -36,9 +36,12 @@ func Benchmark_Problem59(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans59, q.para59
-		(generateMatrix(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans59, q.para59
+				(generateMatrix(p.one))
+			}
+		}
 	}
-}}}
+}

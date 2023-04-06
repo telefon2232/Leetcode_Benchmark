@@ -70,9 +70,12 @@ func Benchmark_Problem21(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans21, q.para21
-		(structures.List2Ints(mergeTwoLists(structures.Ints2List(p.one), structures.Ints2List(p.another))))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans21, q.para21
+				(structures.List2Ints(mergeTwoLists(structures.Ints2List(p.one), structures.Ints2List(p.another))))
+			}
+		}
 	}
-}}}
+}

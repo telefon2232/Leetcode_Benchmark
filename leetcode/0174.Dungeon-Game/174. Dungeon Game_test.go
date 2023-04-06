@@ -46,9 +46,12 @@ func Benchmark_Problem174(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans174, q.para174
-		(calculateMinimumHP1(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans174, q.para174
+				(calculateMinimumHP1(p.s))
+			}
+		}
 	}
-}}}
+}

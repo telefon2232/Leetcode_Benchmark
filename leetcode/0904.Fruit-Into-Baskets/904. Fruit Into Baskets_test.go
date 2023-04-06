@@ -65,9 +65,12 @@ func Benchmark_Problem904(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans904, q.para904
-		(totalFruit(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans904, q.para904
+				(totalFruit(p.one))
+			}
+		}
 	}
-}}}
+}

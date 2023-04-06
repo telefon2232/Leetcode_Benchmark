@@ -36,9 +36,12 @@ func Benchmark_Problem491(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans491, q.para491
-		(findSubsequences(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans491, q.para491
+				(findSubsequences(p.one))
+			}
+		}
 	}
-}}}
+}

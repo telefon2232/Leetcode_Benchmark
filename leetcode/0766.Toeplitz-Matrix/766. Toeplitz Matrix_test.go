@@ -36,9 +36,12 @@ func Benchmark_Problem766(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans766, q.para766
-		(isToeplitzMatrix(p.A))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans766, q.para766
+				(isToeplitzMatrix(p.A))
+			}
+		}
 	}
-}}}
+}

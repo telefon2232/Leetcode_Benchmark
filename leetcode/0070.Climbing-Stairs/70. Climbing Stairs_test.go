@@ -36,9 +36,12 @@ func Benchmark_Problem70(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans70, q.para70
-		(climbStairs(p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans70, q.para70
+				(climbStairs(p.n))
+			}
+		}
 	}
-}}}
+}

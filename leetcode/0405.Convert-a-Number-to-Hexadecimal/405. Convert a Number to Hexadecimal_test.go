@@ -36,9 +36,12 @@ func Benchmark_Problem405(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans405, q.para405
-		(toHex(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans405, q.para405
+				(toHex(p.one))
+			}
+		}
 	}
-}}}
+}

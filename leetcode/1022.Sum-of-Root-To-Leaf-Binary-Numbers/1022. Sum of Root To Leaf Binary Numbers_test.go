@@ -37,10 +37,13 @@ func Benchmark_Problem1022(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1022, q.para1022
-		root := structures.Ints2TreeNode(p.one)
-		(sumRootToLeaf(root))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1022, q.para1022
+				root := structures.Ints2TreeNode(p.one)
+				(sumRootToLeaf(root))
+			}
+		}
 	}
-}}}
+}

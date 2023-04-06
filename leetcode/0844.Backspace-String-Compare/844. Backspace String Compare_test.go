@@ -47,9 +47,12 @@ func Benchmark_Problem844(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans844, q.para844
-		(backspaceCompare(p.s, p.t))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans844, q.para844
+				(backspaceCompare(p.s, p.t))
+			}
+		}
 	}
-}}}
+}

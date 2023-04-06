@@ -31,9 +31,12 @@ func Benchmark_Problem500(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans500, q.para500
-		(findWords500(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans500, q.para500
+				(findWords500(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -63,10 +63,12 @@ func Benchmark_Problem1609(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1609, q.para1609
-		fmt.Printf("【input】:%v    【output】:%v\n", p.root, isEvenOddTree(p.root))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1609, q.para1609
+				fmt.Printf("【input】:%v    【output】:%v\n", p.root, isEvenOddTree(p.root))
+			}
+		}
 	}
-}}}
+}

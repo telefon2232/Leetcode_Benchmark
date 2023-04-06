@@ -47,9 +47,12 @@ func Benchmark_Problem438(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans438, q.para438
-		(findAnagrams(p.s, p.p))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans438, q.para438
+				(findAnagrams(p.s, p.p))
+			}
+		}
 	}
-}}}
+}

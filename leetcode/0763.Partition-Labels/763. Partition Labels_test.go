@@ -31,9 +31,12 @@ func Benchmark_Problem763(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans763, q.para763
-		(partitionLabels(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans763, q.para763
+				(partitionLabels(p.one))
+			}
+		}
 	}
-}}}
+}

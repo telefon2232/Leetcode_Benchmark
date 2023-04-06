@@ -41,9 +41,12 @@ func Benchmark_Problem318(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans318, q.para318
-		(maxProduct318(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans318, q.para318
+				(maxProduct318(p.one))
+			}
+		}
 	}
-}}}
+}

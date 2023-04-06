@@ -44,9 +44,12 @@ func Benchmark_Problem391(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans391, q.para391
-		(isRectangleCover(p.rectangles))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans391, q.para391
+				(isRectangleCover(p.rectangles))
+			}
+		}
 	}
-}}}
+}

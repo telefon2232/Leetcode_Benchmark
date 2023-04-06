@@ -37,9 +37,12 @@ func Benchmark_Problem704(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans704, q.para704
-		(search704(p.nums, p.target))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans704, q.para704
+				(search704(p.nums, p.target))
+			}
+		}
 	}
-}}}
+}

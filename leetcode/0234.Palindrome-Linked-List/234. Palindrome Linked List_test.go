@@ -78,9 +78,12 @@ func Benchmark_Problem234(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans234, q.para234
-		(isPalindrome(structures.Ints2List(p.one)))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans234, q.para234
+				(isPalindrome(structures.Ints2List(p.one)))
+			}
+		}
 	}
-}}}
+}

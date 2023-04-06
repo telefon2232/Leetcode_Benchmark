@@ -34,9 +34,12 @@ func Benchmark_Problem986(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans986, q.para986
-		(intervalIntersection(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans986, q.para986
+				(intervalIntersection(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

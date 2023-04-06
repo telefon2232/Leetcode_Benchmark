@@ -47,9 +47,12 @@ func Benchmark_Problem143(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans143, q.para143
-		(structures.List2Ints(reorderList(structures.Ints2List(p.one))))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans143, q.para143
+				(structures.List2Ints(reorderList(structures.Ints2List(p.one))))
+			}
+		}
 	}
-}}}
+}

@@ -52,10 +52,12 @@ func Benchmark_Problem29(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans29, q.para29
-		(divide(p.dividend, p.divisor))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans29, q.para29
+				(divide(p.dividend, p.divisor))
+			}
+		}
 	}
-}}}
+}

@@ -31,21 +31,23 @@ func Benchmark_Problem519(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans519, q.para519
-		sol := Constructor(0, 0)
-		for _, v := range p.para {
-			if v == "Solution" {
-				sol = Constructor(q.val[0][0], q.val[0][1])
-				fmt.Printf("【input】:%v    【output】:%v\n", v, nil)
-			} else if v == "flip" {
-				fmt.Printf("【input】:%v    【output】:%v\n", v, sol.Flip())
-			} else {
-				sol.Reset()
-				fmt.Printf("【input】:%v    【output】:%v\n", v, nil)
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans519, q.para519
+				sol := Constructor(0, 0)
+				for _, v := range p.para {
+					if v == "Solution" {
+						sol = Constructor(q.val[0][0], q.val[0][1])
+						fmt.Printf("【input】:%v    【output】:%v\n", v, nil)
+					} else if v == "flip" {
+						fmt.Printf("【input】:%v    【output】:%v\n", v, sol.Flip())
+					} else {
+						sol.Reset()
+						fmt.Printf("【input】:%v    【output】:%v\n", v, nil)
+					}
+				}
 			}
 		}
 	}
-}}}
+}

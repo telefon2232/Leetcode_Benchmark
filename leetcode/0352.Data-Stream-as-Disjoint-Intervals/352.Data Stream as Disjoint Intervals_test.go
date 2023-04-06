@@ -51,10 +51,13 @@ func Benchmark_Problem352(b *testing.B) {
 	}
 
 	obj := Constructor()
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans352, q.para352
-		obj.AddNum(p.num)
-		(obj.GetIntervals())
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans352, q.para352
+				obj.AddNum(p.num)
+				(obj.GetIntervals())
+			}
+		}
 	}
-}}}
+}

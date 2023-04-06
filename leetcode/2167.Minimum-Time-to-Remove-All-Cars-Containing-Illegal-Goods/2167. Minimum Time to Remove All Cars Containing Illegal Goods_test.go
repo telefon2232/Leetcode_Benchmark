@@ -46,9 +46,12 @@ func Benchmark_Problem2167(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans2167, q.para2167
-		(minimumTime(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans2167, q.para2167
+				(minimumTime(p.s))
+			}
+		}
 	}
-}}}
+}

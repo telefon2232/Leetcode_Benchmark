@@ -36,9 +36,12 @@ func Benchmark_Problem575(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans575, q.para575
-		(distributeCandies(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans575, q.para575
+				(distributeCandies(p.one))
+			}
+		}
 	}
-}}}
+}

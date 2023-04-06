@@ -31,9 +31,12 @@ func Benchmark_Problem49(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans49, q.para49
-		(groupAnagrams(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans49, q.para49
+				(groupAnagrams(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -36,9 +36,12 @@ func Benchmark_Problem423(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans423, q.para423
-		(originalDigits(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans423, q.para423
+				(originalDigits(p.one))
+			}
+		}
 	}
-}}}
+}

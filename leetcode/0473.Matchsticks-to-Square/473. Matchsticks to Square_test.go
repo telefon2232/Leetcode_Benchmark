@@ -36,9 +36,12 @@ func Benchmark_Problem473(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans473, q.para473
-		(makesquare(p.arr))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans473, q.para473
+				(makesquare(p.arr))
+			}
+		}
 	}
-}}}
+}

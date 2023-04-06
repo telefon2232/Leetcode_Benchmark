@@ -36,9 +36,12 @@ func Benchmark_Problem137(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans137, q.para137
-		(singleNumberII(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans137, q.para137
+				(singleNumberII(p.s))
+			}
+		}
 	}
-}}}
+}

@@ -79,9 +79,12 @@ func Benchmark_Problem695(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans695, q.para695
-		(maxAreaOfIsland(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans695, q.para695
+				(maxAreaOfIsland(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -36,9 +36,12 @@ func Benchmark_Problem397(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans397, q.para397
-		(integerReplacement(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans397, q.para397
+				(integerReplacement(p.s))
+			}
+		}
 	}
-}}}
+}

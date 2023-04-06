@@ -52,12 +52,14 @@ func Benchmark_Problem385(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans385, q.para385
-		fmt.Printf("【input】:%v       【output】: \n", p)
-		fmt.Printf("NestedInteger = ")
-		deserialize(p.n).Print()
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans385, q.para385
+				fmt.Printf("【input】:%v       【output】: \n", p)
+				fmt.Printf("NestedInteger = ")
+				deserialize(p.n).Print()
+			}
+		}
 	}
-}}}
+}

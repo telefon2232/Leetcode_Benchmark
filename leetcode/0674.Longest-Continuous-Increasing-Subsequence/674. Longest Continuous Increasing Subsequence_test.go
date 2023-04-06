@@ -41,9 +41,12 @@ func Benchmark_Problem674(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans674, q.para674
-		(findLengthOfLCIS(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans674, q.para674
+				(findLengthOfLCIS(p.nums))
+			}
+		}
 	}
-}}}
+}

@@ -46,9 +46,12 @@ func Benchmark_Problem1704(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1704, q.para1704
-		(halvesAreAlike(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1704, q.para1704
+				(halvesAreAlike(p.s))
+			}
+		}
 	}
-}}}
+}

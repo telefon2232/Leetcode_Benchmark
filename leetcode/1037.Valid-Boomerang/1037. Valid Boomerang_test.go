@@ -35,9 +35,12 @@ func Benchmark_Problem1037(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1037, q.para1037
-		(isBoomerang(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1037, q.para1037
+				(isBoomerang(p.one))
+			}
+		}
 	}
-}}}
+}

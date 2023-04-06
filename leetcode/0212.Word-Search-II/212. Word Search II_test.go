@@ -47,10 +47,12 @@ func Benchmark_Problem212(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans212, q.para212
-		fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, findWords(p.b, p.word))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans212, q.para212
+				fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, findWords(p.b, p.word))
+			}
+		}
 	}
-}}}
+}

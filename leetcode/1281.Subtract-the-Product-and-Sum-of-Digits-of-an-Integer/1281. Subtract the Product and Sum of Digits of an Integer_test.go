@@ -36,9 +36,12 @@ func Benchmark_Problem1281(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1281, q.para1281
-		(subtractProductAndSum(p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1281, q.para1281
+				(subtractProductAndSum(p.n))
+			}
+		}
 	}
-}}}
+}

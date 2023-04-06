@@ -46,9 +46,12 @@ func Benchmark_Problem1003(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1003, q.para1003
-		(isValid1003(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1003, q.para1003
+				(isValid1003(p.s))
+			}
+		}
 	}
-}}}
+}

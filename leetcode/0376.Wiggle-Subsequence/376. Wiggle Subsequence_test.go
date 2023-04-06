@@ -41,9 +41,12 @@ func Benchmark_Problem376(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans376, q.para376
-		(wiggleMaxLength(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans376, q.para376
+				(wiggleMaxLength(p.nums))
+			}
+		}
 	}
-}}}
+}

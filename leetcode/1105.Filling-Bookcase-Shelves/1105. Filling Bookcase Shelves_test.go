@@ -32,9 +32,12 @@ func Benchmark_Problem1105(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1105, q.para1105
-		(minHeightShelves(p.one, p.w))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1105, q.para1105
+				(minHeightShelves(p.one, p.w))
+			}
+		}
 	}
-}}}
+}

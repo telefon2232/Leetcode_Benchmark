@@ -67,9 +67,12 @@ func Benchmark_Problem925(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans925, q.para925
-		(isLongPressedName(p.name, p.typed))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans925, q.para925
+				(isLongPressedName(p.name, p.typed))
+			}
+		}
 	}
-}}}
+}

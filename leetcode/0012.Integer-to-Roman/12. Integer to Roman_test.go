@@ -60,9 +60,12 @@ func Benchmark_Problem12(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans12, q.para12
-		(intToRoman(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans12, q.para12
+				(intToRoman(p.one))
+			}
+		}
 	}
-}}}
+}

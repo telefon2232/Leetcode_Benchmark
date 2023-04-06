@@ -58,9 +58,12 @@ func Benchmark_Problem1073(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1073, q.para1073
-		(addNegabinary1(p.arr1, p.arr2))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1073, q.para1073
+				(addNegabinary1(p.arr1, p.arr2))
+			}
+		}
 	}
-}}}
+}

@@ -45,9 +45,12 @@ func Benchmark_Problem1439(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1439, q.para1439
-		(kthSmallest(p.mat, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1439, q.para1439
+				(kthSmallest(p.mat, p.k))
+			}
+		}
 	}
-}}}
+}

@@ -42,9 +42,12 @@ func Benchmark_Problem1438(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1438, q.para1438
-		(longestSubarray(p.nums, p.limit))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1438, q.para1438
+				(longestSubarray(p.nums, p.limit))
+			}
+		}
 	}
-}}}
+}

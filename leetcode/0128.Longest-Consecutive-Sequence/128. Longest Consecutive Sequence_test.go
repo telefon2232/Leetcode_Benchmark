@@ -51,9 +51,12 @@ func Benchmark_Problem128(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans128, q.para128
-		(longestConsecutive(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans128, q.para128
+				(longestConsecutive(p.one))
+			}
+		}
 	}
-}}}
+}

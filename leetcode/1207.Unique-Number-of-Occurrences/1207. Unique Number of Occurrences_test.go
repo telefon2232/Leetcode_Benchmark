@@ -41,9 +41,12 @@ func Benchmark_Problem1207(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1207, q.para1207
-		(uniqueOccurrences(p.arr))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1207, q.para1207
+				(uniqueOccurrences(p.arr))
+			}
+		}
 	}
-}}}
+}

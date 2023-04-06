@@ -39,9 +39,12 @@ func Benchmark_Problem58(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans58, q.para58
-		(lengthOfLastWord(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans58, q.para58
+				(lengthOfLastWord(p.s))
+			}
+		}
 	}
-}}}
+}

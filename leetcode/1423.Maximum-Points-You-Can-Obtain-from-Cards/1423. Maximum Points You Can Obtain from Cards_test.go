@@ -52,9 +52,12 @@ func Benchmark_Problem1423(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1423, q.para1423
-		(maxScore(p.cardPoints, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1423, q.para1423
+				(maxScore(p.cardPoints, p.k))
+			}
+		}
 	}
-}}}
+}

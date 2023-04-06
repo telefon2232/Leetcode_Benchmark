@@ -37,9 +37,12 @@ func Benchmark_Problem537(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans537, q.para537
-		(complexNumberMultiply(p.a, p.b))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans537, q.para537
+				(complexNumberMultiply(p.a, p.b))
+			}
+		}
 	}
-}}}
+}

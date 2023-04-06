@@ -39,9 +39,12 @@ func Benchmark_Problem14(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans14, q.para14
-		(longestCommonPrefix(p.strs))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans14, q.para14
+				(longestCommonPrefix(p.strs))
+			}
+		}
 	}
-}}}
+}

@@ -47,9 +47,12 @@ func Benchmark_Problem989(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans989, q.para989
-		(addToArrayForm(p.A, p.K))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans989, q.para989
+				(addToArrayForm(p.A, p.K))
+			}
+		}
 	}
-}}}
+}

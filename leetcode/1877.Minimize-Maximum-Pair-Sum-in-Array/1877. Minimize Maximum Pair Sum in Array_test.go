@@ -51,9 +51,12 @@ func Benchmark_Problem1877(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1877, q.para1877
-		(minPairSum(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1877, q.para1877
+				(minPairSum(p.nums))
+			}
+		}
 	}
-}}}
+}

@@ -41,9 +41,12 @@ func Benchmark_Problem898(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans898, q.para898
-		(subarrayBitwiseORs(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans898, q.para898
+				(subarrayBitwiseORs(p.one))
+			}
+		}
 	}
-}}}
+}

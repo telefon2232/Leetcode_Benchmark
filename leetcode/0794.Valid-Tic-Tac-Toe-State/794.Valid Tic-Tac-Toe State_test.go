@@ -45,10 +45,12 @@ func Benchmark_Problem794(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans794, q.para794
-		fmt.Printf("【input】:%v    【output】:%v\n", p.board, validTicTacToe(p.board))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans794, q.para794
+				fmt.Printf("【input】:%v    【output】:%v\n", p.board, validTicTacToe(p.board))
+			}
+		}
 	}
-}}}
+}

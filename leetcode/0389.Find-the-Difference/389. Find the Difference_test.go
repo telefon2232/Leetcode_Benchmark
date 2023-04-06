@@ -34,9 +34,12 @@ func Benchmark_Problem389(b *testing.B) {
 		// 如需多个测试，可以复制上方元素。
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans389, q.para389
-		(findTheDifference(p.s, p.t))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans389, q.para389
+				(findTheDifference(p.s, p.t))
+			}
+		}
 	}
-}}}
+}

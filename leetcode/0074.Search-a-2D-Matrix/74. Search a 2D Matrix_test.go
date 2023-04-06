@@ -37,9 +37,12 @@ func Benchmark_Problem74(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans74, q.para74
-		(searchMatrix(p.matrix, p.target))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans74, q.para74
+				(searchMatrix(p.matrix, p.target))
+			}
+		}
 	}
-}}}
+}

@@ -51,9 +51,12 @@ func Benchmark_Problem892(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans892, q.para892
-		(surfaceArea(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans892, q.para892
+				(surfaceArea(p.one))
+			}
+		}
 	}
-}}}
+}

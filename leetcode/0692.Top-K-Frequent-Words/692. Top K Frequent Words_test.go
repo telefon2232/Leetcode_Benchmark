@@ -37,9 +37,12 @@ func Benchmark_Problem692(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans692, q.para692
-		(topKFrequent(p.words, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans692, q.para692
+				(topKFrequent(p.words, p.k))
+			}
+		}
 	}
-}}}
+}

@@ -52,9 +52,12 @@ func Benchmark_Problem560(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans560, q.para560
-		(subarraySum(p.nums, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans560, q.para560
+				(subarraySum(p.nums, p.k))
+			}
+		}
 	}
-}}}
+}

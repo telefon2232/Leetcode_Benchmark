@@ -41,9 +41,12 @@ func Benchmark_Problem436(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans436, q.para436
-		(findRightInterval(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans436, q.para436
+				(findRightInterval(p.one))
+			}
+		}
 	}
-}}}
+}

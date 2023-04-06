@@ -36,9 +36,12 @@ func Benchmark_Problem746(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans746, q.para746
-		(minCostClimbingStairs(p.c))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans746, q.para746
+				(minCostClimbingStairs(p.c))
+			}
+		}
 	}
-}}}
+}

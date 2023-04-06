@@ -45,9 +45,12 @@ func Benchmark_Problem53(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans53, q.para53
-		(maxSubArray(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans53, q.para53
+				(maxSubArray(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -37,9 +37,12 @@ func Benchmark_Problem890(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans890, q.para890
-		(findAndReplacePattern(p.words, p.pattern))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans890, q.para890
+				(findAndReplacePattern(p.words, p.pattern))
+			}
+		}
 	}
-}}}
+}

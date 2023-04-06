@@ -46,9 +46,12 @@ func Benchmark_Problem830(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans830, q.para830
-		(largeGroupPositions(p.S))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans830, q.para830
+				(largeGroupPositions(p.S))
+			}
+		}
 	}
-}}}
+}

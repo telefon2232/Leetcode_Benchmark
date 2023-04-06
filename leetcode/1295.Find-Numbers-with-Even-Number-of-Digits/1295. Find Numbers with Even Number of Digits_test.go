@@ -36,9 +36,12 @@ func Benchmark_Problem1295(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1295, q.para1295
-		(findNumbers(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1295, q.para1295
+				(findNumbers(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -56,9 +56,12 @@ func Benchmark_Problem329(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans329, q.para329
-		(longestIncreasingPath(p.matrix))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans329, q.para329
+				(longestIncreasingPath(p.matrix))
+			}
+		}
 	}
-}}}
+}

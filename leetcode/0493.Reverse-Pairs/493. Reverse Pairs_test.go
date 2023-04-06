@@ -51,9 +51,12 @@ func Benchmark_Problem493(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans493, q.para493
-		(reversePairs(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans493, q.para493
+				(reversePairs(p.nums))
+			}
+		}
 	}
-}}}
+}

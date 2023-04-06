@@ -75,9 +75,12 @@ func Benchmark_Problem52(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans52, q.para52
-		(totalNQueens(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans52, q.para52
+				(totalNQueens(p.one))
+			}
+		}
 	}
-}}}
+}

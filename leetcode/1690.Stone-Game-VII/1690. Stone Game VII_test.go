@@ -36,9 +36,12 @@ func Benchmark_Problem1690(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1690, q.para1690
-		(stoneGameVII(p.stones))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1690, q.para1690
+				(stoneGameVII(p.stones))
+			}
+		}
 	}
-}}}
+}

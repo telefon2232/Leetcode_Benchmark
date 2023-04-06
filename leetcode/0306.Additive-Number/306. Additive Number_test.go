@@ -36,9 +36,12 @@ func Benchmark_Problem306(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans306, q.para306
-		(isAdditiveNumber(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans306, q.para306
+				(isAdditiveNumber(p.one))
+			}
+		}
 	}
-}}}
+}

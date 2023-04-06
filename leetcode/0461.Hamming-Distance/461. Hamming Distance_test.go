@@ -42,9 +42,12 @@ func Benchmark_Problem461(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans461, q.para461
-		(hammingDistance(p.x, p.y))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans461, q.para461
+				(hammingDistance(p.x, p.y))
+			}
+		}
 	}
-}}}
+}

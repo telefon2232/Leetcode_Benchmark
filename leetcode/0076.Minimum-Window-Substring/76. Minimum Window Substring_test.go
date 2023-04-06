@@ -43,10 +43,12 @@ func Benchmark_Problem76(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans76, q.para76
-		fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, minWindow(p.s, p.p))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans76, q.para76
+				fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, minWindow(p.s, p.p))
+			}
+		}
 	}
-}}}
+}

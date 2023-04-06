@@ -37,9 +37,12 @@ func Benchmark_Problem923(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans923, q.para923
-		(threeSumMulti(p.a, p.t))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans923, q.para923
+				(threeSumMulti(p.a, p.t))
+			}
+		}
 	}
-}}}
+}

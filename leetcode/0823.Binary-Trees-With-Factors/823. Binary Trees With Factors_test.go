@@ -36,9 +36,12 @@ func Benchmark_Problem823(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans823, q.para823
-		(numFactoredBinaryTrees(p.arr))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans823, q.para823
+				(numFactoredBinaryTrees(p.arr))
+			}
+		}
 	}
-}}}
+}

@@ -36,9 +36,12 @@ func Benchmark_Problem682(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans682, q.para682
-		(calPoints(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans682, q.para682
+				(calPoints(p.one))
+			}
+		}
 	}
-}}}
+}

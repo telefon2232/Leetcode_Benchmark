@@ -36,9 +36,12 @@ func Benchmark_Problem1079(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1079, q.para1079
-		(numTilePossibilities(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1079, q.para1079
+				(numTilePossibilities(p.one))
+			}
+		}
 	}
-}}}
+}

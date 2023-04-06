@@ -31,9 +31,12 @@ func Benchmark_Problem630(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans630, q.para630
-		(scheduleCourse(p.courses))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans630, q.para630
+				(scheduleCourse(p.courses))
+			}
+		}
 	}
-}}}
+}

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -53,11 +52,13 @@ func Benchmark_Problem1455(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1455, q.para1455
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1455, q.para1455
-		fmt.Printf("【input】:%v      ", p)
-		fmt.Printf("【output】:%v      \n", isPrefixOfWord(p.sentence, p.searchWord))
+				(isPrefixOfWord(p.sentence, p.searchWord))
+			}
+		}
 	}
-}}}
+}

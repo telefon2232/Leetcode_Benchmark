@@ -63,9 +63,12 @@ func Benchmark_Problem373(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans373, q.para373
-		(kSmallestPairs(p.nums1, p.nums2, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans373, q.para373
+				(kSmallestPairs(p.nums1, p.nums2, p.k))
+			}
+		}
 	}
-}}}
+}

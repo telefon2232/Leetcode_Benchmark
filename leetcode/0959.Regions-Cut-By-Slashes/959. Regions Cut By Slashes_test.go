@@ -50,9 +50,12 @@ func Benchmark_Problem959(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans959, q.para959
-		(regionsBySlashes(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans959, q.para959
+				(regionsBySlashes(p.one))
+			}
+		}
 	}
-}}}
+}

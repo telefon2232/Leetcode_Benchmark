@@ -36,9 +36,12 @@ func Benchmark_Problem1108(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1108, q.para1108
-		(defangIPaddr(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1108, q.para1108
+				(defangIPaddr(p.one))
+			}
+		}
 	}
-}}}
+}

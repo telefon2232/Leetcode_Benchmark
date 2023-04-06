@@ -31,9 +31,12 @@ func Benchmark_Problem1047(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1047, q.para1047
-		(removeDuplicates1047(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1047, q.para1047
+				(removeDuplicates1047(p.s))
+			}
+		}
 	}
-}}}
+}

@@ -55,9 +55,12 @@ func Benchmark_Problem227(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans227, q.para227
-		(calculate(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans227, q.para227
+				(calculate(p.one))
+			}
+		}
 	}
-}}}
+}

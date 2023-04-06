@@ -41,9 +41,12 @@ func Benchmark_Problem1672(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1672, q.para1672
-		(maximumWealth(p.accounts))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1672, q.para1672
+				(maximumWealth(p.accounts))
+			}
+		}
 	}
-}}}
+}

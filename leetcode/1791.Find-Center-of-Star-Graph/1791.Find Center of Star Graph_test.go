@@ -35,11 +35,13 @@ func Benchmark_Problem1791(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1791, q.para1791
-		fmt.Printf("【input】:%v      ", p.edges)
-		fmt.Printf("【output】:%v      \n", findCenter(p.edges))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1791, q.para1791
+				fmt.Printf("【input】:%v      ", p.edges)
+				(findCenter(p.edges))
+			}
+		}
 	}
-}}}
+}

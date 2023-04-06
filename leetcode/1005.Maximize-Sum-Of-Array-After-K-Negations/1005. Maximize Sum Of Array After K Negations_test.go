@@ -61,9 +61,12 @@ func Benchmark_Problem1005(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1005, q.para1005
-		(largestSumAfterKNegations(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1005, q.para1005
+				(largestSumAfterKNegations(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

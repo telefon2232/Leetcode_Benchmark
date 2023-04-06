@@ -66,9 +66,12 @@ func Benchmark_Problem864(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans864, q.para864
-		(shortestPathAllKeys(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans864, q.para864
+				(shortestPathAllKeys(p.one))
+			}
+		}
 	}
-}}}
+}

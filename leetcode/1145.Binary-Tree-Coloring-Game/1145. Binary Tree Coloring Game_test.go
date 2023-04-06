@@ -35,10 +35,13 @@ func Benchmark_Problem1145(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1145, q.para1145
-		tree := structures.Ints2TreeNode(p.root)
-		(btreeGameWinningMove(tree, p.n, p.x))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1145, q.para1145
+				tree := structures.Ints2TreeNode(p.root)
+				(btreeGameWinningMove(tree, p.n, p.x))
+			}
+		}
 	}
-}}}
+}

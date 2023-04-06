@@ -47,9 +47,12 @@ func Benchmark_Problem973(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans973, q.para973
-		(KClosest(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans973, q.para973
+				(KClosest(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

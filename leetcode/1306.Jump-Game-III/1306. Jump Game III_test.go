@@ -42,9 +42,12 @@ func Benchmark_Problem1306(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1306, q.para1306
-		(canReach(p.arr, p.start))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1306, q.para1306
+				(canReach(p.arr, p.start))
+			}
+		}
 	}
-}}}
+}

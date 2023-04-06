@@ -36,9 +36,12 @@ func Benchmark_Problem1725(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1725, q.para1725
-		(countGoodRectangles(p.rectangles))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1725, q.para1725
+				(countGoodRectangles(p.rectangles))
+			}
+		}
 	}
-}}}
+}

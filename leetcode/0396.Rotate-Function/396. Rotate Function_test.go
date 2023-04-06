@@ -35,9 +35,12 @@ func Benchmark_Problem396(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans396, q.para396
-		(maxRotateFunction(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans396, q.para396
+				(maxRotateFunction(p.one))
+			}
+		}
 	}
-}}}
+}

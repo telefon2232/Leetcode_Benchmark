@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/halfrost/LeetCode-Go/structures"
@@ -43,9 +42,9 @@ func Benchmark_Problem589(b *testing.B) {
 		for _, q := range qs {
 			{
 				_, p := q.ans589, q.para589
-				fmt.Printf("【input】:%v      ", p)
+
 				rootOne := int2NaryNode(p.one)
-				fmt.Printf("【output】:%v      \n", preorder(rootOne))
+				(preorder(rootOne))
 			}
 		}
 	}

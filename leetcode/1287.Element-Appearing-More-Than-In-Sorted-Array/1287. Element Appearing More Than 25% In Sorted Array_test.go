@@ -31,9 +31,12 @@ func Benchmark_Problem1287(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1287, q.para1287
-		(findSpecialInteger(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1287, q.para1287
+				(findSpecialInteger(p.one))
+			}
+		}
 	}
-}}}
+}

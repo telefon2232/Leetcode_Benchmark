@@ -38,9 +38,12 @@ func Benchmark_Problem566(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans566, q.para566
-		(matrixReshape(p.nums, p.r, p.c))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans566, q.para566
+				(matrixReshape(p.nums, p.r, p.c))
+			}
+		}
 	}
-}}}
+}

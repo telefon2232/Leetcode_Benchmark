@@ -52,9 +52,12 @@ func Benchmark_Problem424(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans424, q.para424
-		(characterReplacement(p.s, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans424, q.para424
+				(characterReplacement(p.s, p.k))
+			}
+		}
 	}
-}}}
+}

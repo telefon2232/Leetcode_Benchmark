@@ -37,15 +37,17 @@ func Benchmark_Problem190(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans190, q.para190
-		input := strconv.FormatUint(uint64(p.one), 2) // 32位无符号整数转换为二进制字符串
-		input = fmt.Sprintf("%0*v", 32, input)        // 格式化输出32位,保留前置0
-		output := reverseBits(p.one)
-		outputBin := strconv.FormatUint(uint64(output), 2) // 32位无符号整数转换为二进制字符串
-		outputBin = fmt.Sprintf("%0*v", 32, outputBin)     // 格式化输出32位,保留前置0
-		fmt.Printf("【input】:%v       【output】:%v (%v)\n", input, output, outputBin)
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans190, q.para190
+				input := strconv.FormatUint(uint64(p.one), 2) // 32位无符号整数转换为二进制字符串
+				input = fmt.Sprintf("%0*v", 32, input)        // 格式化输出32位,保留前置0
+				output := reverseBits(p.one)
+				outputBin := strconv.FormatUint(uint64(output), 2) // 32位无符号整数转换为二进制字符串
+				outputBin = fmt.Sprintf("%0*v", 32, outputBin)     // 格式化输出32位,保留前置0
+				fmt.Printf("【input】:%v       【output】:%v (%v)\n", input, output, outputBin)
+			}
+		}
 	}
-}}}
+}

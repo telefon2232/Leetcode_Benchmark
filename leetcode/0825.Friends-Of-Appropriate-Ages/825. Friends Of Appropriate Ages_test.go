@@ -41,9 +41,12 @@ func Benchmark_Problem825(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans825, q.para825
-		(numFriendRequests(p.ages))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans825, q.para825
+				(numFriendRequests(p.ages))
+			}
+		}
 	}
-}}}
+}

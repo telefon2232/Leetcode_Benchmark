@@ -47,9 +47,12 @@ func Benchmark_Problem875(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans875, q.para875
-		(minEatingSpeed(p.piles, p.H))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans875, q.para875
+				(minEatingSpeed(p.piles, p.H))
+			}
+		}
 	}
-}}}
+}

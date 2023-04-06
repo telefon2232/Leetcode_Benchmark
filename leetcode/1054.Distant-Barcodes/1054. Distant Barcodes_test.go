@@ -36,9 +36,12 @@ func Benchmark_Problem1054(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1054, q.para1054
-		(rearrangeBarcodes(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1054, q.para1054
+				(rearrangeBarcodes(p.one))
+			}
+		}
 	}
-}}}
+}

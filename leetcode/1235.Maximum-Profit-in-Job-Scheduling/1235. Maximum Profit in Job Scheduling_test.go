@@ -43,9 +43,12 @@ func Benchmark_Problem1235(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1235, q.para1235
-		(jobScheduling(p.startTime, p.endTime, p.profit))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1235, q.para1235
+				(jobScheduling(p.startTime, p.endTime, p.profit))
+			}
+		}
 	}
-}}}
+}

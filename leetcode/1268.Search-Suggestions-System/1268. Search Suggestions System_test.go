@@ -59,9 +59,12 @@ func Benchmark_Problem1268(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1268, q.para1268
-		(suggestedProducts(p.products, p.searchWord))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1268, q.para1268
+				(suggestedProducts(p.products, p.searchWord))
+			}
+		}
 	}
-}}}
+}

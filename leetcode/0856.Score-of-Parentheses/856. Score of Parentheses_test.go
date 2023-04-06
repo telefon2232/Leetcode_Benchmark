@@ -55,9 +55,12 @@ func Benchmark_Problem856(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans856, q.para856
-		(scoreOfParentheses(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans856, q.para856
+				(scoreOfParentheses(p.one))
+			}
+		}
 	}
-}}}
+}

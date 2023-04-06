@@ -59,9 +59,12 @@ func Benchmark_Problem20(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans20, q.para20
-		(isValid(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans20, q.para20
+				(isValid(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -45,9 +45,12 @@ func Benchmark_Problem488(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans488, q.para488
-		(findMinStep(p.board, p.hand))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans488, q.para488
+				(findMinStep(p.board, p.hand))
+			}
+		}
 	}
-}}}
+}

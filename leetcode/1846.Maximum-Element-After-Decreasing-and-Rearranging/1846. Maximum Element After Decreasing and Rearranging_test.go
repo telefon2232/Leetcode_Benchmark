@@ -41,9 +41,12 @@ func Benchmark_Problem1846(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1846, q.para1846
-		(maximumElementAfterDecrementingAndRearranging(p.arr))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1846, q.para1846
+				(maximumElementAfterDecrementingAndRearranging(p.arr))
+			}
+		}
 	}
-}}}
+}

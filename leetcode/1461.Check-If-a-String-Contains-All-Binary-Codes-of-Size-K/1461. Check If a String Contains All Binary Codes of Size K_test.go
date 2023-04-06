@@ -52,9 +52,12 @@ func Benchmark_Problem1461(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1461, q.para1461
-		(hasAllCodes(p.s, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1461, q.para1461
+				(hasAllCodes(p.s, p.k))
+			}
+		}
 	}
-}}}
+}

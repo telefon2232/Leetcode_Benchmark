@@ -51,9 +51,12 @@ func Benchmark_Problem1669(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1669, q.para1669
-		(structures.List2Ints(mergeInBetween(structures.Ints2List(p.one), p.a, p.b, structures.Ints2List(p.another))))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1669, q.para1669
+				(structures.List2Ints(mergeInBetween(structures.Ints2List(p.one), p.a, p.b, structures.Ints2List(p.another))))
+			}
+		}
 	}
-}}}
+}

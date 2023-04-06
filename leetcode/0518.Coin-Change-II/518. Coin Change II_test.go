@@ -42,9 +42,12 @@ func Benchmark_Problem518(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans518, q.para518
-		(change(p.amount, p.coins))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans518, q.para518
+				(change(p.amount, p.coins))
+			}
+		}
 	}
-}}}
+}

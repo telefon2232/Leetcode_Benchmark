@@ -47,9 +47,12 @@ func Benchmark_Problem290(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans290, q.para290
-		(wordPattern(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans290, q.para290
+				(wordPattern(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

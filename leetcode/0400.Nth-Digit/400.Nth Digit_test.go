@@ -35,10 +35,12 @@ func Benchmark_Problem400(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans400, q.para400
-		fmt.Printf("【input】:%v    【output】:%v\n", p.n, findNthDigit(p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans400, q.para400
+				fmt.Printf("【input】:%v    【output】:%v\n", p.n, findNthDigit(p.n))
+			}
+		}
 	}
-}}}
+}

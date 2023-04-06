@@ -58,9 +58,12 @@ func Benchmark_Problem220(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans220, q.para220
-		(containsNearbyAlmostDuplicate(p.one, p.k, p.t))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans220, q.para220
+				(containsNearbyAlmostDuplicate(p.one, p.k, p.t))
+			}
+		}
 	}
-}}}
+}

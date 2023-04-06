@@ -42,9 +42,12 @@ func Benchmark_Problem733(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans733, q.para733
-		(floodFill(p.one, p.sr, p.sc, p.c))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans733, q.para733
+				(floodFill(p.one, p.sr, p.sc, p.c))
+			}
+		}
 	}
-}}}
+}

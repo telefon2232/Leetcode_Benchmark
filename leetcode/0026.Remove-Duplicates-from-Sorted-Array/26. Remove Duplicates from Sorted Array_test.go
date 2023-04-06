@@ -46,9 +46,12 @@ func Benchmark_Problem26(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans26, q.para26
-		(removeDuplicates(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans26, q.para26
+				(removeDuplicates(p.one))
+			}
+		}
 	}
-}}}
+}

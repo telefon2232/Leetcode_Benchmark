@@ -37,9 +37,12 @@ func Benchmark_Problem126(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans126, q.para126
-		(findLadders(p.b, p.e, p.w))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans126, q.para126
+				(findLadders(p.b, p.e, p.w))
+			}
+		}
 	}
-}}}
+}

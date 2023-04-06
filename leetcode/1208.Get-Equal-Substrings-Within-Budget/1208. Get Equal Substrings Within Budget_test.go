@@ -53,9 +53,12 @@ func Benchmark_Problem1208(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1208, q.para1208
-		(equalSubstring(p.s, p.t, p.maxCost))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1208, q.para1208
+				(equalSubstring(p.s, p.t, p.maxCost))
+			}
+		}
 	}
-}}}
+}

@@ -41,9 +41,12 @@ func Benchmark_Problem89(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans89, q.para89
-		(grayCode(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans89, q.para89
+				(grayCode(p.one))
+			}
+		}
 	}
-}}}
+}

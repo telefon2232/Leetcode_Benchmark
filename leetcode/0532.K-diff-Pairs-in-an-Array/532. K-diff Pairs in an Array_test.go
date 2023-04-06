@@ -72,9 +72,12 @@ func Benchmark_Problem532(b *testing.B) {
 		// },
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans532, q.para532
-		(findPairs(p.one, p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans532, q.para532
+				(findPairs(p.one, p.n))
+			}
+		}
 	}
-}}}
+}

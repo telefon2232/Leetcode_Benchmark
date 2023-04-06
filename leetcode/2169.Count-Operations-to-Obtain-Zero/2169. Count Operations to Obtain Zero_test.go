@@ -37,9 +37,12 @@ func Benchmark_Problem2169(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans2169, q.para2169
-		(countOperations(p.num1, p.num2))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans2169, q.para2169
+				(countOperations(p.num1, p.num2))
+			}
+		}
 	}
-}}}
+}

@@ -31,9 +31,12 @@ func Benchmark_Problem812(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans812, q.para812
-		(largestTriangleArea(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans812, q.para812
+				(largestTriangleArea(p.one))
+			}
+		}
 	}
-}}}
+}

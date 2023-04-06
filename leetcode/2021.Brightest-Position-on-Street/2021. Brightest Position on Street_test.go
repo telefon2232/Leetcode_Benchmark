@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -45,11 +44,13 @@ func Benchmark_Problem2021(b *testing.B) {
 		},
 	}
 
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans2021, q.para2021
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans2021, q.para2021
-		fmt.Printf("【input】:%v      ", p)
-		fmt.Printf("【output】:%v      \n", brightestPosition(p.lights))
+				(brightestPosition(p.lights))
+			}
+		}
 	}
-}}}
+}

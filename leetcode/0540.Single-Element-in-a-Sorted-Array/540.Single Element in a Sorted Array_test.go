@@ -35,11 +35,13 @@ func Benchmark_Problem540(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans540, q.para540
-		fmt.Printf("【input】:%v      ", p.nums)
-		fmt.Printf("【output】:%v      \n", singleNonDuplicate(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans540, q.para540
+				fmt.Printf("【input】:%v      ", p.nums)
+				(singleNonDuplicate(p.nums))
+			}
+		}
 	}
-}}}
+}

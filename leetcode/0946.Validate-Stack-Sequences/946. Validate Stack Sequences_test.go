@@ -41,9 +41,12 @@ func Benchmark_Problem946(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans946, q.para946
-		(validateStackSequences(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans946, q.para946
+				(validateStackSequences(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

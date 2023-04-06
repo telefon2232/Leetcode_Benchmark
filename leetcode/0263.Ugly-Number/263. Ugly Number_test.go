@@ -41,9 +41,12 @@ func Benchmark_Problem263(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans263, q.para263
-		(isUgly(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans263, q.para263
+				(isUgly(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -53,10 +53,12 @@ func Benchmark_Problem980(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans980, q.para980
-		fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, uniquePathsIII(p.grid))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans980, q.para980
+				fmt.Printf("【input】:%v       【output】:%v\n\n\n", p, uniquePathsIII(p.grid))
+			}
+		}
 	}
-}}}
+}

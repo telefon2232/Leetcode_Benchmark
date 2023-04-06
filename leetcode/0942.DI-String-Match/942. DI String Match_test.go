@@ -41,9 +41,12 @@ func Benchmark_Problem942(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans942, q.para942
-		(diStringMatch(p.S))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans942, q.para942
+				(diStringMatch(p.S))
+			}
+		}
 	}
-}}}
+}

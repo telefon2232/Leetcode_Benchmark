@@ -32,9 +32,12 @@ func Benchmark_Problem209(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans209, q.para209
-		(minSubArrayLen(p.s, p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans209, q.para209
+				(minSubArrayLen(p.s, p.one))
+			}
+		}
 	}
-}}}
+}

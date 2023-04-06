@@ -36,9 +36,12 @@ func Benchmark_Problem1685(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1685, q.para1685
-		(getSumAbsoluteDifferences(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1685, q.para1685
+				(getSumAbsoluteDifferences(p.nums))
+			}
+		}
 	}
-}}}
+}

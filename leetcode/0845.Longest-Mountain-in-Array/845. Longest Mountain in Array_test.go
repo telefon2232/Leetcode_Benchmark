@@ -50,9 +50,12 @@ func Benchmark_Problem845(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans845, q.para845
-		(longestMountain(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans845, q.para845
+				(longestMountain(p.one))
+			}
+		}
 	}
-}}}
+}

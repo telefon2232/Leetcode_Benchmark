@@ -42,9 +42,12 @@ func Benchmark_Problem1684(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1684, q.para1684
-		(countConsistentStrings(p.allowed, p.words))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1684, q.para1684
+				(countConsistentStrings(p.allowed, p.words))
+			}
+		}
 	}
-}}}
+}

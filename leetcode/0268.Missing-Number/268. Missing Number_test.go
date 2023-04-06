@@ -36,9 +36,12 @@ func Benchmark_Problem268(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans268, q.para268
-		(missingNumber(p.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans268, q.para268
+				(missingNumber(p.s))
+			}
+		}
 	}
-}}}
+}

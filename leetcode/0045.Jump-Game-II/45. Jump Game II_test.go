@@ -36,9 +36,12 @@ func Benchmark_Problem45(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans45, q.para45
-		(jump(p.nums))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans45, q.para45
+				(jump(p.nums))
+			}
+		}
 	}
-}}}
+}

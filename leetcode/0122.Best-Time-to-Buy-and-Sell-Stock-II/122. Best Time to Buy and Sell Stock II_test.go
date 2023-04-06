@@ -51,9 +51,12 @@ func Benchmark_Problem122(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans122, q.para122
-		(maxProfit122(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans122, q.para122
+				(maxProfit122(p.one))
+			}
+		}
 	}
-}}}
+}

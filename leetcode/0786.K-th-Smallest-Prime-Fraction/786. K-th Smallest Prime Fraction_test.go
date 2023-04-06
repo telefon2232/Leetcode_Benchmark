@@ -47,9 +47,12 @@ func Benchmark_Problem786(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans786, q.para786
-		(kthSmallestPrimeFraction(p.A, p.K))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans786, q.para786
+				(kthSmallestPrimeFraction(p.A, p.K))
+			}
+		}
 	}
-}}}
+}

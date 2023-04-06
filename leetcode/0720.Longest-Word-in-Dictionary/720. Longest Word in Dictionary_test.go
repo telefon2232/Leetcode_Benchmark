@@ -36,9 +36,12 @@ func Benchmark_Problem720(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans720, q.para720
-		(longestWord(p.w))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans720, q.para720
+				(longestWord(p.w))
+			}
+		}
 	}
-}}}
+}

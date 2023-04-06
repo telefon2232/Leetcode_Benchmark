@@ -46,9 +46,12 @@ func Benchmark_Problem726(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans726, q.para726
-		(countOfAtoms(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans726, q.para726
+				(countOfAtoms(p.one))
+			}
+		}
 	}
-}}}
+}

@@ -64,9 +64,12 @@ func Benchmark_Problem817(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans817, q.para817
-		(numComponents(structures.Ints2List(p.one), p.another))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans817, q.para817
+				(numComponents(structures.Ints2List(p.one), p.another))
+			}
+		}
 	}
-}}}
+}

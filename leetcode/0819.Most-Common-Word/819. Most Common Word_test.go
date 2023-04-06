@@ -32,9 +32,12 @@ func Benchmark_Problem819(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans819, q.para819
-		(mostCommonWord(p.one, p.b))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans819, q.para819
+				(mostCommonWord(p.one, p.b))
+			}
+		}
 	}
-}}}
+}

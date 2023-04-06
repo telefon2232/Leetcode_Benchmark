@@ -37,9 +37,12 @@ func Benchmark_Problem762(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans762, q.para762
-		(countPrimeSetBits(p.l, p.r))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans762, q.para762
+				(countPrimeSetBits(p.l, p.r))
+			}
+		}
 	}
-}}}
+}

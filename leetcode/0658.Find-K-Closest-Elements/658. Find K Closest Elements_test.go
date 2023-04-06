@@ -38,9 +38,12 @@ func Benchmark_Problem658(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans658, q.para658
-		(findClosestElements(p.arr, p.k, p.x))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans658, q.para658
+				(findClosestElements(p.arr, p.k, p.x))
+			}
+		}
 	}
-}}}
+}

@@ -32,9 +32,12 @@ func Benchmark_Problem167(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans167, q.para167
-		(twoSum167(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans167, q.para167
+				(twoSum167(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

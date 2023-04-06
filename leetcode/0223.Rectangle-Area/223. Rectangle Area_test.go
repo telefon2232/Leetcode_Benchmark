@@ -38,9 +38,12 @@ func Benchmark_Problem223(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans223, q.para223
-		(computeArea(p.A, p.B, p.C, p.D, p.E, p.F, p.G, p.H))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans223, q.para223
+				(computeArea(p.A, p.B, p.C, p.D, p.E, p.F, p.G, p.H))
+			}
+		}
 	}
-}}}
+}

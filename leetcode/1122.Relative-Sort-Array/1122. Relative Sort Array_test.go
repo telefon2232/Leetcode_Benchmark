@@ -32,9 +32,12 @@ func Benchmark_Problem1122(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1122, q.para1122
-		(relativeSortArray(p.arr1, p.arr2))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1122, q.para1122
+				(relativeSortArray(p.arr1, p.arr2))
+			}
+		}
 	}
-}}}
+}

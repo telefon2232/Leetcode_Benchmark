@@ -46,9 +46,12 @@ func Benchmark_Problem66(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans66, q.para66
-		(plusOne(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans66, q.para66
+				(plusOne(p.one))
+			}
+		}
 	}
-}}}
+}

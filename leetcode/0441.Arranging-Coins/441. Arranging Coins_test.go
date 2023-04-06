@@ -36,9 +36,12 @@ func Benchmark_Problem441(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans441, q.para441
-		(arrangeCoins(p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans441, q.para441
+				(arrangeCoins(p.n))
+			}
+		}
 	}
-}}}
+}

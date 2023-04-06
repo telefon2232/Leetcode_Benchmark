@@ -68,9 +68,12 @@ func Benchmark_Problem999(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans999, q.para999
-		(numRookCaptures(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans999, q.para999
+				(numRookCaptures(p.one))
+			}
+		}
 	}
-}}}
+}

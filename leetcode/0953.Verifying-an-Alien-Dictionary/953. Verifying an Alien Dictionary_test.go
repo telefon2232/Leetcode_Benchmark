@@ -41,9 +41,12 @@ func Benchmark_Problem953(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans953, q.para953
-		(isAlienSorted(p.one, p.two))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans953, q.para953
+				(isAlienSorted(p.one, p.two))
+			}
+		}
 	}
-}}}
+}

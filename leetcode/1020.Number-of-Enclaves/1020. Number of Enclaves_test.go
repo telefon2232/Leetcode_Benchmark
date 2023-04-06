@@ -79,9 +79,12 @@ func Benchmark_Problem1020(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1020, q.para1020
-		(numEnclaves(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1020, q.para1020
+				(numEnclaves(p.one))
+			}
+		}
 	}
-}}}
+}

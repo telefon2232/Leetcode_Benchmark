@@ -36,9 +36,12 @@ func Benchmark_Problem1010(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1010, q.para1010
-		(numPairsDivisibleBy60(p.time))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1010, q.para1010
+				(numPairsDivisibleBy60(p.time))
+			}
+		}
 	}
-}}}
+}

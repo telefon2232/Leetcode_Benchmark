@@ -41,9 +41,12 @@ func Benchmark_Problem832(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans832, q.para832
-		(flipAndInvertImage(p.A))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans832, q.para832
+				(flipAndInvertImage(p.A))
+			}
+		}
 	}
-}}}
+}

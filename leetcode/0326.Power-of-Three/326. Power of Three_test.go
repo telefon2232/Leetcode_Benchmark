@@ -46,9 +46,12 @@ func Benchmark_Problem326(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans326, q.para326
-		(isPowerOfThree(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans326, q.para326
+				(isPowerOfThree(p.one))
+			}
+		}
 	}
-}}}
+}

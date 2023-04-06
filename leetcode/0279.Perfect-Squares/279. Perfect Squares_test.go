@@ -35,9 +35,12 @@ func Benchmark_Problem279(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans279, q.para279
-		(numSquares(p.n))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans279, q.para279
+				(numSquares(p.n))
+			}
+		}
 	}
-}}}
+}

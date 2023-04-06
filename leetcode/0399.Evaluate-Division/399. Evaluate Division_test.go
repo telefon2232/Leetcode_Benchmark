@@ -33,9 +33,12 @@ func Benchmark_Problem399(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans399, q.para399
-		(calcEquation(p.e, p.v, p.q))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans399, q.para399
+				(calcEquation(p.e, p.v, p.q))
+			}
+		}
 	}
-}}}
+}

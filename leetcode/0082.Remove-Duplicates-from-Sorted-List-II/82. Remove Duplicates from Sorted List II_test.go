@@ -73,9 +73,12 @@ func Benchmark_Problem82(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans82, q.para82
-		(structures.List2Ints(deleteDuplicates1(structures.Ints2List(p.one))))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans82, q.para82
+				(structures.List2Ints(deleteDuplicates1(structures.Ints2List(p.one))))
+			}
+		}
 	}
-}}}
+}

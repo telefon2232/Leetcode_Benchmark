@@ -36,9 +36,12 @@ func Benchmark_Problem69(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans69, q.para69
-		(mySqrt1(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans69, q.para69
+				(mySqrt1(p.one))
+			}
+		}
 	}
-}}}
+}

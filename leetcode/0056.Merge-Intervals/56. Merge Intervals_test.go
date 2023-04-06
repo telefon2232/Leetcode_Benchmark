@@ -61,9 +61,12 @@ func Benchmark_Problem56(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans56, q.para56
-		(merge56(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans56, q.para56
+				(merge56(p.one))
+			}
+		}
 	}
-}}}
+}

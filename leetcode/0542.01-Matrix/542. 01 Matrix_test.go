@@ -41,9 +41,12 @@ func Benchmark_Problem542(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans542, q.para542
-		(updateMatrixDP(p.one))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans542, q.para542
+				(updateMatrixDP(p.one))
+			}
+		}
 	}
-}}}
+}

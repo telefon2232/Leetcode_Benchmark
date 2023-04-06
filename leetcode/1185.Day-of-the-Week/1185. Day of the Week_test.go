@@ -43,9 +43,12 @@ func Benchmark_Problem1185(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans1185, q.para1185
-		(dayOfTheWeek(p.day, p.month, p.year))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans1185, q.para1185
+				(dayOfTheWeek(p.day, p.month, p.year))
+			}
+		}
 	}
-}}}
+}

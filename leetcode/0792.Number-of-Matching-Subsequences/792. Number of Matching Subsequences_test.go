@@ -32,9 +32,12 @@ func Benchmark_Problem792(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans792, q.para792
-		(numMatchingSubseq(p.s, p.words))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans792, q.para792
+				(numMatchingSubseq(p.s, p.words))
+			}
+		}
 	}
-}}}
+}

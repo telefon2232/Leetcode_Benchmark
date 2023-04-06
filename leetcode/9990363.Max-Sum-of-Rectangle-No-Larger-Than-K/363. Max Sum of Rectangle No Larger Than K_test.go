@@ -47,9 +47,12 @@ func Benchmark_Problem363(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans363, q.para363
-		(maxSumSubmatrix(p.one, p.k))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans363, q.para363
+				(maxSumSubmatrix(p.one, p.k))
+			}
+		}
 	}
-}}}
+}

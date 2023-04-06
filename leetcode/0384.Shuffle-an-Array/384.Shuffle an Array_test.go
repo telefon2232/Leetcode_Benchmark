@@ -31,19 +31,21 @@ func Benchmark_Problem384(b *testing.B) {
 		},
 	}
 
-
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		sol := Constructor(nil)
-		_, p := q.ans384, q.para384
-		for _, op := range p.ops {
-			if op == "Solution" {
-				sol = Constructor(q.value[0])
-			} else if op == "reset" {
-				fmt.Printf("【input】:%v    【output】:%v\n", op, sol.Reset())
-			} else {
-				fmt.Printf("【input】:%v    【output】:%v\n", op, sol.Shuffle())
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				sol := Constructor(nil)
+				_, p := q.ans384, q.para384
+				for _, op := range p.ops {
+					if op == "Solution" {
+						sol = Constructor(q.value[0])
+					} else if op == "reset" {
+						fmt.Printf("【input】:%v    【output】:%v\n", op, sol.Reset())
+					} else {
+						fmt.Printf("【input】:%v    【output】:%v\n", op, sol.Shuffle())
+					}
+				}
 			}
 		}
 	}
-}}}
+}

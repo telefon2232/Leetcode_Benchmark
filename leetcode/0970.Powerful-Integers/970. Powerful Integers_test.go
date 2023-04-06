@@ -38,9 +38,12 @@ func Benchmark_Problem970(b *testing.B) {
 		},
 	}
 
-	for bbe := 0; bbe < b.N; bbe++ { 
-for _, q := range qs { {
-		_, p := q.ans970, q.para970
-		(powerfulIntegers(p.one, p.two, p.b))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, q := range qs {
+			{
+				_, p := q.ans970, q.para970
+				(powerfulIntegers(p.one, p.two, p.b))
+			}
+		}
 	}
-}}}
+}
