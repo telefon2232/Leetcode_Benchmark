@@ -22,11 +22,13 @@ func Benchmark_robotSim(b *testing.B) {
 			65,
 		},
 	}
-	for _, tt := range cases {
-		b.Run(tt.name, func(b *testing.B) {
-			if got := robotSim(tt.args.commands, tt.args.obstacles); got != tt.want {
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, tt := range cases {
+			b.Run(tt.name, func(b *testing.B) {
+				if got := robotSim(tt.args.commands, tt.args.obstacles); got != tt.want {
 
-			}
-		})
+				}
+			})
+		}
 	}
 }

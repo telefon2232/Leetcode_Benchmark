@@ -31,8 +31,9 @@ func Benchmark_Problem65(b *testing.B) {
 			true,
 		},
 	}
-
-	for _, tc := range tcs {
-		(isNumber(tc.s))
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, tc := range tcs {
+			(isNumber(tc.s))
+		}
 	}
 }

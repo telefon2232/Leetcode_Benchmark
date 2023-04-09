@@ -14,7 +14,9 @@ func Benchmark_Problem304(b *testing.B) {
 			{1, 0, 3, 0, 5},
 		},
 	)
-	obj.SumRegion(2, 1, 4, 3)
-	obj.SumRegion(1, 1, 2, 2)
-	obj.SumRegion(1, 2, 2, 4)
+	for bbe := 0; bbe < b.N; bbe++ {
+		obj.SumRegion(2, 1, 4, 3)
+		obj.SumRegion(1, 1, 2, 2)
+		obj.SumRegion(1, 2, 2, 4)
+	}
 }

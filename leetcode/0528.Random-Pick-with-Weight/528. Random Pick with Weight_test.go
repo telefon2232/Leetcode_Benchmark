@@ -7,10 +7,12 @@ import (
 func Benchmark_Problem528(b *testing.B) {
 	w := []int{1, 3}
 	sol := Constructor528(w)
-	sol.PickIndex()
-	sol.PickIndex()
-	sol.PickIndex()
-	sol.PickIndex()
-	sol.PickIndex()
-	sol.PickIndex()
+	for bbe := 0; bbe < b.N; bbe++ {
+		sol.PickIndex()
+		sol.PickIndex()
+		sol.PickIndex()
+		sol.PickIndex()
+		sol.PickIndex()
+		sol.PickIndex()
+	}
 }

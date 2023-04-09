@@ -6,7 +6,8 @@ import (
 
 func Benchmark_Problem338(b *testing.B) {
 	obj := Constructor([]*NestedInteger{})
-
-	obj.Next()
-	obj.HasNext()
+	for bbe := 0; bbe < b.N; bbe++ {
+		obj.Next()
+		obj.HasNext()
+	}
 }

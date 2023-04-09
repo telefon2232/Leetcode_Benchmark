@@ -22,11 +22,14 @@ func Benchmark_findNumOfValidWords(b *testing.B) {
 		// TODO: Add test cases.
 		{"1", args{words: words1, puzzles: puzzles1}, []int{1, 1, 3, 2, 4, 0}},
 	}
-	for _, tt := range tests {
-		b.Run(tt.name, func(b *testing.B) {
-			if got := findNumOfValidWords(tt.args.words, tt.args.puzzles); !reflect.DeepEqual(got, tt.want) {
-				b.Errorf("findNumOfValidWords() = %v, want %v", got, tt.want)
-			}
-		})
+	for bbe := 0; bbe < b.N; bbe++ {
+		for _, tt := range tests {
+			b.Run(tt.name, func(b *testing.B) {
+				if got := findNumOfValidWords(tt.args.words, tt.args.puzzles); !reflect.DeepEqual(got, tt.want) {
+					b.Errorf("findNumOfValidWords() = %v, want %v", got, tt.want)
+				}
+			})
+		}
 	}
+
 }
