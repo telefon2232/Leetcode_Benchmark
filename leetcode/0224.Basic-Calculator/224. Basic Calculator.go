@@ -2,7 +2,7 @@ package leetcode
 
 import (
 	"container/list"
-	"fmt"
+
 	"strconv"
 )
 
@@ -63,7 +63,7 @@ func calculate1(s string) int {
 			stack = append(stack, s[i])
 		}
 	}
-	fmt.Printf("stack = %v\n", string(stack))
+
 	return calculateStr(string(stack))
 }
 
@@ -107,7 +107,7 @@ func calculateStr(str string) int {
 			res -= nums[i+1]
 		}
 	}
-	fmt.Printf("s = %v nums = %v res = %v\n", string(s), nums, res)
+
 	return res
 }
 

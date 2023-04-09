@@ -1,7 +1,7 @@
 package structures
 
 import (
-	"fmt"
+
 	"strconv"
 )
 
@@ -71,8 +71,8 @@ func indexOf(val int, nums []int) int {
 		}
 	}
 
-	msg := fmt.Sprintf("%d 不存在于 %v 中", val, nums)
-	panic(msg)
+	
+	panic("")
 }
 
 // PreIn2Tree 把 preorder 和 inorder 切片转换成 二叉树
